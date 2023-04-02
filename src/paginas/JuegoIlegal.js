@@ -1,11 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-const Inicio = () => {
+export default function pagina3() {
   return (
     <div>
          <a href='https://juj.lotemovil.com.ar/' ><img src= '..\img\placadesvio.jpg' width='100%'/></a>
     </div>
   )
 }
-
-export default Inicio
