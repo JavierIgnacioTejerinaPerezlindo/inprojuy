@@ -1,16 +1,16 @@
 import NavBar from './components/NavBar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { browseRouter, Routes, HashRouter, Route } from 'react-router-dom';
 import Inicio from './paginas/Inicio';
 import Juegos from './paginas/Juegos';
 import JuegoResponsable from './paginas/JuegoResponsable';
 import JuegoIlegal from './paginas/JuegoIlegal';
-import { Noticias } from './paginas/Noticias';
-import { Institucional } from './paginas/Institucional';
+import Noticias from './paginas/Noticias';
+import Institucional from './paginas/Institucional';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <NavBar />
         <Routes>
           <Route path='/' element={<Inicio/>} />
@@ -20,7 +20,7 @@ function App() {
           <Route path='/noticias' element={<Noticias />} />
           <Route path='/institucional' element={<Institucional />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

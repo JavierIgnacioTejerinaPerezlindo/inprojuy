@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Noticias = () => {
+const Noticias = () => {
   return (
-    <div>
+    <div >
          <a href='https://juj.lotemovil.com.ar/' ><img src= '..\img\placadesvio.jpg' width='100%'/></a>
     </div>
   )
 }
+
+export default Noticias
