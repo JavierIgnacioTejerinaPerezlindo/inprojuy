@@ -5,7 +5,8 @@ const Inicio = () => {
   return (
     <div >
       <Carrousel/>
-         <a href='https://juj.lotemovil.com.ar/' ><img src= '..\img\placadesvio.jpg' width='100%'/></a>
+      <div className='container p-3'>
+         <a href='https://juj.lotemovil.com.ar/' ><img src= '..\img\placadesvio.jpg' width='100%'/></a></div>
     </div>
   )
 }

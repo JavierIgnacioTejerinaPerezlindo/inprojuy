@@ -2,6 +2,7 @@ import React from 'react'
 
 const Carrousel = () => {
   return (
+    <div className="container pt-5 pb-5" >
     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -37,6 +38,7 @@ const Carrousel = () => {
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
   </button>
+</div>
 </div>
   )
 }
