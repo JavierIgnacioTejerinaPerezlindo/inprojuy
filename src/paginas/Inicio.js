@@ -1,13 +1,16 @@
 import React from 'react';
 import Carrousel from '../components/Carrousel';
+import Footer from '../components/Footer/Footer';
 
 const Inicio = () => {
   return (
     <div >
       <Carrousel/>
       <div className='container p-3'>
-         <a href='https://juj.lotemovil.com.ar/' ><img src= '..\img\placadesvio.jpg' width='100%'/></a></div>
+          <a href='https://juj.lotemovil.com.ar/' ><img src= '..\img\placadesvio.jpg' width='100%'/></a></div>
+      
     </div>
+   
   )
 }
 
