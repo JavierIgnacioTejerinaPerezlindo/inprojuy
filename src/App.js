@@ -7,6 +7,8 @@ import JuegoIlegal from './paginas/JuegoIlegal';
 import Noticias from './paginas/Noticias';
 import Institucional from './paginas/Institucional';
 import Footer from './components/Footer/Footer';
+import InstitucionalMision from './paginas/InstitucionalMision';
+import InstitucionalAutoridades from './paginas/InstitucionalAutoridades';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path='/juegoilegal' element={<JuegoIlegal />} />
           <Route path='/noticias' element={<Noticias />} />
           <Route path='/institucional' element={<Institucional />} />
+          <Route path='/mision' element={<InstitucionalMision />} />
+          <Route path='/autoridades' element={<InstitucionalAutoridades />} />
         </Routes>
         <Footer/>
       </HashRouter>
