@@ -7,6 +7,7 @@ import JuegoIlegal from './paginas/JuegoIlegal';
 import Noticias from './paginas/Noticias';
 import Institucional from './paginas/Institucional';
 import Footer from './components/Footer/Footer';
+import 'animate.css/animate.min.css'
 
 function App() {
   return (
