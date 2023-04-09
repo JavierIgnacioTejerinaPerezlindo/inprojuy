@@ -34,7 +34,7 @@ const Footer = () => {
                     </nav>
                 </div>
                 <div className="container">
-                            <p className="text-center mb-0 mt-2  text-dark-emphasis">Copyright © 2023 - Creado por Connect-Way para INPROJUY </p>
+                            <p className="text-center mb-0 mt-2  text-dark">Copyright © 2023 - Creado por Connect-Way para INPROJUY </p>
                         </div>
             </footer>
         </div>

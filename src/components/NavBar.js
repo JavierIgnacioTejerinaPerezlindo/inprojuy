@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav className="navbar bg-primary navbar-expand-lg bg-body-tertiary text-reset" data-bs-theme="light">
             <div className="container-fluid">
                 <Link className="navbar-brand" to={'/'}>
-                    <img src='../img/inprojuylogo.png' width='200px' />
+                    <img src='../img/inprojuylogo.png' width= '200px' className='animate__animated animate__pulse'/>
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

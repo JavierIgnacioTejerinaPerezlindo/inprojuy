@@ -1,0 +1,34 @@
+[
+    {
+        "titulo": "Prevención de Lavado de Activos: Trabajo coordinado junto a la UIF, de cara la Evaluación del GAFI",
+        "fecha": "01/04/2023",
+        "idnoticia": 1,
+        "imagen": "./noticias/img/lavado.jpg",
+        "texto": "Esta semana, en el Centro de Reuniones de ALEA, 21 integrantes de la Unidad Coordinadora de Prevención de Lavado de Activos de ALEA, de quince jurisdicciones participaron del encuentro de trabajo para la instancia preparatoria de cara a la 4ta. Ronda de Evaluación Mutua del GAFI a la República Argentina.",
+        "tipo": 1
+    },
+    {
+        "titulo": "Concientización. Inprojuy lanzó concursos sobre Juego Responsable",
+        "fecha": "01/04/2023",
+        "idnoticia": 2,
+        "imagen": "./noticias/img/concientizacion.jpg",
+        "texto": "El objetivo del Instituto Provincial de Juegos de Azar (Inprojuy) es promover el Juego Responsable, a través de la convocatoria a dos concursos con premios. Con el objetivo que la población adquiera conocimientos acerca del Juego Responsable, el Instituto Provincial de Juegos de Azar (Inprojuy), a través del Programa Juga x Jugar, lanzó los concursos “Agendame” y la segunda edición del Concurso Literario, en los que se podrá participar hasta el 17 de abril, abiertos a toda la comunidad.",
+        "tipo": 1
+    },
+    {
+        "titulo": "Inprojuy capacitó a los operadores de la línea de ayuda a trastornos por juegos de azar",
+        "fecha": 1500,
+        "idnoticia": 3,
+        "imagen": "./noticias/img/capacitacion.jpg",
+        "texto": "Este encuentro formativo se desarrolla dentro del programa Juga x jugar, que lleva adelante Inprojuy con el objetivo de acompañar, asistir y contener a las personas que tienen un problema con el vínculo que crean el juego. Con esta línea recientemente incorporada se podrá llegar a más personas que necesiten ayuda ",
+        "tipo": 1
+    },
+    {
+        "titulo": "Seminario de Juego Responsable WLA CIBELAE, en Río de Janeiro, 22 al 24 de marzo",
+        "fecha": 1500,
+        "idnoticia": 4,
+        "imagen": "./noticias/img/seminario.jpg",
+        "texto": "Del 22 al 24 de marzo de 2023, la World Lottery Association (WLA) y la Corporación Iberoamericana de Loterías y Apuestas del Estado (CIBELAE) organizan un seminario sobre Juego Responsable en Río de Janeiro, Brasil.",
+        "tipo": 1
+    }
+]

@@ -9,6 +9,7 @@ import Institucional from './paginas/Institucional';
 import Footer from './components/Footer/Footer';
 import InstitucionalMision from './paginas/InstitucionalMision';
 import InstitucionalAutoridades from './paginas/InstitucionalAutoridades';
+import 'animate.css/animate.min.css'
 
 function App() {
   return (
