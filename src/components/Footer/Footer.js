@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <div>
-            <footer className='text-white py-4 bg-danger'>
+            <footer className='text-white py-4' style={{backgroundColor: "#d7412a"}}>
                 <div className="container">
                     <nav className="row">
                         <Link to='/' className="col-6 col-md-3 d-flex align-items-center justify-content-left">

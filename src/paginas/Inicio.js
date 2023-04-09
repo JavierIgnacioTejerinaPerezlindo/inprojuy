@@ -13,10 +13,7 @@ const Inicio = () => {
       <Cards />
 
       </div>
-    
-      <div className='container p-3'>
-          <a href='https://juj.lotemovil.com.ar/' ><img src= '..\img\placadesvio.jpg' width='100%'/></a></div>
-      
+
     </div>
    
   )

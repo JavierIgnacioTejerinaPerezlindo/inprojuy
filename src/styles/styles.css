@@ -11994,7 +11994,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* .card-img-top{
-    border-radius: 50%;
-    width: 100%;
-} *//*# sourceMappingURL=styles.css.map */
+.App {
+  background: rgb(59, 160, 168);
+  background: linear-gradient(180deg, rgba(59, 160, 168, 0.2) 0%, rgba(87, 87, 87, 0.5) 41%, rgb(215, 65, 42) 80%);
+}/*# sourceMappingURL=styles.css.map */

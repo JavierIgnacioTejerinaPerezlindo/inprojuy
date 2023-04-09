@@ -1,7 +1,7 @@
-.Cards{
+/* .Cards{
     background: rgb(59,159,167);
     background: linear-gradient(180deg, rgba(59,159,167,1) 0%, rgba(87,87,87,1) 41%, rgba(215,65,42,1) 100%);
-}
+} */
 .card:hover{ 
    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273);
    transition: all 0.5s linear;
