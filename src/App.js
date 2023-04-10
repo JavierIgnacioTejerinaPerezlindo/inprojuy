@@ -9,7 +9,10 @@ import Institucional from './paginas/Institucional';
 import Footer from './components/Footer/Footer';
 import InstitucionalMision from './paginas/InstitucionalMision';
 import InstitucionalAutoridades from './paginas/InstitucionalAutoridades';
+import InstitucionalDelegaciones from './paginas/InstitucionalDelegaciones';
 import 'animate.css/animate.min.css'
+
+
 
 function App() {
   return (
@@ -25,6 +28,7 @@ function App() {
           <Route path='/institucional' element={<Institucional />} />
           <Route path='/mision' element={<InstitucionalMision />} />
           <Route path='/autoridades' element={<InstitucionalAutoridades />} />
+          <Route path='/delegaciones' element={<InstitucionalDelegaciones/>} />
         </Routes>
         <Footer/>
       </HashRouter>

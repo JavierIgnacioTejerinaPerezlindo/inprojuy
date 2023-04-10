@@ -17,14 +17,19 @@ const NavBar = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to={'/'}>Inicio</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to={'/juegos'}>Juegos</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to={'/juegoresponsable'}>Juego responsable</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to={'/juegoilegal'}>Juego ilegal</Link>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Juego
+                            </a>
+                            <ul className="dropdown-menu">
+                                <li><Link className="dropdown-item" to='/juegoilegal'>Juego Ilegal</Link></li>
+                                <li><Link className="dropdown-item" to='/autoridades'>Juego JuegoResponsable</Link></li>
+                                <li><Link className="dropdown-item" to='/delegaciones'>Bingos y otros juegos</Link></li>
+                                <li><Link className="dropdown-item" to='/delegaciones'>Juego online</Link></li>
+                                <li><Link className="dropdown-item" to='/delegaciones'>Sala de juegos</Link></li>
+                                <li><Link className="dropdown-item" to='/delegaciones'>Agencias</Link></li>
+                                <li><Link className="dropdown-item" to='/delegaciones'>Agencias</Link></li>
+                            </ul>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to={'/noticias'}>Noticias</Link>
