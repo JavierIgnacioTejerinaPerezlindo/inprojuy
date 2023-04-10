@@ -1,7 +1,7 @@
 import NavBar from './components/NavBar';
 import { browseRouter, Routes, HashRouter, Route } from 'react-router-dom';
 import Inicio from './paginas/Inicio';
-import Juegos from './paginas/Juegos';
+import JuegoOnline from './paginas/JuegoOnline';
 import JuegoResponsable from './paginas/JuegoResponsable';
 import JuegoIlegal from './paginas/JuegoIlegal';
 import Noticias from './paginas/Noticias';
@@ -18,11 +18,11 @@ function App() {
         <NavBar />
         <Routes>
           <Route path='/' element={<Inicio/>} />
-          <Route path='/juegos' element={<Juegos />} />
+          <Route path='/juegoonline' element={<JuegoOnline />} />
           <Route path='/juegoresponsable' element={<JuegoResponsable />} />
           <Route path='/juegoilegal' element={<JuegoIlegal />} />
           <Route path='/noticias' element={<Noticias />} />
-          <Route path='/institucional' element={<Institucional />} />
+          <Route path='/institucionalMision' element={<InstitucionalMision />} />
           <Route path='/mision' element={<InstitucionalMision />} />
           <Route path='/autoridades' element={<InstitucionalAutoridades />} />
         </Routes>

@@ -13,9 +13,9 @@ const Footer = () => {
 
                         </Link>
                         <ul className="col-12 col-md-3  list-unstyled">
-                            <Link className="nav-link" to={'/juegos'}>Juegos</Link>
+                            <Link className="nav-link" to={'/juegoResponsable'}>Juego Responsable</Link>
                             <Link className="nav-link" to={'/noticias'}>Noticias</Link>
-                            <Link className="nav-link" to={'/institucional'}>Institucional</Link>
+                            <Link className="nav-link" to={'/institucionalMision'}>Institucional</Link>
                         </ul>
                         <ul className="col-12 col-md-3  list-unstyled">
                             <li className="Text-center text-light fst-italic " >INPROJUY es el ente regulador de Juegos de Azar de la Provincia de Jujuy, cuyo objetivo es la regulación, autorización, dirección, control, administración, fiscalización y explotación de Juegos de Azar en sus distintas modalidades</li>

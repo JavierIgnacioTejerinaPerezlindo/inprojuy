@@ -2,8 +2,8 @@ import React from 'react'
 
 const Carrousel = () => {
   return (
-    <div className="container pt-5 pb-5" >
-    <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+    <div className="container pt-5 pb-5 " >
+    <div id="carouselExampleAutoplaying" className="carousel slide carouselv" data-bs-ride="carousel" >
   <div className="carousel-inner">
     <div className="carousel-item active">
       <img src="./img/slider_1.jpg" className="d-block w-100" alt="..."/>

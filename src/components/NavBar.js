@@ -17,14 +17,24 @@ const NavBar = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to={'/'}>Inicio</Link>
                         </li>
-                        <li className="nav-item">
+                       {/*  <li className="nav-item">
                             <Link className="nav-link" to={'/juegos'}>Juegos</Link>
+                        </li> */}
+                          <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Juegos
+                            </a>
+                            <ul className="dropdown-menu">
+                                <li><Link className="nav-link" to={'/juegoresponsable'}>Juego responsable</Link></li>
+                                <li><Link className="nav-link" to={'/juegoilegal'}>Juego ilegal</Link></li>
+                                <li><Link className="nav-link" to='/juegoonline'>Juego On Line</Link></li>
+                            </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to={'/juegoresponsable'}>Juego responsable</Link>
+                            
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to={'/juegoilegal'}>Juego ilegal</Link>
+                            
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to={'/noticias'}>Noticias</Link>
