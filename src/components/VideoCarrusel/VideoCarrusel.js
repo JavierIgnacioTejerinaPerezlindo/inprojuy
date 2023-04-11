@@ -46,27 +46,27 @@ const VideoCarrusel = () => {
         }
     ]
 
-    return <div className='carousel'>
-        <p></p>
-        
-        <Carousel >
+    return <div  >
+
+        <Carousel   >
             {videoProperties.map((videoObj) => {
                 return (
-                    <Carousel.Item   key={videoObj.id}>
-                        <ReactPlayer
-                        url={videoObj.src}
-                        pip={true}
-                        controls={true}
+                    <Carousel.Item className='player-wrapper' key={videoObj.id}>
+                        <ReactPlayer className='react-player'
+                            url={videoObj.src}
+                            pip={true}
+                            controls={true}
+                            width='90%'
+                            height='87%'
                         //playing={true}
                         />
-                        <Carousel.Caption>
+                        <Carousel.Caption >
                             <h3>{videoObj.title}</h3>
                             <p>{videoObj.credit}</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 )
             }
-        
             )}
         </Carousel>
         <p></p>
