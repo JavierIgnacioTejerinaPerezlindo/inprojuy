@@ -11,6 +11,7 @@ import InstitucionalMision from './paginas/InstitucionalMision';
 import InstitucionalAutoridades from './paginas/InstitucionalAutoridades';
 import InstitucionalDelegaciones from './paginas/InstitucionalDelegaciones';
 import 'animate.css/animate.min.css'
+import Agencias from './paginas/Agencias';
 
 
 
@@ -23,12 +24,13 @@ function App() {
           <Route path='/' element={<Inicio/>} />
           <Route path='/juegos' element={<Juegos />} />
           <Route path='/juegoresponsable' element={<JuegoResponsable />} />
-          <Route path='/juegoilegal' element={<JuegoIlegal />} />
+{/*           <Route path='/juegoilegal' element={<JuegoIlegal />} /> */}
           <Route path='/noticias' element={<Noticias />} />
           <Route path='/institucional' element={<Institucional />} />
           <Route path='/mision' element={<InstitucionalMision />} />
           <Route path='/autoridades' element={<InstitucionalAutoridades />} />
           <Route path='/delegaciones' element={<InstitucionalDelegaciones/>} />
+          <Route path='/agencias' element={<Agencias/>} />
         </Routes>
         <Footer/>
       </HashRouter>
