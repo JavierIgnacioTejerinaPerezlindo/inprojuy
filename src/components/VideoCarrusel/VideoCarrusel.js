@@ -18,31 +18,36 @@ const VideoCarrusel = () => {
             id: 1,
             title: "Horarios",
             src: vid1,
-            credit: "INPROJUY"
+            credit: "INPROJUY",
+            tiempo: 35000
         },
         {
             id: 2,
             title: "Juego Responsable",
             src: vid2,
-            credit: "INPROJUY"
+            credit: "INPROJUY",
+            tiempo: 70000
         },
         {
             id: 3,
             title: "Lavado de Activos",
             src: vid3,
-            credit: "INPROJUY"
+            credit: "INPROJUY",
+            tiempo: 60000
         },
         {
             id: 4,
             title: "Telekino",
             src: vid4,
-            credit: "INPROJUY"
+            credit: "INPROJUY",
+            tiempo: 16000
         },
         {
             id: 5,
             title: "Palpito",
             src: vid5,
-            credit: "INPROJUY"
+            credit: "INPROJUY",
+            tiempo: 38000
         }
     ]
 
@@ -51,7 +56,7 @@ const VideoCarrusel = () => {
         <Carousel   >
             {videoProperties.map((videoObj) => {
                 return (
-                    <Carousel.Item className='player-wrapper' key={videoObj.id}>
+                    <Carousel.Item interval={videoObj.tiempo} className='player-wrapper' key={videoObj.id}>
                         <ReactPlayer className='react-player'
                             url={videoObj.src}
                             pip={true}

@@ -14,7 +14,7 @@ const Carrousel = () => {
       </a>
     </div>
     <div className="carousel-item">
-      <a href='./download/BasesyCondiciones.pdf' target="_blank">
+      <a href='./download/agendame.pdf' target="_blank">
       <img src="./img/slider_3.jpg" className="d-block w-100" alt="Agendame"/>
       </a>
     </div>
