@@ -4,7 +4,7 @@ import './Cards.css'
 
 export default function Card({titulo,imagen,texto}) {
     return (
-        <div className='card text-center bg-dark animate__animated animate__fadeInUp'>
+        <div className='card text-center bg-dark animate__animated animate__fadeInUp mt-2'>
             <div className='overflow'>
             <img src={imagen} className='card-img-top'/>
             </div>

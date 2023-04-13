@@ -9,10 +9,14 @@ const Carrousel = () => {
       <img src="./img/slider_1.jpg" className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="./img/slider_2.jpg" className="d-block w-100" alt="..."/>
+    <a href='./download/BasesyCondiciones.pdf' target="_blank">
+      <img src="./img/slider_2.jpg" className="d-block w-100" alt="Concurso Literario"/>
+      </a>
     </div>
     <div className="carousel-item">
-      <img src="./img/slider_3.jpg" className="d-block w-100" alt="..."/>
+      <a href='./download/agendame.pdf' target="_blank">
+      <img src="./img/slider_3.jpg" className="d-block w-100" alt="Agendame"/>
+      </a>
     </div>
     <div className="carousel-item">
       <img src="./img/slider_4.jpg" className="d-block w-100" alt="..."/>
@@ -26,9 +30,7 @@ const Carrousel = () => {
     <div className="carousel-item">
       <img src="./img/slider_7.jpg" className="d-block w-100" alt="..."/>
     </div>
-    <div className="carousel-item">
-      <img src="./img/slider_8.jpg" className="d-block w-100" alt="..."/>
-    </div>
+   
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>

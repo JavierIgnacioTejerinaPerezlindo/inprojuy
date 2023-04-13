@@ -213,7 +213,7 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -241,6 +241,8 @@ h4, .h4 {
 @media (min-width: 1200px) {
   h4, .h4 {
     font-size: 1.5rem;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
 
@@ -253,8 +255,11 @@ h6, .h6 {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: 1;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 abbr[title] {
@@ -273,7 +278,9 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem;
+  
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 ol,
@@ -281,6 +288,7 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
 ol ol,
@@ -3556,6 +3564,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+ 
 }
 
 .nav-link {
@@ -3617,6 +3626,7 @@ textarea.form-control-lg {
   color: var(--bs-nav-tabs-link-active-color);
   background-color: var(--bs-nav-tabs-link-active-bg);
   border-color: var(--bs-nav-tabs-link-active-border-color);
+  font-size: 3rem;
 }
 .nav-tabs .dropdown-menu {
   margin-top: calc(-1 * var(--bs-nav-tabs-border-width));
