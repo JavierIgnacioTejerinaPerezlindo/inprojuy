@@ -7,18 +7,18 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg bg-primary text-reset ">
             <div className="container-fluid">
                 <Link className="navbar-brand" to={'/'}>
-                    <img src='../img/inprojuylogo.png' width='200px' className='animate__animated animate__pulse drop' />
+                    <img src='../img/inprojuylogo.png' width='250px' className='animate__animated animate__pulse drop' />
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse h4" id="navbarSupportedContent">
-                    <ul className="navbar-nav ms-auto pe-5 mb-2 mb-lg-0">
+                    <ul className="navbar-nav ms-auto pe-5 mb-2 mb-lg-0 h2">
                         <li className="nav-item">
-                            <Link className="nav-link text-white luz" to={'/'}>Inicio</Link>
+                            <Link className="nav-link text-white luzhover" to={'/'}>Inicio</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle text-white luz" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Juego
                             </a>
                             <ul className="dropdown-menu">
@@ -31,7 +31,7 @@ const NavBar = () => {
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle text-white luz" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Institucional
                             </a>
                             <ul className="dropdown-menu">
@@ -41,7 +41,7 @@ const NavBar = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white luz" to={'/noticias'}>Noticias</Link>
+                            <Link className="nav-link text-white luzhover" to={'/noticias'}>Noticias</Link>
                         </li>
                     </ul>
                 </div>
