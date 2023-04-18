@@ -23,7 +23,7 @@ const NavBar = () => {
                             </a>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to='/juegoilegal'>Juego Ilegal</Link></li>
-                                <li><Link className="dropdown-item" to='/'>Juego JuegoResponsable</Link></li>
+                                <li><Link className="dropdown-item" to='/juegoResponsable'>Juego Responsable</Link></li>
                                 <li><Link className="dropdown-item" to='/'>Bingos y otros juegos</Link></li>
                                 <li><Link className="dropdown-item" to='/'>Juego online</Link></li>
                                 <li><Link className="dropdown-item" to='/'>Sala de juegos</Link></li>

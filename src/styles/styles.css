@@ -10323,5 +10323,6 @@ textarea.form-control-lg {
 }
 
 .fondotransparente {
-  background: rgba(87, 87, 87, 0.4);
+  background: rgba(188, 188, 188, 0.4);
+  border-radius: 20px;
 }/*# sourceMappingURL=styles.css.map */

@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Inicio/>} />
           <Route path='/juegoonline' element={<JuegoOnline />} />
-          <Route path='/juegoresponsable' element={<JuegoResponsable />} />
+          <Route path='/juegoResponsable' element={<JuegoResponsable />} />
 {/*           <Route path='/juegoilegal' element={<JuegoIlegal />} /> */}
           <Route path='/noticias' element={<Noticias />} />
           <Route path='/institucionalMision' element={<InstitucionalMision />} />

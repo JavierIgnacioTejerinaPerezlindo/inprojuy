@@ -1,6 +1,6 @@
 import Card from "./Card"
 import './Cards.css'
-import { useEffect,useState } from "react"
+import { useEffect, useState } from "react"
 
 const Cards = () => {
     const [tabn, setTabn] = useState([])
@@ -20,19 +20,19 @@ const Cards = () => {
 
     }, [])
     return (
-        <div className="container justify-content-center align-items-center ">
+        <div className="container  justify-content-center align-items-center ">
             <div className=" row">
 
-            {
-             tabn.map(tabn=>{
-                return (
-                    <div  className="col-md-3" key={tabn.idnoticia}>
-<Card titulo={tabn.titulo} imagen={tabn.imagen} texto={tabn.texto}/>
-                    </div>
-                )
-             })
-            }
-               </div>
+                {
+                    tabn.map(tabn => {
+                        return (
+                            <div className="col-md-3" key={tabn.idnoticia}>
+                                <Card titulo={tabn.titulo} imagen={tabn.imagen} texto={tabn.texto} />
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 
