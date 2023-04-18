@@ -8,7 +8,7 @@ const Carrousel = () => {
     <div className="carousel-item active">
       <img src="./img/slider_1.jpg" className="d-block w-100" alt="..."/>
     </div>
-    <div className="carousel-item">
+   {/*  <div className="carousel-item">
     <a href='./download/BasesyCondiciones.pdf' target="_blank">
       <img src="./img/slider_2.jpg" className="d-block w-100" alt="Concurso Literario"/>
       </a>
@@ -17,7 +17,7 @@ const Carrousel = () => {
       <a href='./download/agendame.pdf' target="_blank">
       <img src="./img/slider_3.jpg" className="d-block w-100" alt="Agendame"/>
       </a>
-    </div>
+    </div> */}
     <div className="carousel-item">
       <img src="./img/slider_4.jpg" className="d-block w-100" alt="..."/>
     </div>

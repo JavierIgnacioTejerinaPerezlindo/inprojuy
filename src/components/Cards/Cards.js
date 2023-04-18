@@ -1,6 +1,8 @@
 import Card from "./Card"
 import './Cards.css'
 import { useEffect, useState } from "react"
+import { Link } from 'react-router-dom'
+
 
 const Cards = () => {
     const [tabn, setTabn] = useState([])
