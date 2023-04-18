@@ -12,7 +12,10 @@ import InstitucionalAutoridades from './paginas/InstitucionalAutoridades';
 import InstitucionalDelegaciones from './paginas/InstitucionalDelegaciones';
 import 'animate.css/animate.min.css'
 import Agencias from './paginas/Agencias';
-
+import NotiAgendame from './paginas/NotiAgendame';
+import NotiCapacitacion from './paginas/NotiCapacitacion';
+import NotiPrevencion from './paginas/NotiPrevencion';
+import NotiSeminario from './paginas/NotiSeminario';
 
 
 
@@ -32,6 +35,11 @@ function App() {
           <Route path='/autoridades' element={<InstitucionalAutoridades />} />
           <Route path='/delegaciones' element={<InstitucionalDelegaciones/>} />
           <Route path='/agencias' element={<Agencias/>} />
+          <Route path='/notiAgendame' element={<NotiAgendame/>} />
+          <Route path='/notiCapacitacion' element={<NotiCapacitacion/>} />
+          <Route path='/notiPrevencion' element={<NotiPrevencion/>} />
+          <Route path='/notiSeminario' element={<NotiSeminario/>} />
+
         </Routes>
         <Footer/>
       </HashRouter>

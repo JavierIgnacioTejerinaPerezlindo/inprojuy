@@ -27,7 +27,7 @@ const Cards = () => {
                     tabn.map(tabn => {
                         return (
                             <div className="col-md-3" key={tabn.idnoticia}>
-                                <Card titulo={tabn.titulo} imagen={tabn.imagen} texto={tabn.texto} />
+                                <Card titulo={tabn.titulo} imagen={tabn.imagen} texto={tabn.texto} linkN={tabn.linkn} />
                             </div>
                         )
                     })

@@ -2,7 +2,7 @@ import React from 'react'
 
 const NotiAgendame = () => {
     return (
-        <div>
+        <div className='container p-3 fondotransparente'>
             <h1 class="entry-title entry--item h2">Concientización. Inprojuy lanzó concursos sobre Juego Responsable</h1>
 
             <p>El objetivo del Instituto Provincial de Juegos de Azar (Inprojuy) es promover el Juego Responsable, a través de la convocatoria a dos concursos con premios.</p>
