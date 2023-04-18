@@ -2,7 +2,7 @@ import React from 'react'
 
 const InstitucionalMision = () => {
     return (
-        <div className='text-left text-justify container fondotransparente mb-5 drop rounded h3 p-5' >
+        <div className='text-left text-justify container fondotransparente mb-5 h3 p-5' >
             <br/>
             <center>
             <h1>Mision, Vision, Objetivos</h1>
