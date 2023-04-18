@@ -5,6 +5,7 @@ import Cards from '../components/Cards/Cards';
 import '../components/Cards/Cards.css'
 import VideoCarrusel from '../components/VideoCarrusel/VideoCarrusel';
 import Modal from '../components/Modal/Modal';
+import Links from '../components/Links/Links';
 
 
 
@@ -16,6 +17,7 @@ const Inicio = () => {
       <Carrousel />
 
       <Cards />
+	  <Links/>
       <VideoCarrusel />
       <Modal
         estado={estadoModal}
@@ -24,6 +26,7 @@ const Inicio = () => {
         <Contenido>
           <img src='./img/horarios.jpg'></img>
         </Contenido>
+		
       </Modal>
 
 

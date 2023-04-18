@@ -8,7 +8,7 @@ const NotiAgendame = () => {
             <p>El objetivo del Instituto Provincial de Juegos de Azar (Inprojuy) es promover el Juego Responsable, a través de la convocatoria a dos concursos con premios.</p>
 
 
-            <img src=".\noticias\img\notiagendame.webp" />
+            <img src=".\noticias\img\notiagendame.webp"  className='centrar' />
 
 
             <p>Con el objetivo que la población adquiera conocimientos acerca del Juego Responsable, el Instituto Provincial de Juegos de Azar (Inprojuy), a través del Programa Juga x Jugar, lanzó los concursos “Agendame” y la segunda edición del Concurso Literario, en los que se podrá participar hasta el 17 de abril, abiertos a toda la comunidad.</p>

@@ -2,18 +2,18 @@ import React from 'react'
 
 const NotiSeminario = () => {
     return (
-        <div>
+        <div className='container p-3 fondotransparente'>
 
-            <h1>Seminario de Juego Responsable WLA CIBELAE, en Río de Janeiro, 22 al 24 de marzo</h1>
+            <h1 className='p-3'>Seminario de Juego Responsable WLA CIBELAE, en Río de Janeiro, 22 al 24 de marzo</h1>
 
             <p>Del 22 al 24 de marzo de 2023, la World Lottery Association (WLA) y la Corporación Iberoamericana de Loterías y Apuestas del Estado (CIBELAE) organizan un seminario sobre Juego Responsable en Río de Janeiro, Brasil.</p>
 
 
 
-            <img src=".\noticias\img\notiseminario.webp" />
+            <img src=".\noticias\img\notiseminario.webp" className="centrar"/>
 
 
-            <p >El Seminario<strong> Juego Responsable: una conexión transformadora</strong>, con Loterías CAIXA como anfitrión, ofrece a los interesados en la promoción de un juego seguro y responsable en las loterías, la oportunidad de inspirar y orientar en la práctica, desarrollar y amplificar sus programas de Juego Responsable y Responsabilidad Social Corporativa, aportando valor a los operadores, la sociedad y los consumidores.</p>
+            <p className='p-3 '>El Seminario<strong> Juego Responsable: una conexión transformadora</strong>, con Loterías CAIXA como anfitrión, ofrece a los interesados en la promoción de un juego seguro y responsable en las loterías, la oportunidad de inspirar y orientar en la práctica, desarrollar y amplificar sus programas de Juego Responsable y Responsabilidad Social Corporativa, aportando valor a los operadores, la sociedad y los consumidores.</p>
 
 
 
