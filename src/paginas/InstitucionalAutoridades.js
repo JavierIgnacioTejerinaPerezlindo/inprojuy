@@ -33,7 +33,7 @@ const InstitucionalAutoridades = () => {
 
                 
             </div>
-            <div className='container text-center p-5' ><img src='.\img\aut-organigrama.jpg'/></div>
+            <div className='container text-center p-5' ><img className='img-fluid' src='.\img\aut-organigrama.jpg'/></div>
           
         </div>
 
