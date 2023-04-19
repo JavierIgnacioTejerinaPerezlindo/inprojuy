@@ -2,7 +2,7 @@ import React from 'react'
 
 const Carrousel = () => {
   return (
-    <div className="container pt-5 pb-5 drop" >
+    <div className="container pt-5 pb-5 drop p-3" >
     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner rounded">
     <div className="carousel-item active">

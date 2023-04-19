@@ -13,7 +13,7 @@ import Links from '../components/Links/Links';
 const Inicio = () => {
   const [estadoModal, cambiarEstadoModal] = useState(true);
   return (
-    <div className='Cards' >
+    <div className=' container fondotransparente ' >
       <Carrousel />
 
       <Cards />

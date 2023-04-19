@@ -22,7 +22,7 @@ const Cards = () => {
 
     }, [])
     return (
-        <div className="container  justify-content-center align-items-center ">
+        <div className="container  justify-content-center align-items-center p-3 ">
             <div className=" row">
 
                 {

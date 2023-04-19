@@ -66,8 +66,8 @@ const VideoCarrusel = () => {
                         //playing={true}
                         />
                         <Carousel.Caption >
-                            <h3>{videoObj.title}</h3>
-                            <p>{videoObj.credit}</p>
+                            {/* <h3>{videoObj.title}</h3> */}
+                            {/* <p>{videoObj.credit}</p> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                 )

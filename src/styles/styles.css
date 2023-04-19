@@ -10332,6 +10332,12 @@ textarea.form-control-lg {
   height: auto;
   display: flex;
   justify-content: center;
+
+}
+
+.logoinpro{
+  padding-left: 13%;
+  padding-right: 5%;
 }
 .centrar{
 
@@ -10339,7 +10345,7 @@ textarea.form-control-lg {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%; 
-   height: auto;
+  height: auto;
 }
 p{
   text-align: justify;
