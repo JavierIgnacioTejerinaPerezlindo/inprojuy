@@ -10325,23 +10325,23 @@ textarea.form-control-lg {
 .fondotransparente {
   background: rgba(188, 188, 188, 0.4);
   border-radius: 20px;
-}/*# sourceMappingURL=styles.css.map */
-
-.logob{
+} 
+.logob {
   max-width: 60vw;
   height: auto;
   display: flex;
   justify-content: center;
 }
-.centrar{
 
+.centrar {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-p{
+
+p {
   font-size: 1.7rem;
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 10px;
-}
+}/*# sourceMappingURL=styles.css.map */

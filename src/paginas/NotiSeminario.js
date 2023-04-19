@@ -10,7 +10,7 @@ const NotiSeminario = () => {
 
 
 
-            <img src=".\noticias\img\notiseminario.webp" className="centrar"/>
+            <img src=".\noticias\img\notiseminario.webp" className="centrar img-fluid my-3"/>
 
 
             <p className='p-3 '>El Seminario<strong> Juego Responsable: una conexión transformadora</strong>, con Loterías CAIXA como anfitrión, ofrece a los interesados en la promoción de un juego seguro y responsable en las loterías, la oportunidad de inspirar y orientar en la práctica, desarrollar y amplificar sus programas de Juego Responsable y Responsabilidad Social Corporativa, aportando valor a los operadores, la sociedad y los consumidores.</p>
