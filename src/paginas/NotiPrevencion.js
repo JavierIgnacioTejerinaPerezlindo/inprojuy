@@ -5,7 +5,7 @@ const NotiPrevencion = () => {
         <div className='container p-3 fondotransparente'>
             <h1 className='p-3'>Prevención de Lavado de Activos: Trabajo coordinado junto a la UIF, de cara la Evaluación del GAFI</h1>
             <img src=".\noticias\img\notiprevencion1.webp" className='centrar'/>
-            <p className='p-3' >Esta semana, en el Centro de Reuniones de ALEA, 21 integrantes de la Unidad Coordinadora de Prevención de Lavado de Activos de ALEA, de quince jurisdicciones participaron del encuentro de trabajo para la instancia preparatoria de cara a la 4ta. Ronda de Evaluación Mutua del GAFI a la República Argentina.</p>
+            <p className='p-3 text-' >Esta semana, en el Centro de Reuniones de ALEA, 21 integrantes de la Unidad Coordinadora de Prevención de Lavado de Activos de ALEA, de quince jurisdicciones participaron del encuentro de trabajo para la instancia preparatoria de cara a la 4ta. Ronda de Evaluación Mutua del GAFI a la República Argentina.</p>
             <img src=".\noticias\img\notiprevencion2.webp" className='centrar'/>
             <p className='p-3' >Por la tarde, junto los representantes de la UIF, Elio Grillo y Delfina Cabral y Vedia, dialogaron sobre los diversos aspectos a tener en cuenta para dicha evaluación, que tendrá una instancia preliminar en mayo.</p>
             <p className='p-3'>El Director Ejecutivo Mario Trucco participó del encuentro, junto al Asesor de Planificación Estratégica, Luis Zanazzi.</p>
