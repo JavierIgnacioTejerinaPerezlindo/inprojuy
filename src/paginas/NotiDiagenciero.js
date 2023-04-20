@@ -7,7 +7,7 @@ const NotiDiagenciero = () => {
             <h1 className='p-3'>INPROJUY conmemoró el Día del Agenciero</h1>
             <h2> El Instituto Provincial de Juegos de azar, agasajó en su día a los agencieros de Tómbola de la provincia de Jujuy.</h2>
 
-            <img src=".\img\notidiagenciero.webp" className="centrar img-fluid my-3"/>
+            <img src="./noticias/img/notidiagenciero.jpg" className="centrar img-fluid my-3"/>
 
             <p>En instalaciones del instituto de Juegos de azar de Libertador Gral. San Martín, se compartió una jornada con titulares de las agencias locales, ocasión en la que, también, se pudo escuchar sobre sus necesidades e inquietudes.</p>
 
