@@ -10337,7 +10337,9 @@ textarea.form-control-lg {
 
 .logoinpro{
   padding-left: 13%;
-  padding-right: 5%;
+  max-width: 100%; 
+  height: auto;
+
 }
 .centrar{
 
