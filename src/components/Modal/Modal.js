@@ -6,7 +6,7 @@ const Modal = ({children,estado,cambiarEstado}) => {
         <>
             {estado &&
             <Overlay>
-                <ContenedorModal>
+                <ContenedorModal className="modall">
                     <h1></h1>
                     <BotonCerrar onClick={()=>cambiarEstado(false) }>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
@@ -30,6 +30,7 @@ const Overlay = styled.div `
     top: 0;
     left: 0;
     background: rgba(0,0,0,.5);
+    z-index: 1000;
 
     display: flex;
     align-items: center;

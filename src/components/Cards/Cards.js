@@ -29,14 +29,14 @@ const Cards = () => {
 
     }, [])
     return (<div>
-        <div className="container  justify-content-center align-items-center ">
+        <div className="containerC  justify-content-center align-items-center ">
             <Swiper
                 effect={'coverflow'}
 
                 grabCursor={true}
                 centeredSlides={true}
                 loop={true}
-                slidesPerView={3}
+                slidesPerView={4}
                 coverflowEffect={{
                     rotate: 0,
                     stretch: 0,
@@ -86,7 +86,7 @@ const Cards = () => {
                     tabn.map(tabn => {
                         return (
                             <div key={tabn.idnoticia}>
-                                <SwiperSlide  >
+                                <SwiperSlide className="swlide">
 
 
                                     <Card titulo={tabn.titulo} imagen={tabn.imagen} texto={tabn.texto} linkN={tabn.linkn} />
