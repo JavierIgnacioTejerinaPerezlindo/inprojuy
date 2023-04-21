@@ -2,7 +2,7 @@ import React from 'react'
 
 const NotiDiagenciero = () => {
     return (
-        <div className='container fondotransparente p-3'>
+        <div className='container fondotransparente p-5 text-center'>
 
             <h1 className='p-3'>INPROJUY conmemoró el Día del Agenciero</h1>
             <h2> El Instituto Provincial de Juegos de azar, agasajó en su día a los agencieros de Tómbola de la provincia de Jujuy.</h2>
