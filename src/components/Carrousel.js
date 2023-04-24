@@ -30,6 +30,12 @@ const Carrousel = () => {
     <div className="carousel-item">
       <img src="./img/slider_7.jpg" className="d-block w-100" alt="..."/>
     </div>
+    <div className="carousel-item">
+      <img src="./img/slider_8.png" className="d-block w-100" alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src="./img/slider_9.png" className="d-block w-100" alt="..."/>
+    </div>
    
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
