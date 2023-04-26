@@ -2,22 +2,22 @@ import React from 'react'
 
 const Carrousel = () => {
   return (
-    <div className="container pt-5 pb-5 drop p-3" >
+    <div className="container pt-5 pb-5 drop" >
     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner rounded">
     <div className="carousel-item active">
       <img src="./img/slider_1.jpg" className="d-block w-100" alt="..."/>
     </div>
-   {/*  <div className="carousel-item">
+{/*     <div className="carousel-item">
     <a href='./download/BasesyCondiciones.pdf' target="_blank">
       <img src="./img/slider_2.jpg" className="d-block w-100" alt="Concurso Literario"/>
       </a>
-    </div>*/}
-    <div className="carousel-item">
-     
+    </div> */}
+{/*     <div className="carousel-item">
+      <a href='./download/agendame.pdf' target="_blank">
       <img src="./img/slider_3.jpg" className="d-block w-100" alt="Agendame"/>
-    
-    </div> 
+      </a>
+    </div> */}
     <div className="carousel-item">
       <img src="./img/slider_4.jpg" className="d-block w-100" alt="..."/>
     </div>
@@ -30,16 +30,12 @@ const Carrousel = () => {
     <div className="carousel-item">
       <img src="./img/slider_7.jpg" className="d-block w-100" alt="..."/>
     </div>
-<<<<<<< HEAD
-    
-=======
     <div className="carousel-item">
       <img src="./img/slider_8.png" className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
       <img src="./img/slider_9.png" className="d-block w-100" alt="..."/>
     </div>
->>>>>>> ramajavier
    
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

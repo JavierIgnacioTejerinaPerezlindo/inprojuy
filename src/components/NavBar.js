@@ -15,19 +15,29 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse h4" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto pe-5 mb-2 mb-lg-0 h2">
                         <li className="nav-item">
-                            <Link className="nav-link text-white luzhover" to={'/'}>Inicio</Link>
+                            <Link className="nav-link text-white luzhover px-3" to={'/'}>Inicio</Link>
                         </li>
-                        <li className="nav-item dropdown">
+                        <li className="nav-item dropdown px-3">
                             <a className="nav-link dropdown-toggle text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Juego
                             </a>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to='/juegoilegal'>Juego Ilegal</Link></li>
-                                <li><Link className="dropdown-item" to='/juegoResponsable'>Juego Responsable</Link></li>
-                                <li><Link className="dropdown-item" to='/'>Bingos y otros juegos</Link></li>
-                                <li><Link className="dropdown-item" to='/'>Juego online</Link></li>
-                                <li><Link className="dropdown-item" to='/'>Sala de juegos</Link></li>
+                                <li><Link className="dropdown-item" to='/enconstruccion'>Juego Ilegal</Link></li>
+                                <li><Link className="dropdown-item" to='/enconstruccion'>Bingos y otros juegos</Link></li>
+                                <li><Link className="dropdown-item" to='/enconstruccion'>Juego online</Link></li>
+                                <li><Link className="dropdown-item" to='/enconstruccion'>Sala de juegos</Link></li>
                                 <li><Link className="dropdown-item" to='/agencias'>Agencias</Link></li>
+                            </ul>
+                        </li>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Juego Responsable
+                            </a>
+                            <ul className="dropdown-menu">
+                                <li><Link className="dropdown-item" to='/enconstruccion'>Juego seguro y legal</Link></li>
+                                <li><Link className="dropdown-item" to='/enconstruccion'>Uso de tecnologias</Link></li>
+                                <li><Link className="dropdown-item" to='/enconstruccion'>Tu espacio</Link></li>
+                                <li><Link className="dropdown-item" to='/enconstruccion'>Novedades</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
@@ -41,7 +51,7 @@ const NavBar = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white luzhover" to={'/noticias'}>Noticias</Link>
+                            <Link className="nav-link text-white luzhover px-3" to={'/noticias'}>Noticias</Link>
                         </li>
                     </ul>
                 </div>

@@ -17,6 +17,7 @@ import NotiCapacitacion from './paginas/NotiCapacitacion';
 import NotiPrevencion from './paginas/NotiPrevencion';
 import NotiSeminario from './paginas/NotiSeminario';
 import NotiDiagenciero from './paginas/NotiDiagenciero';
+import Enconstruccion from './paginas/Enconstruccion';
 
 
 
@@ -41,6 +42,7 @@ function App() {
           <Route path='/notiPrevencion' element={<NotiPrevencion/>} />
           <Route path='/notiSeminario' element={<NotiSeminario/>} />
           <Route path='/notiDiagenciero' element={<NotiDiagenciero/>} />
+          <Route path='/enconstruccion' element={<Enconstruccion/>} />
 
         </Routes>
         <Footer/>
