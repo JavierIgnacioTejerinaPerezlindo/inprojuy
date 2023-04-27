@@ -4,10 +4,10 @@ const InstitucionalAutoridades = () => {
     return (
         <div className='container fondotransparente '>
              <center>
-            <h1 className='p-5'>Autoridades</h1>
+            <h1 className='p-5 luz'>Autoridades</h1>
             </center>
             <div className='container d-flex justify-content-around row p-5  '>
-                <div className="col-md-4 card  " style={{ width: '23rem' }}>
+                <div className="col-md-4 card p-2 " style={{ width: '23rem' }}>
                     <img src=".\img\aut-marales.jpeg" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h3 className="card-title">LIC. WALTER MORALES</h3>
@@ -15,7 +15,7 @@ const InstitucionalAutoridades = () => {
                         <p className="card-text"></p>
                     </div>
                 </div>
-                <div className="card col-md-4" style={{ width: '23rem' }}>
+                <div className="card p-2 col-md-4" style={{ width: '23rem' }}>
                     <img src=".\img\aut-naser.jpeg" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h3 className="card-title">ING. JOSE GARCIA NASER</h3>
@@ -23,7 +23,7 @@ const InstitucionalAutoridades = () => {
                         <p className="card-text">Ing. en Sistemas de Información, Especialista en Gestión Pública y Técnico en Administración y Gestión de Juegos de Azar. Doc. Univ. Facultad de Ciencias Económicas UNJu. Presidente Unión Jujeña de Rugby.</p>
                     </div>
                 </div>
-                <div className="card col-4" style={{ width: '23rem' }}>
+                <div className="card p-2 col-md-4" style={{ width: '23rem' }}>
                     <img src=".\img\aut-lamas.jpeg" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h3 className="card-title">CPN GABRIELA LAMAS</h3>

@@ -21,33 +21,35 @@ const NavBar = () => {
                             <a className="nav-link dropdown-toggle text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Juego
                             </a>
-                            <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to='/enconstruccion'>Juego Ilegal</Link></li>
-                                <li><Link className="dropdown-item" to='/enconstruccion'>Bingos y otros juegos</Link></li>
-                                <li><Link className="dropdown-item" to='/enconstruccion'>Juego online</Link></li>
-                                <li><Link className="dropdown-item" to='/enconstruccion'>Sala de juegos</Link></li>
-                                <li><Link className="dropdown-item" to='/agencias'>Agencias</Link></li>
+                            <ul className="dropdown-menu fondotransparente2 p-2">
+                            <li><Link className="dropdown-item h5" to='/reglamentos'>Reglamentos y Leyes</Link></li>
+                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego Ilegal</Link></li>
+                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Bingos y otros juegos</Link></li>
+                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego online</Link></li>
+                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Sala de juegos</Link></li>
+                                <li><Link className="dropdown-item h5" to='/agencias'>Agencias</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Juego Responsable
                             </a>
-                            <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to='/enconstruccion'>Juego seguro y legal</Link></li>
-                                <li><Link className="dropdown-item" to='/enconstruccion'>Uso de tecnologias</Link></li>
-                                <li><Link className="dropdown-item" to='/enconstruccion'>Tu espacio</Link></li>
-                                <li><Link className="dropdown-item" to='/enconstruccion'>Novedades</Link></li>
+                            <ul className="dropdown-menu fondotransparente2 p-2">
+                            <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Que significa?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego seguro y legal</Link></li>
+                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Uso de tecnologias</Link></li>
+                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Tu espacio</Link></li>
+                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Novedades</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Institucional
                             </a>
-                            <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to='/mision'>Mision, Vision, Objetivos</Link></li>
-                                <li><Link className="dropdown-item" to='/autoridades'>Autoridades y Organigrama</Link></li>
-                                <li><Link className="dropdown-item" to='/delegaciones'>Delegaciones del interior</Link></li>
+                            <ul className="dropdown-menu fondotransparente2 p-2">
+                                <li><Link className="dropdown-item h5" to='/mision'>Mision, Vision, Objetivos</Link></li>
+                                <li><Link className="dropdown-item h5" to='/autoridades'>Autoridades y Organigrama</Link></li>
+                                <li><Link className="dropdown-item h5" to='/delegaciones'>Delegaciones del interior</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
