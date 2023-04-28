@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar';
-import { browseRouter, Routes, HashRouter, Route } from 'react-router-dom';
+import {  Routes, HashRouter, Route, Router } from 'react-router-dom';
 import Inicio from './paginas/Inicio';
 import JuegoOnline from './paginas/JuegoOnline';
 import JuegoResponsable from './paginas/JuegoResponsable';
@@ -19,11 +19,15 @@ import NotiSeminario from './paginas/NotiSeminario';
 import NotiDiagenciero from './paginas/NotiDiagenciero';
 import Enconstruccion from './paginas/Enconstruccion';
 import Reglamentos from './paginas/Reglamentos';
-
+import { AuthProvider} from './context/AuthContext';
+import Login from './paginas/Login';
+import Register from './paginas/Register';
+import Reset from './paginas/Reset';
 
 
 function App() {
   return (
+    <AuthProvider>
     <div className="App">
       <HashRouter>
         <NavBar />
@@ -45,11 +49,21 @@ function App() {
           <Route path='/notiDiagenciero' element={<NotiDiagenciero/>} />
           <Route path='/reglamentos' element={<Reglamentos/>} />
           <Route path='/enconstruccion' element={<Enconstruccion/>} />
+          <Route path='/register' element={<Register/>} />
+          <Route path='/login' element={<Login/>} />
+          <Route path='/reset' element={<Reset/>} />
+
+
+
+
+
 
         </Routes>
+       
         <Footer/>
       </HashRouter>
     </div>
+    </AuthProvider>
   );
 }
 

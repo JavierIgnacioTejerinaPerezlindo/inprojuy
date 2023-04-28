@@ -1,13 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from "../context/AuthContext";
+import { RiRadioButtonLine } from "react-icons/ri";
+import Logout from '../components/Logout';
 
 
 const NavBar = () => {
+    const auth = useAuth();
+    console.log(auth.user);
     return (
         <nav className="navbar navbar-expand-lg bg-primary text-reset p-4 ">
             <div className="container-fluid">
                 <Link className="navbar-brand" to={'/'}>
-                    <img src='../img/inprojuylogo.png' width='370px' className='animate__animated animate__pulse drop img-fluid rounded'  />
+                    <img src='../img/inprojuylogo.png' width='370px' className='animate__animated animate__pulse drop img-fluid rounded' />
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -22,7 +27,7 @@ const NavBar = () => {
                                 Juego
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-2">
-                            <li><Link className="dropdown-item h5" to='/reglamentos'>Reglamentos y Leyes</Link></li>
+                                <li><Link className="dropdown-item h5" to='/reglamentos'>Reglamentos y Leyes</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego Ilegal</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Bingos y otros juegos</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego online</Link></li>
@@ -35,7 +40,7 @@ const NavBar = () => {
                                 Juego Responsable
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-2">
-                            <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Que significa?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Que significa?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego seguro y legal</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Uso de tecnologias</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Tu espacio</Link></li>
@@ -53,8 +58,28 @@ const NavBar = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white luzhover px-3" to={'/noticias'}>Noticias</Link>
+                            <Link className="nav-link text-white luzhover " to={'/noticias'}>Noticias</Link>
                         </li>
+                  
+                            {auth.user === "" ? (
+                                <>
+                                    <li className="nav-item">
+                                        <Link className='nav-link text-white luzhover px-3' to="/register">Registrarse</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link  className='nav-link text-white luzhover px-3' to="/login">Ingresar</Link>
+                                    </li>
+                                </>
+                            ) : (
+                                <li className="nav-item">
+                                    <Link to="/login" className="nav-link text-dark luzhover px-3">
+                                        {auth.userName} <RiRadioButtonLine className="" />
+                                       
+                                    </Link>
+                                </li>
+                            )}
+                      
+                     
                     </ul>
                 </div>
             </div>
