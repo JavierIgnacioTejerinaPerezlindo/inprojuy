@@ -60,8 +60,8 @@ const NavBar = () => {
                         <li className="nav-item">
                             <Link className="nav-link text-white luzhover " to={'/noticias'}>Noticias</Link>
                         </li>
-                  
-{/*                             {auth.user === "" ? (
+{/*                   
+                          {auth.user === "" ? (
                                 <>
                                     <li className="nav-item">
                                         <Link className='nav-link text-white luzhover px-3' to="/register">Registrarse</Link>
@@ -77,8 +77,8 @@ const NavBar = () => {
                                        
                                     </Link>
                         </li>
-                            )} */}
-                      
+                            )} 
+                       */}
                      
                     </ul>
                 </div>

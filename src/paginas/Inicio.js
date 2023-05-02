@@ -11,28 +11,30 @@ import Links from '../components/Links/Links';
 
 
 const Inicio = () => {
-  const [estadoModal, cambiarEstadoModal] = useState(true);
-  return (
-    <div className=' container fondotransparente ' >
-      <Carrousel />
+	const [estadoModal, cambiarEstadoModal] = useState(true);
+	return (
+		<div className=' container fondotransparente ' >
 
-      <Cards />
-	  <Links/>
-      <VideoCarrusel />
-      <Modal
-        estado={estadoModal}
-        cambiarEstado={cambiarEstadoModal}
-      >
-        <Contenido>
-          <img src='./img/horarios.jpg'></img>
-        </Contenido>
-		
-      </Modal>
+			<Modal
+				estado={estadoModal}
+				cambiarEstado={cambiarEstadoModal}
+			>
+				<Contenido>
+					<img src='./img/horarios.jpg'></img>
+				</Contenido>
+
+			</Modal>
+			<Carrousel />
+
+			<Cards />
+			<Links />
+			<VideoCarrusel />
 
 
-    </div>
 
-  )
+		</div>
+
+	)
 }
 
 export default Inicio

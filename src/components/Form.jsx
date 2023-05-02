@@ -22,10 +22,11 @@ function Form({ nameForm }) {
         } else if (nameForm === "Registrarse") {
             try {
                 if (password === secondPassword) {
+                    console.log("por entrar" + user + email +password );
                     auth.register(user, email, password);
                 }
             } catch (error) {
-                console.error(error);
+                console.error(error+"hola");
             }
         }
     };

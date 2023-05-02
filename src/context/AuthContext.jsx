@@ -51,7 +51,7 @@ export function AuthProvider({ children }) {
         password
       );
       const user = response.user.email;
-      console.log(user);
+      console.log('hhhh ' + username);
       const docRef = doc(db, `users/${response.user.uid}`);
       setDoc(docRef, {
         username: username,
@@ -60,7 +60,7 @@ export function AuthProvider({ children }) {
         id: response.user.uid
       });
       setError("");
-      <Link className="navbar-brand" to={'/'}/>;
+      <Link  to={'/'}/>;
     } catch (error) {
       setError(error.message);
     }
@@ -72,6 +72,8 @@ export function AuthProvider({ children }) {
     localStorage.setItem("role", dataRole.rol || "user");
     localStorage.setItem("username", dataRole.username);
   }
+
+
   async function setRoleDb(uid, admin) {
     const docRef = doc(db, `users/${uid}`);
     setDoc(
