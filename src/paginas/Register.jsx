@@ -8,7 +8,7 @@ function Register() {
   const auth = useAuth();
   console.log(auth.user)
   return (
-    <div className="container fondotransparente center">
+    <div className="container fondotransparente center form" >
       {auth.user.length > 0
       ?<Logout/>
       :<Form nameForm="Registrarse" />

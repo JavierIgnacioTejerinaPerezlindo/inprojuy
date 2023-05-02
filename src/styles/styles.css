@@ -10370,4 +10370,9 @@ p {
 
 .sinvineta {
   list-style: none;
+}
+
+.form {
+  max-width: 600px;
+  padding: 3rem;
 }/*# sourceMappingURL=styles.css.map */

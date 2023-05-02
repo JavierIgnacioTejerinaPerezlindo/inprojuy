@@ -27,7 +27,7 @@ const NavBar = () => {
                                 Juego
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-2">
-                                <li><Link className="dropdown-item h5" to='/reglamentos'>Reglamentos y Leyes</Link></li>
+                            <li><Link className="dropdown-item h5" to='/reglamentos'>Reglamentos y Leyes</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego Ilegal</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Bingos y otros juegos</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego online</Link></li>
@@ -40,7 +40,7 @@ const NavBar = () => {
                                 Juego Responsable
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-2">
-                                <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Que significa?</Link></li>
+                            <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Que significa?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego seguro y legal</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Uso de tecnologias</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Tu espacio</Link></li>
@@ -61,7 +61,7 @@ const NavBar = () => {
                             <Link className="nav-link text-white luzhover " to={'/noticias'}>Noticias</Link>
                         </li>
                   
-                            {auth.user === "" ? (
+{/*                             {auth.user === "" ? (
                                 <>
                                     <li className="nav-item">
                                         <Link className='nav-link text-white luzhover px-3' to="/register">Registrarse</Link>
@@ -76,8 +76,8 @@ const NavBar = () => {
                                         {auth.userName} <RiRadioButtonLine className="" />
                                        
                                     </Link>
-                                </li>
-                            )}
+                        </li>
+                            )} */}
                       
                      
                     </ul>

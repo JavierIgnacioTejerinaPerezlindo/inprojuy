@@ -41,9 +41,9 @@ function Form({ nameForm }) {
         <div className="">
             <div className="">
                 {error && (
-                    <div className="text-sm text-center">
+                    <div className="text-center">
                         <div
-                            className="font-medium text-red-600 hover:text-indigo-500"
+                            className="text-danger p-2"
                         >
                             {error && nameForm === "Registrarse" ? (
                                 <a>Email ya registrado</a>
@@ -60,7 +60,7 @@ function Form({ nameForm }) {
                         alt="INPROJUY"
                     />
                     </center>
-                    <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
+                    <h2 className="p-3">
                         {nameForm}
                     </h2>
                 </div>
@@ -75,8 +75,8 @@ function Form({ nameForm }) {
                         {nameForm === "Registrarse" ?
                             <div class="form-row col-6"  >
                                 <div class="form-col">
-                                    <label htmlFor="user" className="sr-only">
-                                        Username
+                                    <label htmlFor="user" className="p-2 h5">
+                                        Usuario
                                     </label>
                                 </div>
                                 <div class="form-col">
@@ -87,7 +87,7 @@ function Form({ nameForm }) {
                                         type="text"
                                         autoComplete=""
                                         required
-                                        className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                        className="border px-3 py-2 rounded  placeholder-gray-500 "
                                         placeholder="Nombre de Usuario"
                                     />
                                 </div>
@@ -95,7 +95,7 @@ function Form({ nameForm }) {
                             : <></>}
                         <div class="form-row col-6" >
                         <div class="form-col">
-                            <label htmlFor="email-address" className="sr-only form-col">
+                            <label htmlFor="email-address" className="p-2 h5">
                                 E-mail 
                             </label>
                             </div>
@@ -106,14 +106,14 @@ function Form({ nameForm }) {
                                 type="email"
                                 autoComplete="email"
                                 required
-                                className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                className="border px-3 py-2 rounded  placeholder-gray-500 "
                                 placeholder="Ingrese e-mail "
                             />
                         </div>
                         <div class="form-row col-6" >
                             <div class="form-col">
-                            <label htmlFor="password" className="sr-only">
-                                Password
+                            <label htmlFor="password" className="p-2 h5">
+                                Contraseña
                             </label>
                             </div>
                             <input
@@ -123,15 +123,15 @@ function Form({ nameForm }) {
                                 type={viewPassword}
                                 autoComplete="current-password"
                                 required
-                                className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                placeholder="Password"
+                                className="border px-3 py-2 rounded  placeholder-gray-500 "
+                                placeholder="Contraseña"
                             />
                         </div>
                         {nameForm === "Registrarse" ? (
                             <div class="form-row">
                                 <div class="form-col">
-                                <label htmlFor="password" className="sr-only">
-                                    Ingrese su password nuevamente
+                                <label htmlFor="password" className="p-2 h5">
+                                    Ingrese su contraseña nuevamente
                                 </label>
                                 </div>
                                 <input
@@ -141,8 +141,8 @@ function Form({ nameForm }) {
                                     type={viewPassword}
                                     autoComplete="current-password"
                                     required
-                                    className="relative block w-full appearance-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                    placeholder="Repeat your password"
+                                    className=" border px-3 py-2 rounded  placeholder-gray-500  "
+                                    placeholder="Repita su contraseña"
                                 />
                             </div>
                         ) : (
@@ -160,11 +160,11 @@ function Form({ nameForm }) {
                                 id="remember-me"
                                 name="remember-me"
                                 type="checkbox"
-                                className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                className=""
                             />
                             <label
                                 htmlFor="remember-me"
-                                className="ml-2 block text-sm text-gray-900"
+                                className="p-2"
                             >
                                 Mostrar contraseña
                             </label>
