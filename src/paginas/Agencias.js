@@ -2,7 +2,7 @@ import React from 'react'
 
 const Agencias = () => {
     return (
-        <div className='container'>
+        <div className='container fondotransparente p-5'>
             <h2>Requisitos para ser designado Agente Oficial</h2>
             <br/>
             <h3>Apertura de Agencias</h3>
@@ -68,7 +68,7 @@ const Agencias = () => {
             </ol>
             <br/>
 
-            <button>Descargar PDF</button>
+            <button className='btn btn-primary text-white'>Descargar PDF</button>
         </div>
     )
 }

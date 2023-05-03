@@ -23,6 +23,13 @@ import { AuthProvider} from './context/AuthContext';
 import Login from './paginas/Login';
 import Register from './paginas/Register';
 import Reset from './paginas/Reset';
+import LugaresdeAyuda from './paginas/LugaresdeAyuda';
+import ComoTrabajamos from './paginas/ComoTrabajamos';
+import Quetaljuegoyo from './paginas/Quetaljuegoyo';
+import SitiosAutorizados from './paginas/SitiosAutorizados';
+import Mitosyverdades from './paginas/Mitosyverdades';
+import Recomendaciones from './paginas/Recomendaciones';
+import DondeJuego from './paginas/DondeJuego';
 
 
 function App() {
@@ -42,12 +49,19 @@ function App() {
           <Route path='/autoridades' element={<InstitucionalAutoridades />} />
           <Route path='/delegaciones' element={<InstitucionalDelegaciones/>} />
           <Route path='/agencias' element={<Agencias/>} />
+          <Route path='/dondejuego' element={<DondeJuego/>} />
           <Route path='/notiAgendame' element={<NotiAgendame/>} />
           <Route path='/notiCapacitacion' element={<NotiCapacitacion/>} />
           <Route path='/notiPrevencion' element={<NotiPrevencion/>} />
           <Route path='/notiSeminario' element={<NotiSeminario/>} />
           <Route path='/notiDiagenciero' element={<NotiDiagenciero/>} />
+          <Route path='/comotrabajamos' element={<ComoTrabajamos/>} />
+          <Route path='/quetaljuego' element={<Quetaljuegoyo/>} />
+          <Route path='/sitiosautorizados' element={<SitiosAutorizados/>} />
+          <Route path='/mitosyverdades' element={<Mitosyverdades/>} />
+          <Route path='/recomendaciones' element={<Recomendaciones/>} />
           <Route path='/reglamentos' element={<Reglamentos/>} />
+          <Route path='/lugaresdeayuda' element={<LugaresdeAyuda/>} />
           <Route path='/enconstruccion' element={<Enconstruccion/>} />
           <Route path='/register' element={<Register/>} />
           <Route path='/login' element={<Login/>} />

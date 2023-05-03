@@ -4,9 +4,10 @@ const Recomendaciones = () => {
     return (
         <div className='container fondotransparente p-5'>
 
-            <h1 class=" h2">Recomendaciones Generales</h1>
+            <h1 class="text-center h1">Recomendaciones Generales</h1>
+            <br/>
             <div class="">
-                <img src="./Recomendaciones Generales_files/tic-819x1024.jpg" class="img-fluid" />
+                <img src=".\img\recomendaciones.jpg" className="img-fluid mx-auto d-block" />
             </div>
             <p>El uso de las Tecnologías de la Información y la Comunicación (TIC), ya sea Internet, las redes sociales, los videojuegos… conlleva unos riesgos tanto para nosotros como para nuestros hijos que no debemos despreciar ni minimizar, pero también nos ofrecen una gran variedad de beneficios o virtudes que ya estamos disfrutando en mayor o menor medida. El miedo a los riesgos no debe coartar nuestro disfrute y la utilidad de tales medios.</p>
 

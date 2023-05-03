@@ -28,11 +28,13 @@ const NavBar = () => {
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-2">
                             <li><Link className="dropdown-item h5" to='/reglamentos'>Reglamentos y Leyes</Link></li>
-                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego Ilegal</Link></li>
+{/*                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego Ilegal</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Bingos y otros juegos</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego online</Link></li>
-                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Sala de juegos</Link></li>
+                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Sala de juegos</Link></li> */}
+                                <li><Link className="dropdown-item h5" to='/sitiosautorizados'>Sitios Autorizados</Link></li>
                                 <li><Link className="dropdown-item h5" to='/agencias'>Agencias</Link></li>
+                                <li><Link className="dropdown-item h5" to='/dondejuego'>¿Donde Juego?</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
@@ -41,10 +43,11 @@ const NavBar = () => {
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-2">
                             <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Que significa?</Link></li>
-                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego seguro y legal</Link></li>
-                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Uso de tecnologias</Link></li>
-                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Tu espacio</Link></li>
-                                <li><Link className="dropdown-item h5" to='/enconstruccion'>Novedades</Link></li>
+                                <li><Link className="dropdown-item h5" to='/comotrabajamos'>¿Como Trabajamos?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/quetaljuego'>¿Que tal Juego Yo?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/mitosyverdades'>Mitos y Verdades</Link></li>
+                                <li><Link className="dropdown-item h5" to='/recomendaciones'>Recomendaciones</Link></li>
+                                <li><Link className="dropdown-item h5" to='/lugaresdeayuda'>Lugares de Ayuda</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">

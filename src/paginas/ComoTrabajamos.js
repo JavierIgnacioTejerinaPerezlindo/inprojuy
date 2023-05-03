@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ComoTrabajamos = () => {
     return (
         <div className='container fondotransparente p-5'>
-            <h1 class="entry-title entry--item h2">¿Cómo trabajamos?</h1>
+            <h1 class="h1">¿Cómo trabajamos?</h1>
 
             <ul>
                 <li>Entrevista: Se realiza un cuestionario con la finalidad de determinar la situación actual y personal de quien acude, considerando sus diferentes aspectos: sociales, psicológico, laboral y económico. &nbsp;Podes acercarte al INPROJUY, o llamar por teléfono</li>
@@ -36,7 +37,7 @@ const ComoTrabajamos = () => {
                 <li>No juzgue o critique a quién posiblemente tiene problema con el juego por no poder manejar su conducta.</li>
                 <li>No intente decidir por él o ella, sino manifiéstele sus intenciones de ayudarlo.</li>
                 <li>Hable con él o ella, posibilitando un clima distendido y acogedor, en el cual le exprese como afecta no solo a su persona, sino también a su entorno mas cercano.</li>
-                <li>Facilitele información en lugar de consejos. &nbsp;Pásale la dirección de esta web del Inprojuy y el teléfono de ayuda. También los lugares mas cercanos de atención de la Secretaria de Salud mental y adicciones&nbsp; (DTC) <a href="https://inprojuy.gob.ar/lugares-de-ayuda/">ver lugares de ayuda</a></li>
+                <li>Facilitele información en lugar de consejos. &nbsp;Pásale la dirección de esta web del Inprojuy y el teléfono de ayuda. También los lugares mas cercanos de atención de la Secretaria de Salud mental y adicciones&nbsp; (DTC) <Link to={'/lugaresdeayuda'}>ver lugares de ayuda</Link></li>
             </ol>
 
 
@@ -57,6 +58,8 @@ const ComoTrabajamos = () => {
                 <li>Si pierdes, no sigas jugando para recuperar tu dinero.</li>
                 <li>No juegues si tu estado esta alterado.</li>
             </ul>
+
+            <img src='.\img\INPROJUY_0800.jpg' className='img-fluid p-5'/>
 
         </div>
 
