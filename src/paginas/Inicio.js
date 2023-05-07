@@ -6,6 +6,7 @@ import '../components/Cards/Cards.css'
 import VideoCarrusel from '../components/VideoCarrusel/VideoCarrusel';
 import Modal from '../components/Modal/Modal';
 import Links from '../components/Links/Links';
+import { Link } from 'react-router-dom';
 
 
 
@@ -17,10 +18,12 @@ const Inicio = () => {
 
 			<Modal
 				estado={estadoModal}
-				cambiarEstado={cambiarEstadoModal}
-			>
+				cambiarEstado={cambiarEstadoModal}>
 				<Contenido>
-					<img src='./img/horarios.jpg'></img>
+					<img src='./img/horarios.jpg' useMap='#map' className='rounded'/>
+					<map name='map'>
+						<Link to={'/dondejuego'}><area shape='rect' coords='555, 340, 724, 371'/></Link>
+					</map>
 				</Contenido>
 
 			</Modal>
