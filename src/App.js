@@ -30,7 +30,7 @@ import SitiosAutorizados from './paginas/SitiosAutorizados';
 import Mitosyverdades from './paginas/Mitosyverdades';
 import Recomendaciones from './paginas/Recomendaciones';
 import DondeJuego from './paginas/DondeJuego';
-
+import NoGanadores from './components/cuponesNo/NoGanadores';
 
 function App() {
   return (
@@ -66,6 +66,7 @@ function App() {
           <Route path='/register' element={<Register/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/reset' element={<Reset/>} />
+          <Route path='/noganadores' element={<NoGanadores/>} />
 
 
 

@@ -27,7 +27,7 @@ function Logout() {
                 {/* <h2 className="font-thin text-sm">id : {auth.id} </h2> */}
             </div>
             <div>
-            <Link to="/enconstruccion">
+            <Link to="/noganadores">
      
             <button  className="btn btn-primary ">
             <h3 className="text-white">Ingresar Cupon No Ganador</h3>
