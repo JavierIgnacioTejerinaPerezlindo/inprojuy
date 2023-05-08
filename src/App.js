@@ -32,6 +32,7 @@ import Recomendaciones from './paginas/Recomendaciones';
 import DondeJuego from './paginas/DondeJuego';
 import NoGanadores from './components/cuponesNo/NoGanadores';
 import ProfileForm from './components/ProfileForm';
+import NotiGanadores from './paginas/NotiGanadores';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           <Route path='/agencias' element={<Agencias/>} />
           <Route path='/dondejuego' element={<DondeJuego/>} />
           <Route path='/notiAgendame' element={<NotiAgendame/>} />
+          <Route path='/notiganadores' element={<NotiGanadores/>} />
           <Route path='/notiCapacitacion' element={<NotiCapacitacion/>} />
           <Route path='/notiPrevencion' element={<NotiPrevencion/>} />
           <Route path='/notiSeminario' element={<NotiSeminario/>} />

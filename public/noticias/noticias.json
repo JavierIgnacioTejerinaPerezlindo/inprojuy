@@ -44,5 +44,14 @@
         "texto": "Del 22 al 24 de marzo de 2023, la World Lottery Association (WLA) y la Corporación Iberoamericana de Loterías y Apuestas del Estado (CIBELAE) organizan un seminario sobre Juego Responsable en Río de Janeiro, Brasil.",
         "tipo": 1,
         "linkn": "/notiSeminario"
+    },
+    {
+        "titulo": "Ganadores del 2° Concurso Literario y 'Agendame'",
+        "fecha": "02/04/2023",
+        "idnoticia": 5,
+        "imagen": "./noticias/img/concursocard.jpg",
+        "texto": "Se conocieron los ganadores del concurso 'AGENDAME', y el 2º CONCURSO LITERARIO. Comenzó el 17 de febrero y concluyó el 17 de abril y contó con más de 100 participantes.",
+        "tipo": 1,
+        "linkn": "/notiGanadores"
     }
-]
+]    

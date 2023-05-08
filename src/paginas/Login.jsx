@@ -7,7 +7,7 @@ import Logout from "../components/Logout";
 function Login() {
   const auth = useAuth();
   return (
-    <div className="container fondotransparente center">
+    <div className="container fondotransparente center form">
       {auth.user.length > 0 ? <Logout /> : <Form nameForm="Ingresar" />}
     </div>
   );

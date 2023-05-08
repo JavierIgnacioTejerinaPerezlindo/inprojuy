@@ -27,8 +27,8 @@ const NavBar = () => {
                                 Juego
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-2">
-                            <li><Link className="dropdown-item h5" to='/reglamentos'>Reglamentos y Leyes</Link></li>
-{/*                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego Ilegal</Link></li>
+                                <li><Link className="dropdown-item h5" to='/reglamentos'>Reglamentos y Leyes</Link></li>
+                                {/* <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego Ilegal</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Bingos y otros juegos</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Juego online</Link></li>
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Sala de juegos</Link></li> */}
@@ -42,7 +42,7 @@ const NavBar = () => {
                                 Juego Responsable
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-2">
-                            <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Que significa?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Que significa?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/comotrabajamos'>¿Como Trabajamos?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/quetaljuego'>¿Que tal Juego Yo?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/mitosyverdades'>Mitos y Verdades</Link></li>
@@ -63,26 +63,26 @@ const NavBar = () => {
                         <li className="nav-item">
                             <Link className="nav-link text-white luzhover " to={'/noticias'}>Noticias</Link>
                         </li>
-                
-                          {auth.user === "" ? (
-                                <>
-                                    <li className="nav-item">
-                                        <Link className='nav-link text-white luzhover px-3' to="/register">Registrarse</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link  className='nav-link text-white luzhover px-3' to="/login">Ingresar</Link>
-                                    </li>
-                                </>
-                            ) : (
+
+{/*                         {auth.user === "" ? (
+                            <>
                                 <li className="nav-item">
-                                    <Link to="/login" className="nav-link text-dark luzhover px-3">
-                                        {auth.userName} <RiRadioButtonLine className="" />
-                                       
-                                    </Link>
-                        </li>
-                            )} 
-                     
-                     
+                                    <Link className='nav-link text-white luzhover px-3' to="/register">Registrarse</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className='nav-link text-white luzhover px-3' to="/login">Ingresar</Link>
+                                </li>
+                            </>
+                        ) : (
+                            <li className="nav-item">
+                                <Link to="/login" className="nav-link text-dark luzhover px-3">
+                                    {auth.userName} <RiRadioButtonLine className="" />
+
+                                </Link>
+                            </li>
+                        )}
+
+ */}
                     </ul>
                 </div>
             </div>
