@@ -30,42 +30,59 @@ const NoGanadores = () =>{
     return (
         <div>
         <form onSubmit={handleSubmit}>
-
-      <label>
-        Número de máquina:
-        <input
-          type="text"
-          value={maquina}
-          onChange={(event) => setMaquina(event.target.value)}
-        />
-      </label>
-      <label>
-        Número:
-        <input
-          type="text"
-          value={numero}
-          onChange={(event) => setNumero(event.target.value)}
-        />
-      </label>
-      <label>
-        Número de cupón:
-        <input
-          type="text"
-          value={cupon}
-          onChange={(event) => setCupon(event.target.value)}
-        />
-      </label>
- {/*      <label>
-        ID de usuario:
-        <input
-          type="text"
-          value={usuario}
-       
-        />
-      </label> */}
-      <button type="submit">Enviar</button>
-    </form>
-    </div>
+      
+          <label htmlFor="maquina">
+            Número de máquina:
+            <input
+              type="number"
+              id="maquina"
+              name="maquina"
+              value={maquina}
+              onChange={(event) => setMaquina(event.target.value)}
+              required
+            />
+          </label>
+      
+          <label htmlFor="numero">
+            Número:
+            <input
+              type="number"
+              id="numero"
+              name="numero"
+              value={numero}
+              onChange={(event) => setNumero(event.target.value)}
+              required
+            />
+          </label>
+      
+          <label htmlFor="cupon">
+            Número de cupón:
+            <input
+              type="text"
+              id="cupon"
+              name="cupon"
+              value={cupon}
+              onChange={(event) => setCupon(event.target.value)}
+              required
+            />
+          </label>
+      
+          {/* 
+          <label htmlFor="usuario">
+            ID de usuario:
+            <input
+              type="text"
+              id="usuario"
+              name="usuario"
+              value={usuario}
+            />
+          </label>
+          */}
+      
+          <button type="submit">Verificar cupón</button>
+        </form>
+      </div>
+      
     )
 }
 

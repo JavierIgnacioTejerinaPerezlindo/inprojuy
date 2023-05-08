@@ -27,6 +27,14 @@ function Logout() {
                 {/* <h2 className="font-thin text-sm">id : {auth.id} </h2> */}
             </div>
             <div>
+            <Link to="/profile">
+     
+            <button  className="btn btn-primary ">
+            <h3 className="text-white">Datos del usuario</h3>
+            </button>
+            </Link>
+            </div>
+            <div>
             <Link to="/noganadores">
      
             <button  className="btn btn-primary ">

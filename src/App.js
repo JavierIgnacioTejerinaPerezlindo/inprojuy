@@ -31,6 +31,7 @@ import Mitosyverdades from './paginas/Mitosyverdades';
 import Recomendaciones from './paginas/Recomendaciones';
 import DondeJuego from './paginas/DondeJuego';
 import NoGanadores from './components/cuponesNo/NoGanadores';
+import ProfileForm from './components/ProfileForm';
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
           <Route path='/login' element={<Login/>} />
           <Route path='/reset' element={<Reset/>} />
           <Route path='/noganadores' element={<NoGanadores/>} />
+          <Route path='/profile' element={<ProfileForm/>}/>
 
 
 
