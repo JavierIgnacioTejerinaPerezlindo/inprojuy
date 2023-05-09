@@ -5,21 +5,21 @@ import axios from 'axios';
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
-const NoGanadores = () =>{
-  const auth = useAuth();  
+const NoGanadores = () => {
+  const auth = useAuth();
   const [maquina, setMaquina] = useState('');
   const [numero, setNumero] = useState('');
   const [cupon, setCupon] = useState('');
-  const usuario= auth.id;
+  const usuario = auth.id;
 
   const handleSubmit = async (event) => {
-  
+
     event.preventDefault();
     try {
-      console.log(maquina,numero,cupon);  
+      console.log(maquina, numero, cupon);
       const response = await axios.get(`https://us-central1-inprojuy-f1173.cloudfunctions.net/app/cupones/${maquina}/${numero}/${cupon}/${usuario}`)
       console.log(response.data);
-    
+
     } catch (error) {
       console.error(error);
     }
@@ -27,63 +27,63 @@ const NoGanadores = () =>{
 
 
 
-    return (
-        <div>
-        <form onSubmit={handleSubmit}>
-      
-          <label htmlFor="maquina">
+  return (
+    <div className="container fondotransparente form text-center">
+      <h2 className="h1 p-4">Ingrese los datos del cupón</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-row col-6">
+          <label className=" p-2 h5">
             Número de máquina:
-            <input
-              type="number"
-              id="maquina"
-              name="maquina"
-              value={maquina}
-              onChange={(event) => setMaquina(event.target.value)}
-              required
-            />
           </label>
-      
-          <label htmlFor="numero">
-            Número:
-            <input
-              type="number"
-              id="numero"
-              name="numero"
-              value={numero}
-              onChange={(event) => setNumero(event.target.value)}
-              required
-            />
+        </div>
+        <div className="form-col">
+          <input
+            className="border px-3 py-2 rounded"
+            type="text"
+            value={maquina}
+            onChange={(event) => setMaquina(event.target.value)} />
+        </div>
+
+        <div class="form-row col-6" >
+          <label className="p-2 h5">
+            Número de agencia:
           </label>
-      
-          <label htmlFor="cupon">
+        </div>
+
+        <div className="form-col">
+          <input
+            className="border px-3 py-2 rounded"
+            type="text"
+            value={numero}
+            onChange={(event) => setNumero(event.target.value)}
+          />
+        </div>
+        <div class="form-row col-6" >
+          <label className="p-2 h5">
             Número de cupón:
-            <input
-              type="text"
-              id="cupon"
-              name="cupon"
-              value={cupon}
-              onChange={(event) => setCupon(event.target.value)}
-              required
-            />
           </label>
-      
-          {/* 
-          <label htmlFor="usuario">
-            ID de usuario:
-            <input
-              type="text"
-              id="usuario"
-              name="usuario"
-              value={usuario}
-            />
-          </label>
-          */}
-      
-          <button type="submit">Verificar cupón</button>
-        </form>
-      </div>
-      
-    )
+        </div>
+        <div className="form-col">
+          <input
+            className="border px-3 py-2 rounded"
+            type="text"
+            value={cupon}
+            onChange={(event) => setCupon(event.target.value)}
+          />
+        </div>
+        {/*      <label>
+        ID de usuario:
+        <input
+          type="text"
+          value={usuario}
+       
+        />
+      </label> */}
+        <button className="btn btn-primary text-white m-4" type="submit">Enviar</button>
+      </form>
+      <a href="">¿Donde encuentro estos datos en mi cupon?</a>
+    </div>
+  )
 }
 
 export default NoGanadores

@@ -108,3 +108,28 @@ p {
   max-width: 600px;
   padding: 3rem;
 }
+
+nav.navbar{
+  padding: 0px !important;
+  border-bottom: 7px;
+  border-bottom-style: solid;
+  border-color: $danger;
+}
+.navbar-brand{
+  padding: 0px;
+}
+.container-fluid{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.letrachica{
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 0%;
+  margin: 0%;
+  margin-left: auto;
+margin-right: 0%;
+}
+.online{
+  color:lawngreen;
+}
