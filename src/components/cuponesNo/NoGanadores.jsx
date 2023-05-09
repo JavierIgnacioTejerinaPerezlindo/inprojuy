@@ -15,10 +15,16 @@ const NoGanadores = () =>{
   const handleSubmit = async (event) => {
   
     event.preventDefault();
-    try {
+    try {  
       console.log(maquina,numero,cupon);  
       const response = await axios.get(`https://us-central1-inprojuy-f1173.cloudfunctions.net/app/cupones/${maquina}/${numero}/${cupon}/${usuario}`)
       console.log(response.data);
+
+      if (response.data.numParticip === undefined) {
+        alert(response.data.message);
+      } else {
+        alert(`${response.data.message}, El número de participación es: ${response.data.numParticip}`);
+      }
     
     } catch (error) {
       console.error(error);
