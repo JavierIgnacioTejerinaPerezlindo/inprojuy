@@ -3,6 +3,7 @@ import { BiLogOut } from "react-icons/bi";
 import { useAuth } from "../context/AuthContext";
 import { GiPlagueDoctorProfile } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import Cupones from "./cuponesNo/Cupones";
 function Logout() {
     const auth = useAuth();
     const username = localStorage.getItem("username");
@@ -14,18 +15,18 @@ function Logout() {
         }
     };
     return (
-        <div className="p-5">
-            <div className="flex items-center">
-                <h1 className="text-xl font-semibold text-violet-900">Perfil de Usuario</h1>
+<div className="">
+                <h1 className="">Perfil de Usuario</h1>
                
-            </div>
             <div className="animate-pulse">
-                <h2 className="font-thin">e-mail : {auth.user}</h2>
-                <h2 className="font-thin">
+                <h2 className="my-3">E-mail: {auth.user}</h2>
+                <h2 className="my-4">
                     Usuario : {auth.userName ? auth.userName : username}
                 </h2>
                 {/* <h2 className="font-thin text-sm">id : {auth.id} </h2> */}
             </div>
+            <br/>
+
             <div>
             <Link to="/profile">
      
@@ -34,7 +35,7 @@ function Logout() {
             </button>
             </Link>
             </div>
-            <div>
+            <div className="my-3">
             <Link to="/noganadores">
      
             <button  className="btn btn-primary ">
@@ -43,7 +44,7 @@ function Logout() {
             </Link>
             </div>
             <button
-                className="btn btn-danger "
+                className="btn btn-danger my-3"
                 onClick={() => {
                     logoutButton();
                 }}
@@ -51,7 +52,7 @@ function Logout() {
                 <h3 className="text-white">Salir</h3>
                
             </button>
-           
+            <Cupones id= {auth.id} />
         </div>
     );
 }

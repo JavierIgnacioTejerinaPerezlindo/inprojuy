@@ -10395,4 +10395,33 @@ p {
 .form {
   max-width: 600px;
   padding: 3rem;
+}
+
+nav.navbar {
+  padding: 0px !important;
+  border-bottom: 7px;
+  border-bottom-style: solid;
+  border-color: rgb(215, 65, 42);
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.letrachica {
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 0%;
+  margin: 0%;
+  margin-left: auto;
+  margin-right: 0%;
+}
+
+.online {
+  color: lawngreen;
 }/*# sourceMappingURL=styles.css.map */
