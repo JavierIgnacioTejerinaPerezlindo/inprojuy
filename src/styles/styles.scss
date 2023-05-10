@@ -140,5 +140,34 @@ margin-right: 0%;
   height: 100vh;
   width: 100vw;
   background-color: white;
-  z-index: 9999;
+  z-index: 999;
+}
+
+.card-title a{
+  color: white;
+}
+.card{
+  margin: auto;
+  width: 95%;
+  height: 50vh;
+}
+.card-img{
+  height: 100%;
+}
+
+.contcard{
+  min-width: 318px;
+  max-width: 470px;
+  box-sizing: border-box;
+}
+.contenedorcardnoti{
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.masnoti{
+  border-radius: 0%;
+  border-left: solid !important;
+  border-left: 10px;
+  border-Left-color: $primary !important;
 }

@@ -3,9 +3,11 @@ import Cards from '../components/Cards/Cards'
 
 const Noticias = () => {
   return (
-    <div >
+    <div className='container-fluid contenedorcardnoti'>
         <center><h1>Noticias</h1></center>
-            <Cards />
+<div >
+        <Cards showAllCards={true} />
+</div>
     </div>
   )
 }
