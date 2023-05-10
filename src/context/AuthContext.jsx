@@ -60,24 +60,32 @@ export function AuthProvider({ children }) {
         id: response.user.uid
       });
       setError("");
-      <Link  to={'/'}/>;
+      <Link to={'/'} />;
     } catch (error) {
       setError(error.message);
     }
   };
-  const registerg = async ( email, rol = "user") => {
+  const registerg = async (email, rol = "user") => {
 
-      
-      console.log('hhhh ' + id);
-      const docRef = doc(db, `users/${id}`);
-      setDoc(docRef, {
-        email: email,
-        rol: rol,
-        id: id
-      });
-      setError("");
-      <Link  to={'/'}/>;
-   
+
+    console.log('hhhh ' + id);
+    const docRef = doc(db, `users/${id}`);
+    setDoc(docRef, {
+      nombre: "",
+      apellido: "",
+      dni: "",
+      telefono: "",
+      direccion: "",
+      Barrio: "",
+      Localidad: "",
+      fechaNacimiento: "",
+      email: email,
+      rol: rol,
+      id: id
+    });
+    setError("");
+    <Link to={'/'} />;
+
   };
   async function getRole(uid) {
     const docRef = doc(db, `users/${uid}`);
@@ -103,7 +111,7 @@ export function AuthProvider({ children }) {
       const response = await signInWithEmailAndPassword(auth, email, password);
       getRole(response.user.uid);
       setError("");
-      <Link className="navbar-brand" to={'/'}/>;
+      <Link className="navbar-brand" to={'/'} />;
     } catch (error) {
       setError(error.message);
     }
@@ -112,13 +120,21 @@ export function AuthProvider({ children }) {
     const google = new GoogleAuthProvider();
     const response = await signInWithPopup(auth, google);
     console.log(response.user.email);
-    console.log (response.user.uid);
+    console.log(response.user.uid);
 
     const user = response.user.email;
     console.log('hhhh ' + user.uid);
     const docRef = doc(db, `users/${response.user.uid}`);
     setDoc(docRef, {
-      nombre: "",     
+      nombre: "",
+      apellido: "",
+      dni: "",
+      telefono: "",
+      direccion: "",
+      Barrio: "",
+      email: "",
+      Localidad: "",
+      fechaNacimiento: "",
       rol: "user",
       id: response.user.uid
     });
@@ -126,8 +142,8 @@ export function AuthProvider({ children }) {
 
 
 
-    <Link className="navbar-brand" to={'/'}/>;
-};
+    <Link className="navbar-brand" to={'/'} />;
+  };
   const logout = async () => {
     localStorage.removeItem("role");
     const response = await signOut(auth);
@@ -146,7 +162,7 @@ export function AuthProvider({ children }) {
   };
   const getAllUsers = async () => {
     const data = await getDocs(collection(db, "users"));
-    
+
   }
   return (
     <authContext.Provider

@@ -15,9 +15,9 @@ function UserProfile() {
     apellido: '',
     dni: '',
     direccion: '',
-    barrio: '',
-    localidad: '',
-    fechaNacimiento: '',
+    Barrio: '',
+    Localidad: '',
+    fechaNacimiento: new Date().toLocaleDateString('es-AR'),
   });
 
   useEffect(() => {
@@ -46,9 +46,10 @@ function UserProfile() {
               apellido: '',
               dni: '',
               direccion: '',
-              barrio: '',
-              localidad: '',
-              fechaNacimiento: '',
+              email: '',
+              Barrio: '',
+              Localidad: '',
+              fechaNacimiento: new Date().toLocaleDateString('es-AR'),
             };
             await setDoc(doc(db, `users/${usera}`), newUser);
             setUser(newUser);
@@ -88,8 +89,8 @@ function UserProfile() {
       apellido: formValues.apellido,
       dni: formValues.dni,
       direccion: formValues.direccion,
-      barrio: formValues.barrio,
-      localidad: formValues.localidad,
+      Barrio: formValues.Barrio,
+      Localidad: formValues.Localidad,
       fechaNacimiento: formValues.fechaNacimiento,
     };
 
@@ -126,19 +127,22 @@ function UserProfile() {
           <input className='border px-3 py-2 rounded' type="text" id="dni" name="dni" value={formValues.dni} onChange={handleChange} />
         </div>
         <div>
+          <label className='p-2 h5' htmlFor="localidad">email:</label>
+          <input className='border px-3 py-2 rounded' type="text" id="localidad" name="localidad" value={formValues.email} onChange={handleChange} />
+        </div>
+        <div>
           <label className='p-2 h5' htmlFor="direccion">Dirección:</label>
           <input className='border px-3 py-2 rounded' type="text" id="direccion" name="direccion" value={formValues.direccion} onChange={handleChange} />
         </div>
         <div>
           <label className='p-2 h5' htmlFor="barrio">Barrio:</label>
-          <input className='border px-3 py-2 rounded' type="text" id="barrio"
-            name="barrio" value={formValues.barrio}
+          <input className='border px-3 py-2 rounded' type="text" id="barrio"name="barrio" value={formValues.Barrio}
 
             onChange={handleChange} />
         </div>
         <div>
           <label className='p-2 h5' htmlFor="localidad">Localidad:</label>
-          <input className='border px-3 py-2 rounded' type="text" id="localidad" name="localidad" value={formValues.localidad} onChange={handleChange} />
+          <input className='border px-3 py-2 rounded' type="text" id="localidad" name="localidad" value={formValues.Localidad} onChange={handleChange} />
         </div>
         <div>
           <label className='p-2 h5' htmlFor="fechaNacimiento">Fecha de Nacimiento:</label>
