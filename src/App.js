@@ -33,14 +33,39 @@ import DondeJuego from './paginas/DondeJuego';
 import NoGanadores from './components/cuponesNo/NoGanadores';
 import ProfileForm from './components/ProfileForm';
 import NotiGanadores from './paginas/NotiGanadores';
+import React, { useState, useEffect } from 'react';
+import InproLoader from './components/loader/Loader';
+
+
+
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  const toggleLoading = () => {
+    setLoading(!loading);
+    console.log("loading", loading)
+
+  };
+  useEffect(() => {
+    const handleLoad = () => {
+      toggleLoading();
+    };
+
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
+  console.log("loading", loading)
   return (
     <AuthProvider>
-    <div className="App">
-      <HashRouter>
-        <NavBar />
-        <Routes>
+      <div className="App">
+        {loading && <InproLoader />}
+        <HashRouter>
+          <NavBar/>
+          <Routes>
           <Route path='/' element={<Inicio/>} />
           <Route path='/juegoonline' element={<JuegoOnline />} />
           <Route path='/juegoResponsable' element={<JuegoResponsable />} />
