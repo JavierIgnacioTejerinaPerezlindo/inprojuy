@@ -3,6 +3,7 @@ import { BiLogOut } from "react-icons/bi";
 import { useAuth } from "../context/AuthContext";
 import { GiPlagueDoctorProfile } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import Cupones from "./cuponesNo/Cupones";
 function Logout() {
     const auth = useAuth();
     const username = localStorage.getItem("username");
@@ -51,6 +52,7 @@ function Logout() {
                 <h3 className="text-white">Salir</h3>
                
             </button>
+            <Cupones id= {auth.id} />
         </div>
     );
 }
