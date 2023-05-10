@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 const Inicio = () => {
 	const [estadoModal, cambiarEstadoModal] = useState(true);
 	return (
-		<div className=' container fondotransparente ' >
+		<div className='' >
 
 			<Modal
 				estado={estadoModal}

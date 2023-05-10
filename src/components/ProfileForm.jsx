@@ -85,41 +85,41 @@ function UserProfile() {
   }
 
   return (
-    <div>
-      <h2>Mi Perfil</h2>
+    <div className='container fondotransparente text-center form'>
+      <h2 className="h1 p-4">Mi Perfil</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" value={formValues.nombre} onChange={handleChange} />
+          <label className='p-2 h5' htmlFor="nombre">Nombre:</label>
+          <input className='border px-3 py-2 rounded' type="text" id="nombre" name="nombre" value={formValues.nombre} onChange={handleChange} />
         </div>
         <div>
-          <label htmlFor="apellido">Apellido:</label>
-          <input type="text" id="apellido" name="apellido" value={formValues.apellido} onChange={handleChange} />
+          <label className='p-2 h5' htmlFor="apellido">Apellido:</label>
+          <input className='border px-3 py-2 rounded' type="text" id="apellido" name="apellido" value={formValues.apellido} onChange={handleChange} />
         </div>
         <div>
-          <label htmlFor="dni">DNI:</label>
-          <input type="text" id="dni" name="dni" value={formValues.dni} onChange={handleChange} />
+          <label className='p-2 h5' htmlFor="dni">DNI:</label>
+          <input className='border px-3 py-2 rounded' type="text" id="dni" name="dni" value={formValues.dni} onChange={handleChange} />
         </div>
         <div>
-          <label htmlFor="direccion">Dirección:</label>
-          <input type="text" id="direccion" name="direccion" value={formValues.direccion} onChange={handleChange} />
+          <label className='p-2 h5' htmlFor="direccion">Dirección:</label>
+          <input className='border px-3 py-2 rounded' type="text" id="direccion" name="direccion" value={formValues.direccion} onChange={handleChange} />
         </div>
         <div>
-          <label htmlFor="barrio">Barrio:</label>
-          <input type="text" id="barrio"
+          <label className='p-2 h5' htmlFor="barrio">Barrio:</label>
+          <input className='border px-3 py-2 rounded' type="text" id="barrio"
             name="barrio" value={formValues.barrio}
 
             onChange={handleChange} />
         </div>
         <div>
-          <label htmlFor="localidad">Localidad:</label>
-          <input type="text" id="localidad" name="localidad" value={formValues.localidad} onChange={handleChange} />
+          <label className='p-2 h5' htmlFor="localidad">Localidad:</label>
+          <input className='border px-3 py-2 rounded' type="text" id="localidad" name="localidad" value={formValues.localidad} onChange={handleChange} />
         </div>
         <div>
-          <label htmlFor="fechaNacimiento">Fecha de Nacimiento:</label>
-          <input type="date" id="fechaNacimiento" name="fechaNacimiento" value={formValues.fechaNacimiento} onChange={handleChange} />
+          <label className='p-2 h5' htmlFor="fechaNacimiento">Fecha de Nacimiento:</label>
+          <input className='border px-3 py-2 rounded' type="date" id="fechaNacimiento" name="fechaNacimiento" value={formValues.fechaNacimiento} onChange={handleChange} />
         </div>
-        <button type="submit">Guardar Cambios</button>
+        <button className="btn btn-primary text-white m-4" type="submit">Guardar Cambios</button>
       </form>
     </div>
   );

@@ -10424,4 +10424,14 @@ nav.navbar {
 
 .online {
   color: lawngreen;
+}
+
+.inproloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 9999;
 }/*# sourceMappingURL=styles.css.map */

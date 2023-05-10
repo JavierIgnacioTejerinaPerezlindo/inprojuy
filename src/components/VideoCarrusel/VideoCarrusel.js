@@ -61,7 +61,7 @@ const VideoCarrusel = () => {
                             url={videoObj.src}
                             pip={true}
                             controls={true}
-                            width='90%'
+                            width='100%'
                             height='87%'
                         //playing={true}
                         />
