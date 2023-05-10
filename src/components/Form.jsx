@@ -16,6 +16,7 @@ function Form({ nameForm }) {
         if (nameForm === "Ingresar") {
             try {
                 auth.login(email, password);
+        
             } catch (error) {
                 console.error(error);
             }
@@ -30,13 +31,16 @@ function Form({ nameForm }) {
             }
         }
     };
-    const googleButton = (e) => {
+    const googleButton = async (e) => {
         try {
-            auth.googleAuth();
+            await  auth.googleAuth();
+        
         } catch (error) {
-            console.log(error);
+          console.log(error);
         }
-    };
+       
+      };
+      
     return (
         <center>
         <div className="">

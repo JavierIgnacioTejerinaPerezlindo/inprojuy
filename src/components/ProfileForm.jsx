@@ -21,7 +21,6 @@ function UserProfile() {
   });
 
   useEffect(() => {
-
     const getUserData = async () => {
       const user = auth.id;
       if (user) {
@@ -30,6 +29,31 @@ function UserProfile() {
         if (userData.exists) {
           setUser(userData.data());
           setFormValues(userData.data());
+        } else {
+          const usersRef = collection(db, 'users');
+          const querySnapshot = await getDocs(usersRef);
+          let usersData = [];
+          querySnapshot.forEach(doc => {
+            const user = doc.data();
+            if (user.id === auth.id) {
+              usersData.push(user);
+            }
+          });
+          if (usersData.length === 0) {
+            const newUser = {
+              id: auth.id,
+              nombre: '',
+              apellido: '',
+              dni: '',
+              direccion: '',
+              barrio: '',
+              localidad: '',
+              fechaNacimiento: '',
+            };
+            await setDoc(doc(db, `users/${usera}`), newUser);
+            setUser(newUser);
+            setFormValues(newUser);
+          }
         }
       }
     };
@@ -71,7 +95,7 @@ function UserProfile() {
 
     try {
       const docRef = doc(db, `users/${usera}`);
-      await setDoc(docRef,userData, { merge: true });;
+      await setDoc(docRef, userData, { merge: true });
       setUser(userData);
     } catch (error) {
       console.log(error);
@@ -80,6 +104,8 @@ function UserProfile() {
 
   if (!usera) {
     console.log('Usuario no autenticado' + usera + auth.id);
+  
+
     return <div>Cargando...{usera}</div>;
   }
 
