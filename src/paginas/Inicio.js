@@ -28,8 +28,11 @@ const Inicio = () => {
 
 			</Modal>
 			<Carrousel />
-
+<div className='p-5'>
+	<h2 className='px-5 fs-1'>Noticias</h2>
 			<Cards />
+			<Link to={'/noticias'}><button className='btn btn-danger text-white h2 masnoti'><h2>MAS NOTICIAS</h2></button></Link>
+			</div>
 			<Links />
 			<VideoCarrusel />
 
