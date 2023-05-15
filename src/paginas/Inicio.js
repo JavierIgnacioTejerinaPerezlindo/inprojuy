@@ -31,7 +31,7 @@ const Inicio = () => {
 <div className='p-5'>
 	<h2 className='px-5 fs-1'>Noticias</h2>
 			<Cards />
-			<Link to={'/noticias'}><button className='btn btn-danger text-white h2 masnoti'><h2>MAS NOTICIAS</h2></button></Link>
+			<Link className='btn-titulo' to={'/noticias'}><div className='botonbordeazul'><h2 className='text-white px-5 mx-5 py-3 h1'>MAS NOTICIAS</h2></div></Link>
 			</div>
 			<Links />
 			<VideoCarrusel />
