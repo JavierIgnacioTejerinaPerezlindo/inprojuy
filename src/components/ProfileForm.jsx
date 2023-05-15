@@ -21,6 +21,8 @@ function UserProfile() {
     telefono: '',
     fechaNacimiento: new Date().toLocaleDateString('es-AR'),
   });
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   useEffect(() => {
     const getUserData = async () => {
@@ -76,13 +78,18 @@ function UserProfile() {
       return;
     }
 
+    if (!formValues.nombre || !formValues.apellido || !formValues.dni || !formValues.direccion || !formValues.barrio || !formValues.localidad || !formValues.email || !formValues.telefono || !formValues.fechaNacimiento) {
+      setErrorMessage('Por favor completa todos los campos');
+      return;
+    }
+
     if (formValues.fechaNacimiento) {
       const birthDate = new Date(formValues.fechaNacimiento);
       const ageDiffMs = Date.now() - birthDate.getTime();
       const ageDate = new Date(ageDiffMs);
       const userAge = Math.abs(ageDate.getUTCFullYear() - 1970);
       if (userAge < 18) {
-        console.log('El usuario debe ser mayor a 18 años');
+        setErrorMessage('Debes ser mayor de 18 años');
         return;
       }
     }
@@ -103,7 +110,10 @@ function UserProfile() {
       const docRef = doc(db, `users/${usera}`);
       await setDoc(docRef, userData, { merge: true });
       setUser(userData);
+      setSuccessMessage('Cambios guardados correctamente');
+      setErrorMessage('');
     } catch (error) {
+      setErrorMessage('Error al guardar los cambios');
       console.log(error);
     }
   };
@@ -217,6 +227,8 @@ function UserProfile() {
             className="form-control"
           />
         </div>
+        {errorMessage && <div className="text-danger">{errorMessage}</div>}
+        {successMessage && <div className="text-success">{successMessage}</div>}
         <button type="submit" className="btn btn-primary mt-4">Guardar Cambios</button>
       </form>
     </div>
