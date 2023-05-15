@@ -149,8 +149,6 @@ export function AuthProvider({ children }) {
     });
   
     setError("");
-  };
-  
 
 
 
