@@ -33,7 +33,7 @@ const InstitucionalAutoridades = () => {
                         <div className="card-body">
                             <h3 className="card-title">ING. JOSE GARCIA NASER</h3>
                             <h5 className="card-title">Vicepresidente InProJuy</h5>
-                            <p className="card-text">Ing. en Sistemas de Información, Especialista en Gestión Pública y Técnico en Administración y Gestión de Juegos de Azar. Doc. Univ. Facultad de Ciencias Económicas UNJu. Presidente Unión Jujeña de Rugby.</p>
+                            <p className="card-text"></p>
                         </div>
                     </div>
                 </div>
