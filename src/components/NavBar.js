@@ -9,10 +9,10 @@ const NavBar = () => {
     const auth = useAuth();
     console.log(auth.user);
     return (
-        <nav className="navbar navbar-expand-xl bg-primary text-reset">
+        <nav className="navbar navbar-expand-xl bg-primary text-reset ">
             <div className="container-fluid">
-                <Link className="navbar-brand" to={'/'}>
-                    <img src='../img/inprojuylogo.png' width='400px' className='animate__animated animate__pulse img-fluid' />
+                <Link className="navbar-brand bg-white p-4 col-12 col-md-4" to={'/'}>
+                    <img src='../img/logonav.jpg' width='400px' className='animate__animated animate__pulse img-fluid' />
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -66,9 +66,6 @@ const NavBar = () => {
 
                         {auth.user === "" ? (
                             <>
-                                <li className="nav-item">
-                                    <Link className='nav-link text-white luzhover px-3' to="/register">Registrarse</Link>
-                                </li>
                                 <li className="nav-item">
                                     <Link className='nav-link text-white luzhover px-3' to="/login">Ingresar</Link>
                                 </li>

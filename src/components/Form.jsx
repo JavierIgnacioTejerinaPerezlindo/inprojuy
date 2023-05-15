@@ -189,7 +189,7 @@ function Form({ nameForm }) {
                         <button
                             type="submit"
                             className={`group relative ${password !== secondPassword ? "bg-gray-600" : "bg-indigo-600"
-                                } btn btn-primary m-4`}
+                                } btn btn-primary text-white m-4`}
                         >
                             {nameForm}
                         </button>
@@ -209,6 +209,7 @@ function Form({ nameForm }) {
                                 </>
                             )}
                         </button>
+                        <Link className=' text-white btn btn-primary' to="/register">Registrarse</Link>
                     </div>
                 </form>
             </div>

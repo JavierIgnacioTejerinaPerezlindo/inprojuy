@@ -5,8 +5,11 @@ import Cards from '../components/Cards/Cards';
 import '../components/Cards/Cards.css'
 import VideoCarrusel from '../components/VideoCarrusel/VideoCarrusel';
 import Modal from '../components/Modal/Modal';
-import Links from '../components/Links/Links';
 import { Link } from 'react-router-dom';
+import Ganadores from '../components/Ganadores/Ganadores';
+import Salas from '../components/salas/Salas';
+import TiraResp from '../components/TiraResp/TiraResp';
+import JuegoOnline from '../components/juegoonline/JuegoOnline';
 
 
 
@@ -14,7 +17,7 @@ import { Link } from 'react-router-dom';
 const Inicio = () => {
 	const [estadoModal, cambiarEstadoModal] = useState(true);
 	return (
-		<div className='' >
+		<container className='' >
 
 			<Modal
 				estado={estadoModal}
@@ -27,18 +30,22 @@ const Inicio = () => {
 				</Contenido>
 
 			</Modal>
+			<Ganadores/>
 			<Carrousel />
-<div className='p-5'>
-	<h2 className='px-5 fs-1'>Noticias</h2>
+			<TiraResp/>
+			<Salas/>
+
+			<JuegoOnline/>
+			<VideoCarrusel />
+			<div className='p-5'>
+
 			<Cards />
 			<Link className='btn-titulo' to={'/noticias'}><div className='botonbordeazul'><h2 className='text-white px-5 mx-5 py-3 h1'>MAS NOTICIAS</h2></div></Link>
 			</div>
-			<Links />
-			<VideoCarrusel />
 
 
 
-		</div>
+		</container>
 
 	)
 }

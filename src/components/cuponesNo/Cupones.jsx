@@ -17,28 +17,33 @@ function Cupones(props) {
 
   return (
     <div className="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Cupón</th>
-            <th>Fecha de carga</th>
-            <th>Número de Participación</th>
-            <th>Mes de sorteo</th>
-          </tr>
-        </thead>
-        <tbody>
-          {cupones.map((cupon, index) => (
-            <tr key={index}>
-              <td>{cupon.cupon}</td>
-              <td>{cupon.fechaCarga}</td>
-              <td>{cupon.numParticip}</td>
-              <td>{cupon.mesDeSorteo}</td>
+      {cupones.length === 0 ? (
+        <p>Sin cupones cargados</p>
+      ) : (
+        <table>
+          <thead>
+            <tr>
+              <th>Cupón</th>
+              <th>Fecha de carga</th>
+              <th>Número de Participación</th>
+              <th>Mes de sorteo</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {cupones.map((cupon, index) => (
+              <tr key={index}>
+                <td>{cupon.cupon}</td>
+                <td>{cupon.fechaCarga}</td>
+                <td>{cupon.numParticip}</td>
+                <td>{cupon.mesDeSorteo}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
   );
+  
 }
 
 export default Cupones;

@@ -1,36 +1,56 @@
 .player-wrapper {
-    position: relative;
-    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+
+ 
+    padding-top: 50%; /* Player ratio: 100 / (1280 / 720) */
   }
   
   .react-player {
+ 
     position: absolute;
-    top: 0;
-    left: 0;
-padding: 1%;  }
+    top: 10%;
+    left: 24%;
+padding: 5%;  }
 
-.carouselv{
+.carousel{
+    position: absolute;
+    top: 10%;
 
     width: 100%;
     margin: 0 auto;
 }
 
+
+
 .carousel-control-prev {
+ 
 height: 200px;
 }
 .carousel-control-next {
     height: 200px;
     }
-.carousel .carousel-control-prev-icon {
+.carousel-control-prev-icon {
+    background-color: rgb(45, 44, 44);
+
+
     visibility: hidden;
 }
 .carousel:hover .carousel-control-prev-icon {
     visibility: visible;
 }
 
-.carousel .carousel-control-next-icon {
+.carousel-control-next-icon {
+    background-color: rgb(45, 44, 44);
+  
     visibility: hidden;
 }
 .carousel:hover .carousel-control-next-icon {
     visibility: visible;
+}
+
+.back{
+
+    background-image: url('../../../public/img/videosbg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
 }
