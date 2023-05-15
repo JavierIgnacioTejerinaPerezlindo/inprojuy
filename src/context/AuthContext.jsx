@@ -121,25 +121,36 @@ export function AuthProvider({ children }) {
     const response = await signInWithPopup(auth, google);
     console.log(response.user.email);
     console.log(response.user.uid);
-
-    const user = response.user.email;
-    console.log('hhhh ' + user.uid);
-    const docRef = doc(db, `users/${response.user.uid}`);
-    setDoc(docRef, {
+  
+    const user = response.user;
+  
+    // Verificar si ya existe un documento con el ID de usuario
+    const docRef = doc(db, `users/${user.uid}`);
+    const docSnap = await getDoc(docRef);
+    
+    if (docSnap.exists()) {
+      console.log('El documento ya existe. No se creará uno nuevo.');
+      return; // Salir de la función si el documento ya existe
+    }
+  
+    // Crear un nuevo documento solo si no existe
+    await setDoc(docRef, {
       nombre: "",
       apellido: "",
       dni: "",
       telefono: "",
       direccion: "",
       Barrio: "",
-      email: "",
+      email: user.email,
       Localidad: "",
       fechaNacimiento: "",
       rol: "user",
-      id: response.user.uid
+      id: user.uid
     });
   
     setError("");
+  };
+  
 
 
 

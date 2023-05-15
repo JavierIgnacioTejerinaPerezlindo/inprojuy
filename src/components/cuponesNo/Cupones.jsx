@@ -14,6 +14,7 @@ function Cupones(props) {
     }
     getCupones();
   }, [props.id]);
+
   return (
     <div className="table-container">
       {cupones.length === 0 ? (
@@ -43,5 +44,6 @@ function Cupones(props) {
     </div>
   );
   
+}
 
 export default Cupones;
