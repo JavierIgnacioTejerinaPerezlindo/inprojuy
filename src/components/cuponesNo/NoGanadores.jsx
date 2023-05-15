@@ -52,7 +52,7 @@ const NoGanadores = () => {
 
         <div class="form-row col-6" >
           <label className="p-2 h5">
-            Número de agencia:
+            Código:
           </label>
         </div>
 
@@ -66,7 +66,7 @@ const NoGanadores = () => {
         </div>
         <div class="form-row col-6" >
           <label className="p-2 h5">
-            Código
+            Número de cupón:
           </label>
         </div>
         <div className="form-col">
