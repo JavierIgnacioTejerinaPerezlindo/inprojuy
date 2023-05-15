@@ -48,7 +48,7 @@ function App() {
     console.log("loading", loading)
 
   };
-/*   useEffect(() => {
+  useEffect(() => {
     const handleLoad = () => {
       toggleLoading();
     };
@@ -58,14 +58,14 @@ function App() {
     return () => {
       window.removeEventListener('load', handleLoad);
     };
-  }, []); */
+  }, []);
 
-
+/* 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
-  }, []);
+  }, []); */
 
   console.log("loading", loading)
   return (

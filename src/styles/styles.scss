@@ -49,6 +49,24 @@ h1 {
 
 }
 
+.fondotransparente3 {
+  padding: 0%;
+  margin-left: auto !important;
+  margin-right: 0% !important;
+  margin-top: 2rem;
+  width: 80%;
+  min-width: 320px;
+  background: rgba(211, 211, 211);
+  color: rgba(87, 87, 87);
+}
+.fondotransparente4 {
+  padding: 0%;
+  margin-left: auto !important;
+  margin-right: 0% !important;
+  margin-top: 2rem;
+  width: 95%;
+  min-width: 320px;
+}
 .fondotransparente {
   font-size: 1.4rem;
   color: rgba(87, 87, 87);
@@ -109,31 +127,36 @@ p {
   padding: 3rem;
 }
 
-nav.navbar{
+nav.navbar {
   padding: 0px !important;
   border-bottom: 7px;
   border-bottom-style: solid;
   border-color: $danger;
 }
-.navbar-brand{
+
+.navbar-brand {
   padding: 0px;
 }
-.container-fluid{
+
+.container-fluid {
   margin-left: 0px;
   padding-left: 0px;
 }
-.letrachica{
+
+.letrachica {
   justify-content: center;
   font-size: 1.5rem;
   padding: 0%;
   margin: 0%;
   margin-left: auto;
-margin-right: 0%;
+  margin-right: 0%;
 }
-.online{
-  color:lawngreen;
+
+.online {
+  color: lawngreen;
 }
-.inproloader{
+
+.inproloader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,31 +166,130 @@ margin-right: 0%;
   z-index: 10000 !important;
 }
 
-.card-title a{
+.card-title a {
   color: white;
 }
-.noticard{
+
+.noticard {
   margin: auto;
   width: 95%;
   height: 50vh;
 }
-.imgnoti{
+
+.imgnoti {
   height: 100%;
 }
 
-.contcard{
+.contcard {
   min-width: 318px;
   max-width: 470px;
   box-sizing: border-box;
 }
-.contenedorcardnoti{
+
+.contenedorcardnoti {
 
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.masnoti{
+
+.margenazul {
+  border-left-style: solid !important;
+  border-left-color: $primary !important;
+  border-left: 4rem;
+  padding-bottom: 3rem;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.margenrojo {
+  border-left-style: solid !important;
+  border-left-color: $danger !important;
+  border-left: 4rem;
+  padding-bottom: 4rem;
+  margin-right: 20%;
+  text-align: center;
+
+}
+
+.card {
   border-radius: 0%;
-  border-left: solid !important;
-  border-left: 10px;
-  border-Left-color: $primary !important;
+}
+
+.card-img {
+  border-radius: 5%;
+  box-sizing: border-box !important;
+}
+
+.cardaut {
+  width: 40vw;
+  min-width: 250px;
+  max-width: 50vw;
+}
+
+.botonbordeazul {
+  display: inline-block;
+  border-left-style: solid !important;
+  border-left-color: $primary !important;
+  border-left: 1rem;
+  background-color: $danger;
+  border-radius: 0%;
+}
+.btn-titulo{
+  text-align: center;
+}
+.contcaja{
+  display: flex;
+}
+.titulocaja{
+  size: 3rem;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+}
+.cajaroja{
+  display: inline-flex;
+  background-color: $danger;
+  width: 20%;
+  text-align: center;
+  text-justify: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.cajazul{
+  display: inline-flex;
+  background-color: $primary;
+  width: 20%;
+  text-align: center;
+  text-justify: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.cajagris{
+  display: inline-flex;
+  background-color: rgb(87, 87, 87);
+  width: 20%;
+  text-align: center;
+  text-justify: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.cajagrisclaro{
+  display: inline-flex;
+  background-color: rgb(211, 211, 211);
+  width: 20%;
+  text-align: center;
+  text-justify: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.cuerpo{
+  display: inline-block;
+  width: 85%;
+  padding: 3rem;
+  font-size: 2rem;
 }

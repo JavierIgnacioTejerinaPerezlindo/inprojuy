@@ -10340,6 +10340,26 @@ h1, .h1 {
   border-radius: 5px;
 }
 
+.fondotransparente3 {
+  padding: 0%;
+  margin-left: auto !important;
+  margin-right: 0% !important;
+  margin-top: 2rem;
+  width: 80%;
+  min-width: 320px;
+  background: rgb(211, 211, 211);
+  color: rgb(87, 87, 87);
+}
+
+.fondotransparente4 {
+  padding: 0%;
+  margin-left: auto !important;
+  margin-right: 0% !important;
+  margin-top: 2rem;
+  width: 95%;
+  min-width: 320px;
+}
+
 .fondotransparente {
   font-size: 1.4rem;
   color: rgb(87, 87, 87);
@@ -10461,9 +10481,111 @@ nav.navbar {
   justify-content: space-around;
 }
 
-.masnoti {
+.margenazul {
+  border-left-style: solid !important;
+  border-left-color: rgb(59, 160, 168) !important;
+  border-left: 4rem;
+  padding-bottom: 3rem;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.margenrojo {
+  border-left-style: solid !important;
+  border-left-color: rgb(215, 65, 42) !important;
+  border-left: 4rem;
+  padding-bottom: 4rem;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.card {
   border-radius: 0%;
-  border-left: solid !important;
-  border-left: 10px;
-  border-Left-color: rgb(59, 160, 168) !important;
+}
+
+.card-img {
+  border-radius: 5%;
+  box-sizing: border-box !important;
+}
+
+.cardaut {
+  width: 40vw;
+  min-width: 250px;
+  max-width: 50vw;
+}
+
+.botonbordeazul {
+  display: inline-block;
+  border-left-style: solid !important;
+  border-left-color: rgb(59, 160, 168) !important;
+  border-left: 1rem;
+  background-color: rgb(215, 65, 42);
+  border-radius: 0%;
+}
+
+.btn-titulo {
+  text-align: center;
+}
+
+.contcaja {
+  display: flex;
+}
+
+.titulocaja {
+  size: 3rem;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.cajaroja {
+  display: inline-flex;
+  background-color: rgb(215, 65, 42);
+  width: 20%;
+  text-align: center;
+  text-justify: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.cajazul {
+  display: inline-flex;
+  background-color: rgb(59, 160, 168);
+  width: 20%;
+  text-align: center;
+  text-justify: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.cajagris {
+  display: inline-flex;
+  background-color: rgb(87, 87, 87);
+  width: 20%;
+  text-align: center;
+  text-justify: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.cajagrisclaro {
+  display: inline-flex;
+  background-color: rgb(211, 211, 211);
+  width: 20%;
+  text-align: center;
+  text-justify: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.cuerpo {
+  display: inline-block;
+  width: 85%;
+  padding: 3rem;
+  font-size: 2rem;
 }/*# sourceMappingURL=styles.css.map */
