@@ -138,6 +138,7 @@ export function AuthProvider({ children }) {
       rol: "user",
       id: response.user.uid
     });
+  
     setError("");
 
 

@@ -52,7 +52,7 @@ function Logout() {
                 <h3 className="text-white">Salir</h3>
                
             </button>
-            {/* <Cupones id= {auth.id} /> */}
+            <Cupones id= {auth.id} />
         </div>
     );
 }

@@ -51,18 +51,19 @@ const VideoCarrusel = () => {
         }
     ]
 
-    return <div  >
+    return <div className='back'  >
 
-        <Carousel   >
+        <Carousel className= 'carousel ' >
             {videoProperties.map((videoObj) => {
-                return (
-                    <Carousel.Item interval={videoObj.tiempo} className='player-wrapper' key={videoObj.id}>
-                        <ReactPlayer className='react-player'
+                return ( 
+                  
+                    <Carousel.Item interval={videoObj.tiempo} className='player-wrapper carousel' key={videoObj.id}>
+                        <ReactPlayer className='react-player '
                             url={videoObj.src}
-                            pip={true}
+                            pip={false}
                             controls={true}
-                            width='100%'
-                            height='87%'
+                            width='80%'
+                            height='89  %'
                         //playing={true}
                         />
                         <Carousel.Caption >
@@ -70,11 +71,12 @@ const VideoCarrusel = () => {
                             {/* <p>{videoObj.credit}</p> */}
                         </Carousel.Caption>
                     </Carousel.Item>
+                
                 )
             }
             )}
         </Carousel>
-        <p></p>
+      
     </div>
 }
 export default VideoCarrusel

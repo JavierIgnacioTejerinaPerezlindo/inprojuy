@@ -10448,6 +10448,8 @@ nav.navbar {
 
 .imgnoti {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contcard {
