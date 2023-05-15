@@ -9,7 +9,7 @@ const NavBar = () => {
     const auth = useAuth();
     console.log(auth.user);
     return (
-        <nav className="navbar navbar-expand-lg bg-primary text-reset">
+        <nav className="navbar navbar-expand-xl bg-primary text-reset">
             <div className="container-fluid">
                 <Link className="navbar-brand" to={'/'}>
                     <img src='../img/inprojuylogo.png' width='400px' className='animate__animated animate__pulse img-fluid' />

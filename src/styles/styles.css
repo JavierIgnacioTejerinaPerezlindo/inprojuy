@@ -10433,20 +10433,20 @@ nav.navbar {
   height: 100vh;
   width: 100vw;
   background-color: white;
-  z-index: 999;
+  z-index: 10000 !important;
 }
 
 .card-title a {
   color: white;
 }
 
-.card {
+.noticard {
   margin: auto;
   width: 95%;
   height: 50vh;
 }
 
-.card-img {
+.imgnoti {
   height: 100%;
 }
 

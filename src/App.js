@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar';
-import {  Routes, HashRouter, Route, Router } from 'react-router-dom';
+import { Routes, HashRouter, Route, Router } from 'react-router-dom';
 import Inicio from './paginas/Inicio';
 import JuegoOnline from './paginas/JuegoOnline';
 import JuegoResponsable from './paginas/JuegoResponsable';
@@ -19,7 +19,7 @@ import NotiSeminario from './paginas/NotiSeminario';
 import NotiDiagenciero from './paginas/NotiDiagenciero';
 import Enconstruccion from './paginas/Enconstruccion';
 import Reglamentos from './paginas/Reglamentos';
-import { AuthProvider} from './context/AuthContext';
+import { AuthProvider } from './context/AuthContext';
 import Login from './paginas/Login';
 import Register from './paginas/Register';
 import Reset from './paginas/Reset';
@@ -35,6 +35,7 @@ import ProfileForm from './components/ProfileForm';
 import NotiGanadores from './paginas/NotiGanadores';
 import React, { useState, useEffect } from 'react';
 import InproLoader from './components/loader/Loader';
+import Wrapper from './components/loader/Wrapper';
 
 
 
@@ -47,7 +48,7 @@ function App() {
     console.log("loading", loading)
 
   };
-  useEffect(() => {
+/*   useEffect(() => {
     const handleLoad = () => {
       toggleLoading();
     };
@@ -57,56 +58,65 @@ function App() {
     return () => {
       window.removeEventListener('load', handleLoad);
     };
+  }, []); */
+
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
   }, []);
+
   console.log("loading", loading)
   return (
     <AuthProvider>
       <div className="App">
-        {loading && <InproLoader />}
-        <HashRouter>
-          <NavBar/>
-          <Routes>
-          <Route path='/' element={<Inicio/>} />
-          <Route path='/juegoonline' element={<JuegoOnline />} />
-          <Route path='/juegoResponsable' element={<JuegoResponsable />} />
-{/*           <Route path='/juegoilegal' element={<JuegoIlegal />} /> */}
-          <Route path='/noticias' element={<Noticias />} />
-          <Route path='/institucionalMision' element={<InstitucionalMision />} />
-          <Route path='/mision' element={<InstitucionalMision />} />
-          <Route path='/autoridades' element={<InstitucionalAutoridades />} />
-          <Route path='/delegaciones' element={<InstitucionalDelegaciones/>} />
-          <Route path='/agencias' element={<Agencias/>} />
-          <Route path='/dondejuego' element={<DondeJuego/>} />
-          <Route path='/notiAgendame' element={<NotiAgendame/>} />
-          <Route path='/notiganadores' element={<NotiGanadores/>} />
-          <Route path='/notiCapacitacion' element={<NotiCapacitacion/>} />
-          <Route path='/notiPrevencion' element={<NotiPrevencion/>} />
-          <Route path='/notiSeminario' element={<NotiSeminario/>} />
-          <Route path='/notiDiagenciero' element={<NotiDiagenciero/>} />
-          <Route path='/comotrabajamos' element={<ComoTrabajamos/>} />
-          <Route path='/quetaljuego' element={<Quetaljuegoyo/>} />
-          <Route path='/sitiosautorizados' element={<SitiosAutorizados/>} />
-          <Route path='/mitosyverdades' element={<Mitosyverdades/>} />
-          <Route path='/recomendaciones' element={<Recomendaciones/>} />
-          <Route path='/reglamentos' element={<Reglamentos/>} />
-          <Route path='/lugaresdeayuda' element={<LugaresdeAyuda/>} />
-          <Route path='/enconstruccion' element={<Enconstruccion/>} />
-          <Route path='/register' element={<Register/>} />
-          <Route path='/login' element={<Login/>} />
-          <Route path='/reset' element={<Reset/>} />
-          <Route path='/noganadores' element={<NoGanadores/>} />
-          <Route path='/profile' element={<ProfileForm/>}/>
+        <Wrapper loading={loading}>
+          <HashRouter>
+            <NavBar />
+            <Routes>
+              <Route path='/' element={<Inicio />} />
+              <Route path='/juegoonline' element={<JuegoOnline />} />
+              <Route path='/juegoResponsable' element={<JuegoResponsable />} />
+              {/*           <Route path='/juegoilegal' element={<JuegoIlegal />} /> */}
+              <Route path='/noticias' element={<Noticias />} />
+              <Route path='/institucionalMision' element={<InstitucionalMision />} />
+              <Route path='/mision' element={<InstitucionalMision />} />
+              <Route path='/autoridades' element={<InstitucionalAutoridades />} />
+              <Route path='/delegaciones' element={<InstitucionalDelegaciones />} />
+              <Route path='/agencias' element={<Agencias />} />
+              <Route path='/dondejuego' element={<DondeJuego />} />
+              <Route path='/notiAgendame' element={<NotiAgendame />} />
+              <Route path='/notiganadores' element={<NotiGanadores />} />
+              <Route path='/notiCapacitacion' element={<NotiCapacitacion />} />
+              <Route path='/notiPrevencion' element={<NotiPrevencion />} />
+              <Route path='/notiSeminario' element={<NotiSeminario />} />
+              <Route path='/notiDiagenciero' element={<NotiDiagenciero />} />
+              <Route path='/comotrabajamos' element={<ComoTrabajamos />} />
+              <Route path='/quetaljuego' element={<Quetaljuegoyo />} />
+              <Route path='/sitiosautorizados' element={<SitiosAutorizados />} />
+              <Route path='/mitosyverdades' element={<Mitosyverdades />} />
+              <Route path='/recomendaciones' element={<Recomendaciones />} />
+              <Route path='/reglamentos' element={<Reglamentos />} />
+              <Route path='/lugaresdeayuda' element={<LugaresdeAyuda />} />
+              <Route path='/enconstruccion' element={<Enconstruccion />} />
+              <Route path='/register' element={<Register />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/reset' element={<Reset />} />
+              <Route path='/noganadores' element={<NoGanadores />} />
+              <Route path='/profile' element={<ProfileForm />} />
 
 
 
 
 
 
-        </Routes>
-       
-        <Footer/>
-      </HashRouter>
-    </div>
+            </Routes>
+
+            <Footer />
+          </HashRouter>
+        </Wrapper>
+      </div>
     </AuthProvider>
   );
 }
