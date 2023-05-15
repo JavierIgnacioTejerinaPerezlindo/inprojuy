@@ -36,7 +36,7 @@ function Cupones(props) {
               <tr key={index}>
                 <td>{cupon.cupon}</td>
                 <td>{cupon.fechaCarga}</td>
-                <td>{cupon.numParticip}</td>
+                {/* <td>{cupon.numParticip}</td> */}
                 <td>{cupon.mesDeSorteo}</td>
               </tr>
             ))
