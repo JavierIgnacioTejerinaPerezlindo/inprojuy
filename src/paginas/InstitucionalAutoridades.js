@@ -1,56 +1,68 @@
-import React from 'react';
+import React from 'react'
 
 const InstitucionalAutoridades = () => {
-  return (
-    <div>
-      <div className='container fondotransparente3'>
-        <div className='margenazul'>
-          <div className='botonbordeazul m-4'>
-          <h1 className='text-white px-5 mx-5 py-3 h1'>Autoridades</h1>
-          </div>
-          <div className="card mx-auto container-fluid cardaut">
-            <div className='p-4'>
-              <img src=".\img\aut-marales.jpeg" className="card-img" alt="..." />
+    return (
+        <div>
+
+
+            <div className='container fondotransparente3 '>
+
+
+
+                <div className='margenazul'>
+                    <div className='botonbordeazul m-5'>
+                    <h2 className='text-white px-5 mx-5 py-3 h1'>Autoridades</h2>
+                    </div>
+                    <div className="card mx-auto container-fluid cardaut">
+                        <div className='p-4'>
+                            <img src=".\img\aut-marales.jpeg" className="card-img" alt="..." />
+                        </div>
+                        <div className="card-body">
+                            <h3 className="card-title">LIC. WALTER MORALES</h3>
+                            <h5 className="card-title">Presidente InProJuy</h5>
+                            <p className="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='margenazul'>
+                    <div className="card mx-auto cardaut">
+                        <div className='p-4'>
+                            <img src=".\img\aut-naser.jpeg" className="card-img" alt="..." />
+                        </div>
+                        <div className="card-body">
+                            <h3 className="card-title">ING. JOSE GARCIA NASER</h3>
+                            <h5 className="card-title">Vicepresidente InProJuy</h5>
+                            <p className="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='margenrojo'>
+                    <div className="card mx-auto cardaut">
+                        <div className='p-4'>
+                            <img src=".\img\aut-lamas.jpeg" className="card-img" alt="..." />
+                        </div>
+                        <div className="card-body">
+                        <h3 className="card-title">CPN GABRIELA LAMAS</h3>
+                        <h5 className="card-title">Gerente General de InProJuy</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             </div>
-            <div className="card-body">
-              <h3 className="card-title">LIC. WALTER MORALES</h3>
-              <h5 className="card-title">Presidente InProJuy</h5>
-              <p className="card-text"></p>
-            </div>
-          </div>
+
+            <div className='container-fluid text-center py-5'>
+  <img className='img-fluid' src='.\img\aut-organigrama.jpg' style={{ objectFit: 'contain', width: '100%', height: 'auto' }} />
+</div>
+
         </div>
 
-        <div className='margenazul'>
-          <div className="card mx-auto cardaut">
-            <div className='p-4'>
-              <img src=".\img\aut-naser.jpeg" className="card-img" alt="..." />
-            </div>
-            <div className="card-body">
-              <h3 className="card-title">ING. JOSE GARCIA NASER</h3>
-              <h5 className="card-title">Vicepresidente InProJuy</h5>
-              <p className="card-text"></p>
-            </div>
-          </div>
-        </div>
 
-        <div className='margenrojo'>
-          <div className="card mx-auto cardaut">
-            <div className='p-4'>
-              <img src=".\img\aut-lamas.jpeg" className="card-img" alt="..." />
-            </div>
-            <div className="card-body">
-              <h3 className="card-title">CPN GABRIELA LAMAS</h3>
-              <h5 className="card-title">Gerente General de InProJuy</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className='container-fluid text-center py-5'>
-        <img className='img-fluid' src='.\img\aut-organigrama.jpg' />
-      </div>
-    </div>
-  );
+    )
 }
 
-export default InstitucionalAutoridades;
+export default InstitucionalAutoridades

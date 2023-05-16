@@ -19,7 +19,7 @@ const Footer = () => {
 
                         </Link>
                        
-                        <ul className="col-12 col-md-4  list-unstyled bg-white d-flex justify-content-end">
+                        <ul className="col-12 col-md-4  bg-white d-flex justify-content-end">
                         <Link to='/' className=" ">
                             <img src="../img/logoinprofooter.png" className="  d-flex justify-content-end" ></img>
 

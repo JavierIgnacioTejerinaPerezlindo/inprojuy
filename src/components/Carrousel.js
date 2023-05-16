@@ -5,15 +5,11 @@ const Carrousel = () => {
     <div className="pt-5 pb-5 drop" >
       <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner rounded">
-         
+                         
           <div className="carousel-item active">
-            <a href='' target="_blank">
-              <img src="./img/slider_2.jpg" className="d-block w-100" alt="Concurso Literario" />
+            <a href="https://juj.lotemovil.com.ar" target="_blank">
+              <img src="./img/slider_4.jpg" className="d-block w-100" alt="..." />
             </a>
-          </div>
-         
-          <div className="carousel-item">
-            <img src="./img/slider_4.jpg" className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
             <img src="./img/slider_5.jpeg" className="d-block w-100" alt="..." />
