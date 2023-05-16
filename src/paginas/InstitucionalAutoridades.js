@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const InstitucionalAutoridades = () => {
     return (
@@ -25,41 +25,37 @@ const InstitucionalAutoridades = () => {
                     </div>
                 </div>
 
-                <div className='margenazul'>
-                    <div className="card mx-auto cardaut">
-                        <div className='p-4'>
-                            <img src=".\img\aut-naser.jpeg" className="card-img" alt="..." />
-                        </div>
-                        <div className="card-body">
-                            <h3 className="card-title">ING. JOSE GARCIA NASER</h3>
-                            <h5 className="card-title">Vicepresidente InProJuy</h5>
-                            <p className="card-text"></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='margenrojo'>
-                    <div className="card mx-auto cardaut">
-                        <div className='p-4'>
-                            <img src=".\img\aut-lamas.jpeg" className="card-img" alt="..." />
-                        </div>
-                        <div className="card-body">
-                        <h3 className="card-title">CPN GABRIELA LAMAS</h3>
-                        <h5 className="card-title">Gerente General de InProJuy</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
+        <div className='margenazul'>
+          <div className="card mx-auto cardaut">
+            <div className='p-4'>
+              <img src=".\img\aut-naser.jpeg" className="card-img" alt="..." />
             </div>
-
-            <div className='container-fluid text-center py-5' ><img className='img-fluid' src='.\img\aut-organigrama.jpg' /></div>
+            <div className="card-body">
+              <h3 className="card-title">ING. JOSE GARCIA NASER</h3>
+              <h5 className="card-title">Vicepresidente InProJuy</h5>
+              <p className="card-text"></p>
+            </div>
+          </div>
         </div>
 
+        <div className='margenrojo'>
+          <div className="card mx-auto cardaut">
+            <div className='p-4'>
+              <img src=".\img\aut-lamas.jpeg" className="card-img" alt="..." />
+            </div>
+            <div className="card-body">
+              <h3 className="card-title">CPN GABRIELA LAMAS</h3>
+              <h5 className="card-title">Gerente General de InProJuy</h5>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    )
+      <div className='container-fluid text-center py-5'>
+        <img className='img-fluid' src='.\img\aut-organigrama.jpg' />
+      </div>
+    </div>
+  );
 }
 
-export default InstitucionalAutoridades
+export default InstitucionalAutoridades;

@@ -15,10 +15,14 @@ function UserProfile() {
     apellido: '',
     dni: '',
     direccion: '',
-    Barrio: '',
-    Localidad: '',
+    barrio: '',
+    localidad: '',
+    email: '',
+    telefono: '',
     fechaNacimiento: new Date().toLocaleDateString('es-AR'),
   });
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   useEffect(() => {
     const getUserData = async () => {
@@ -26,7 +30,7 @@ function UserProfile() {
       if (user) {
         const docRef = doc(db, `users/${usera}`);
         const userData = await getDoc(docRef);
-        if (userData.exists) {
+        if (userData.exists()) {
           setUser(userData.data());
           setFormValues(userData.data());
         } else {
@@ -47,8 +51,9 @@ function UserProfile() {
               dni: '',
               direccion: '',
               email: '',
-              Barrio: '',
-              Localidad: '',
+              barrio: '',
+              localidad: '',
+              telefono: '',
               fechaNacimiento: new Date().toLocaleDateString('es-AR'),
             };
             await setDoc(doc(db, `users/${usera}`), newUser);
@@ -67,9 +72,14 @@ function UserProfile() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-   
+
     if (!usera) {
       console.log('Usuario no autenticado');
+      return;
+    }
+
+    if (!formValues.nombre || !formValues.apellido || !formValues.dni || !formValues.direccion || !formValues.barrio || !formValues.localidad || !formValues.email || !formValues.telefono || !formValues.fechaNacimiento) {
+      setErrorMessage('Por favor completa todos los campos');
       return;
     }
 
@@ -79,18 +89,20 @@ function UserProfile() {
       const ageDate = new Date(ageDiffMs);
       const userAge = Math.abs(ageDate.getUTCFullYear() - 1970);
       if (userAge < 18) {
-        console.log('El usuario debe ser mayor a 18 años');
+        setErrorMessage('Debes ser mayor de 18 años');
         return;
       }
     }
-    
+
     const userData = {
       nombre: formValues.nombre,
       apellido: formValues.apellido,
       dni: formValues.dni,
       direccion: formValues.direccion,
-      Barrio: formValues.Barrio,
-      Localidad: formValues.Localidad,
+      barrio: formValues.barrio,
+      localidad: formValues.localidad,
+      email: formValues.email,
+      telefono: formValues.telefono,
       fechaNacimiento: formValues.fechaNacimiento,
     };
 
@@ -98,61 +110,129 @@ function UserProfile() {
       const docRef = doc(db, `users/${usera}`);
       await setDoc(docRef, userData, { merge: true });
       setUser(userData);
+      setSuccessMessage('Cambios guardados correctamente');
+      setErrorMessage('');
     } catch (error) {
+      setErrorMessage('Error al guardar los cambios');
       console.log(error);
     }
   };
 
   if (!usera) {
     console.log('Usuario no autenticado' + usera + auth.id);
-  
 
-    return <div>Cargando...{usera}</div>;
+    return <div>Cargando...{usera}</div>
   }
 
   return (
-    <div className='container fondotransparente text-center form'>
-      <h2 className="h1 p-4">Mi Perfil</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label className='p-2 h5' htmlFor="nombre">Nombre:</label>
-          <input className='border px-3 py-2 rounded' type="text" id="nombre" name="nombre" value={formValues.nombre} onChange={handleChange} />
+    <div className="container">
+      <h2 className="h1 text-center p-4">Mi Perfil</h2>
+      <form onSubmit={handleSubmit} className="form">
+        <div className="form-group">
+          <label htmlFor="nombre" className="h5">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            value={formValues.nombre}
+            onChange={handleChange}
+            className="form-control"
+          />
         </div>
-        <div>
-          <label className='p-2 h5' htmlFor="apellido">Apellido:</label>
-          <input className='border px-3 py-2 rounded' type="text" id="apellido" name="apellido" value={formValues.apellido} onChange={handleChange} />
+        <div className="form-group">
+          <label htmlFor="apellido" className="h5">Apellido:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            value={formValues.apellido}
+            onChange={handleChange}
+            className="form-control"
+          />
         </div>
-        <div>
-          <label className='p-2 h5' htmlFor="dni">DNI:</label>
-          <input className='border px-3 py-2 rounded' type="text" id="dni" name="dni" value={formValues.dni} onChange={handleChange} />
+        <div className="form-group">
+          <label htmlFor="dni" className="h5">DNI:</label>
+          <input
+            type="text"
+            id="dni"
+            name="dni"
+            value={formValues.dni}
+            onChange={handleChange}
+            className="form-control"
+          />
         </div>
-        <div>
-          <label className='p-2 h5' htmlFor="localidad">email:</label>
-          <input className='border px-3 py-2 rounded' type="text" id="localidad" name="localidad" value={formValues.email} onChange={handleChange} />
+        <div className="form-group">
+          <label htmlFor="email" className="h5">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            value={formValues.email}
+            onChange={handleChange}
+            className="form-control"
+          />
         </div>
-        <div>
-          <label className='p-2 h5' htmlFor="direccion">Dirección:</label>
-          <input className='border px-3 py-2 rounded' type="text" id="direccion" name="direccion" value={formValues.direccion} onChange={handleChange} />
+        <div className="form-group">
+          <label htmlFor="direccion" className="h5">Dirección:</label>
+          <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            value={formValues.direccion}
+            onChange={handleChange}
+            className="form-control"
+          />
         </div>
-        <div>
-          <label className='p-2 h5' htmlFor="barrio">Barrio:</label>
-          <input className='border px-3 py-2 rounded' type="text" id="barrio"name="barrio" value={formValues.Barrio}
-
-            onChange={handleChange} />
+        <div className="form-group">
+          <label htmlFor="barrio" className="h5">Barrio:</label>
+          <input
+            type="text"
+            id="barrio"
+            name="barrio"
+            value={formValues.barrio}
+            onChange={handleChange}
+            className="form-control"
+          />
         </div>
-        <div>
-          <label className='p-2 h5' htmlFor="localidad">Localidad:</label>
-          <input className='border px-3 py-2 rounded' type="text" id="localidad" name="localidad" value={formValues.Localidad} onChange={handleChange} />
+        <div className="form-group">
+          <label htmlFor="localidad" className="h5">Localidad:</label>
+          <input
+            type="text"
+            id="localidad"
+            name="localidad"
+            value={formValues.localidad}
+            onChange={handleChange}
+            className="form-control"
+          />
         </div>
-        <div>
-          <label className='p-2 h5' htmlFor="fechaNacimiento">Fecha de Nacimiento:</label>
-          <input className='border px-3 py-2 rounded' type="date" id="fechaNacimiento" name="fechaNacimiento" value={formValues.fechaNacimiento} onChange={handleChange} />
+        <div className="form-group">
+          <label htmlFor="telefono" className="h5">Teléfono:</label>
+          <input
+            type="text"
+            id="telefono"
+            name="telefono"
+            value={formValues.telefono}
+            onChange={handleChange}
+            className="form-control"
+          />
         </div>
-        <button className="btn btn-primary text-white m-4" type="submit">Guardar Cambios</button>
+        <div className="form-group">
+          <label htmlFor="fechaNacimiento" className="h5">Fecha de Nacimiento:</label>
+          <input
+            type="date"
+            id="fechaNacimiento"
+            name="fechaNacimiento"
+            value={formValues.fechaNacimiento}
+            onChange={handleChange}
+            className="form-control"
+          />
+        </div>
+        {errorMessage && <div className="text-danger">{errorMessage}</div>}
+        {successMessage && <div className="text-success">{successMessage}</div>}
+        <button type="submit" className="btn btn-primary mt-4">Guardar Cambios</button>
       </form>
     </div>
   );
-
 }
 
 export default UserProfile;

@@ -20,13 +20,13 @@ function Cupones(props) {
   }, [props.id]);
 
   return (
-    <div className="table-container">
-      <table>
-        <thead>
+    <div className="table-responsive">
+      <h2 className="h3 mt-4 mb-3">Cupones no Ganadores Cargados para el próximo Sorteo</h2>
+      <table className="table table-striped">
+        <thead className="thead-dark">
           <tr>
             <th>Cupón</th>
             <th>Fecha de carga</th>
-            <th>Número de Participación</th>
             <th>Mes de sorteo</th>
           </tr>
         </thead>
@@ -36,13 +36,12 @@ function Cupones(props) {
               <tr key={index}>
                 <td>{cupon.cupon}</td>
                 <td>{cupon.fechaCarga}</td>
-                <td>{cupon.numParticip}</td>
                 <td>{cupon.mesDeSorteo}</td>
               </tr>
             ))
           ) : (
             <tr>
-              <td colSpan={4}>Sin cupones cargados</td>
+              <td colSpan={3}>Sin cupones cargados</td>
             </tr>
           )}
         </tbody>

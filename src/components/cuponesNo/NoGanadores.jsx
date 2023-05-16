@@ -52,7 +52,7 @@ const NoGanadores = () => {
 
         <div class="form-row col-6" >
           <label className="p-2 h5">
-            Número de agencia:
+            Código:
           </label>
         </div>
 
