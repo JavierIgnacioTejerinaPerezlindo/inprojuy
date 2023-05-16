@@ -19,7 +19,7 @@ const Cards = ({ showAllCards }) => {
   let maxCards = showAllCards ? tabn.length : 4
 
   return (
-    <div className="d-flex p-5 contenedorcardnoti">
+    <div className="d-flex bg-light  p-5 contenedorcardnoti">
       {tabn.slice(0, maxCards).map((noticia, index) => (
         <Card
           key={index}
