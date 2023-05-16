@@ -10356,6 +10356,7 @@ h1, .h1 {
   margin-left: auto !important;
   margin-right: 0% !important;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 95%;
   min-width: 320px;
 }
@@ -10523,9 +10524,11 @@ nav.navbar {
   border-left: 1rem;
   background-color: rgb(215, 65, 42);
   border-radius: 0%;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
 .btn-titulo {
+  display: block;
   text-align: center;
 }
 

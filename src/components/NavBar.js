@@ -64,11 +64,8 @@ const NavBar = () => {
                             <Link className="nav-link text-white luzhover " to={'/noticias'}>Noticias</Link>
                         </li>
 
-                        {auth.user === "" ? (
+{/*                         {auth.user === "" ? (
                             <>
-                                <li className="nav-item">
-                                    <Link className='nav-link text-white luzhover px-3' to="/register">Registrarse</Link>
-                                </li>
                                 <li className="nav-item">
                                     <Link className='nav-link text-white luzhover px-3' to="/login">Ingresar</Link>
                                 </li>
@@ -80,7 +77,7 @@ const NavBar = () => {
 
                                 </Link>
                             </li>
-                        )}
+                        )} */}
 
 
                     </ul>

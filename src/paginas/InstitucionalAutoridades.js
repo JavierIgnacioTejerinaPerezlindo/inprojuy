@@ -5,15 +5,15 @@ const InstitucionalAutoridades = () => {
         <div>
 
 
-            <div className='container fondotransparente3 '>
+            <div className='container-fluid fondotransparente3 '>
 
 
 
                 <div className='margenazul'>
-                    <div className='botonbordeazul m-5'>
-                    <h2 className='text-white px-5 mx-5 py-3 h1'>Autoridades</h2>
+                    <div className='botonbordeazul mx-auto my-3'>
+                    <h2 className='text-white px-4 py-3 h1 container-fluid'>Autoridades</h2>
                     </div>
-                    <div className="card mx-auto container-fluid cardaut">
+                    <div className="card ms-auto container-fluid cardaut">
                         <div className='p-4'>
                             <img src=".\img\aut-marales.jpeg" className="card-img" alt="..." />
                         </div>
