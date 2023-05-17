@@ -11,16 +11,26 @@ const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-xl bg-primary text-reset ">
             <div className="container-fluid">
-                <Link className="navbar-brand bg-white p-4 col-12 col-md-4" to={'/'}>
-                    <img src='../img/logonav.jpg' width='400px' className='animate__animated animate__pulse img-fluid' />
+                <Link className="navbar-brand bg-white p-1 " to={'/'}>
+                    <img src='../img/logonav.jpg' min-width='400px' className='animate__animated animate__pulse img-fluid' />
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse h4" id="navbarSupportedContent">
-                    <ul className="navbar-nav ms-auto pe-5 mb-2 mb-lg-0 h2">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 h2">
                         <li className="nav-item">
                             <Link className="nav-link text-white luzhover px-3" to={'/'}>Inicio</Link>
+                        </li>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Institucional
+                            </a>
+                            <ul className="dropdown-menu fondotransparente2 p-2">
+                                <li><Link className="dropdown-item h5" to='/mision'>Mision, Vision, Objetivos</Link></li>
+                                <li><Link className="dropdown-item h5" to='/autoridades'>Autoridades y Organigrama</Link></li>
+                                <li><Link className="dropdown-item h5" to='/delegaciones'>Delegaciones del interior</Link></li>
+                            </ul>
                         </li>
                         <li className="nav-item dropdown px-3">
                             <a className="nav-link dropdown-toggle text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,22 +54,13 @@ const NavBar = () => {
                             <ul className="dropdown-menu fondotransparente2 p-2">
                                 <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Que significa?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/comotrabajamos'>¿Como Trabajamos?</Link></li>
-                                <li><Link className="dropdown-item h5" to='/quetaljuego'>¿Que tal Juego Yo?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/quetaljuego'>¿Como estoy jugando?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/mitosyverdades'>Mitos y Verdades</Link></li>
                                 <li><Link className="dropdown-item h5" to='/recomendaciones'>Recomendaciones</Link></li>
                                 <li><Link className="dropdown-item h5" to='/lugaresdeayuda'>Lugares de Ayuda</Link></li>
                             </ul>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Institucional
-                            </a>
-                            <ul className="dropdown-menu fondotransparente2 p-2">
-                                <li><Link className="dropdown-item h5" to='/mision'>Mision, Vision, Objetivos</Link></li>
-                                <li><Link className="dropdown-item h5" to='/autoridades'>Autoridades y Organigrama</Link></li>
-                                <li><Link className="dropdown-item h5" to='/delegaciones'>Delegaciones del interior</Link></li>
-                            </ul>
-                        </li>
+                 
                         <li className="nav-item">
                             <Link className="nav-link text-white luzhover " to={'/noticias'}>Noticias</Link>
                         </li>

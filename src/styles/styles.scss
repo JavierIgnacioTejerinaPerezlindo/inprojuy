@@ -132,7 +132,7 @@ p {
 
 nav.navbar {
   padding: 0px !important;
-  border-bottom: 7px;
+  border-bottom: 10px;
   border-bottom-style: solid;
   border-color: $danger;
 }
@@ -206,32 +206,52 @@ nav.navbar {
   .card {
     display: flex;
 
-    
+
     .card-img {
       align-items: center;
       justify-items: center;
-border-radius: 0%;
+      border-radius: 0%;
       box-sizing: border-box !important;
       width: 100%;
       height: 400px;
-object-fit: cover;
+      object-fit: cover;
       min-width: 300px;
       filter: brightness(60%);
     }
+
     .card-img-overlay {
       height: max-content;
-text-align: end !important;
-    align-items: end !important;
-    align-content: end !important;
+      text-align: end !important;
+      align-items: end !important;
+      align-content: end !important;
       overflow: hidden;
-justify-items: end !important;
-justify-content: end !important;
+      justify-items: end !important;
+      justify-content: end !important;
 
-
-     
     }
   }
 }
+@media (max-width: 1400px) {
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 400px;
+}
+  }
+  @media (max-width: 768px) {
+
+    .wrapper{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: 400px;
+      margin: 0px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+      }
 
 .cardaut {
   width: 40vw;

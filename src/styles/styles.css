@@ -10420,7 +10420,7 @@ p {
 
 nav.navbar {
   padding: 0px !important;
-  border-bottom: 7px;
+  border-bottom: 10px;
   border-bottom-style: solid;
   border-color: rgb(215, 65, 42);
 }
@@ -10514,6 +10514,25 @@ nav.navbar {
   justify-content: end !important;
 }
 
+@media (max-width: 1400px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 400px;
+    margin: 0px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
 .cardaut {
   width: 40vw;
   min-width: 250px;
