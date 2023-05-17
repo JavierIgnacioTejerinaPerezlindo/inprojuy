@@ -59,6 +59,7 @@ h1 {
   background: rgba(211, 211, 211);
   color: rgba(87, 87, 87);
 }
+
 .fondotransparente4 {
   padding: 0%;
   margin-left: auto !important;
@@ -68,6 +69,7 @@ h1 {
   width: 95%;
   min-width: 320px;
 }
+
 .fondotransparente {
   font-size: 1.4rem;
   color: rgba(87, 87, 87);
@@ -167,32 +169,6 @@ nav.navbar {
   z-index: 10000 !important;
 }
 
-.card-title a {
-  color: white;
-}
-
-.noticard {
-  margin: auto;
-  width: 95%;
-  height: 50vh;
-}
-
-.imgnoti {
-  height: 100%;
-  object-fit: cover;
-}
-
-.contcard {
-  min-width: 318px;
-  max-width: 470px;
-  box-sizing: border-box;
-}
-
-.contenedorcardnoti {
-
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
 .margenazul {
   border-left-style: solid !important;
@@ -217,9 +193,44 @@ nav.navbar {
   border-radius: 0%;
 }
 
-.card-img {
-  border-radius: 5%;
-  box-sizing: border-box !important;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 400px;
+  margin: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+
+  .card {
+    display: flex;
+
+    
+    .card-img {
+      align-items: center;
+      justify-items: center;
+border-radius: 0%;
+      box-sizing: border-box !important;
+      width: 100%;
+      height: 400px;
+object-fit: cover;
+      min-width: 300px;
+      filter: brightness(60%);
+    }
+    .card-img-overlay {
+      height: max-content;
+text-align: end !important;
+    align-items: end !important;
+    align-content: end !important;
+      overflow: hidden;
+justify-items: end !important;
+justify-content: end !important;
+
+
+     
+    }
+  }
 }
 
 .cardaut {
@@ -238,21 +249,25 @@ nav.navbar {
   border-radius: 0%;
   box-shadow: (5px 7px 10px rgba(0, 0, 0, 0.5));
 }
-.btn-titulo{
+
+.btn-titulo {
   display: block;
   text-align: center;
 }
-.contcaja{
+
+.contcaja {
   display: flex;
 }
-.titulocaja{
+
+.titulocaja {
   size: 3rem;
   display: inline-block;
   color: white;
   font-weight: bold;
   padding: 1rem;
 }
-.cajaroja{
+
+.cajaroja {
   display: inline-flex;
   background-color: $danger;
   width: 20%;
@@ -262,7 +277,8 @@ nav.navbar {
   align-items: center;
   justify-items: center;
 }
-.cajazul{
+
+.cajazul {
   display: inline-flex;
   background-color: $primary;
   width: 20%;
@@ -272,7 +288,8 @@ nav.navbar {
   align-items: center;
   justify-items: center;
 }
-.cajagris{
+
+.cajagris {
   display: inline-flex;
   background-color: rgb(87, 87, 87);
   width: 20%;
@@ -282,7 +299,8 @@ nav.navbar {
   align-items: center;
   justify-items: center;
 }
-.cajagrisclaro{
+
+.cajagrisclaro {
   display: inline-flex;
   background-color: rgb(211, 211, 211);
   width: 20%;
@@ -292,12 +310,14 @@ nav.navbar {
   align-items: center;
   justify-items: center;
 }
-.cuerpo{
+
+.cuerpo {
   display: inline-block;
   width: 85%;
   padding: 3rem;
   font-size: 2rem;
 }
-.casinos{
+
+.casinos {
   width: 100vw !important;
 }
