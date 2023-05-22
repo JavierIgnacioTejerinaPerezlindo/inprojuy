@@ -5,7 +5,7 @@ const JuegoResponsable = () => {
    
     <div className='text-left text-justify container fondotransparente p-5' >
        <br/>
-      <center ><h1 className='p-5'>JUEGO RESPONSABLE</h1></center>
+      <center ><h1 className='p-5 botonbordeazul text-white px-5 mx-5 py-3'>JUEGO RESPONSABLE</h1></center>
       <p className='p-3'> 
       Es hacerlo responsablemente, implica jugar en sitios autorizados que se desarrollan en un entorno seguro, regulado, controlado, y transparente, donde se respetan los principios de Juego Responsable. El juego es una actividad de ocio y entretenimiento, nunca debe interferir en las obligaciones sociales, profesionales o familiares. Con el único objetivo del entretenimiento, la distracción, en donde nunca el valor de lo jugado supera lo que el individuo se puede permitir.
       </p>

@@ -4,7 +4,7 @@ const SitiosAutorizados = () => {
     return (
         <div className='container fondotransparente p-5'>
 
-            <h1 class="entry-title entry--item h2">Sitios Autorizados</h1>
+            <center><h1 class="p-5 botonbordeazul text-white px-5 mx-5 py-3">Sitios Autorizados</h1></center>
 
 
 

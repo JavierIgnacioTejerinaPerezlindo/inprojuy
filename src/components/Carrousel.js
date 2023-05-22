@@ -8,20 +8,20 @@ const Carrousel = () => {
                          
           <div className="carousel-item active">
             <a href="https://juj.lotemovil.com.ar" target="_blank">
-              <img src="./img/slider_4.jpg" className="d-block w-100" alt="..." />
+              <img src="./img/resultados.jpg" className="d-block w-100" alt="..." />
             </a>
           </div>
           <div className="carousel-item">
             <img src="./img/slider_5.jpeg" className="d-block w-100" alt="..." />
           </div>
                 <div className="carousel-item">
-            <img src="./img/slider_7.jpg" className="d-block w-100" alt="..." />
+            <img src="./img/telekino.jpg" className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
             <img src="./img/quini.jpg" className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src="./img/slider_9.jpg" className="d-block w-100" alt="..." />
+            <img src="./img/brinco.jpg" className="d-block w-100" alt="..." />
           </div>
 
         </div>

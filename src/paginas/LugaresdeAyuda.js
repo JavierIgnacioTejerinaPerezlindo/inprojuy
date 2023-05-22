@@ -4,7 +4,7 @@ const LugaresdeAyuda = () => {
     return (
         <div className='container fondotransparente p-5'>
 
-            <h1 class=" h2">Lugares de Ayuda</h1>
+            <center><h1 class="p-5 botonbordeazul text-white px-5 mx-5 py-3 ">Lugares de Ayuda</h1></center>
 
             <h4>DTC SAN PEDRO</h4>
 

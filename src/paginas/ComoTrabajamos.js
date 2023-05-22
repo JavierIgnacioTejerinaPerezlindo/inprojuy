@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const ComoTrabajamos = () => {
     return (
         <div className='container fondotransparente p-5'>
-            <h1 class="h1">¿Cómo trabajamos?</h1>
-
+            <center><h1 class="botonbordeazul text-white px-5 mx-5 py-3">¿Cómo trabajamos?</h1></center>
+            <p></p>
             <ul>
                 <li>Entrevista: Se realiza un cuestionario con la finalidad de determinar la situación actual y personal de quien acude, considerando sus diferentes aspectos: sociales, psicológico, laboral y económico. &nbsp;Podes acercarte al INPROJUY, o llamar por teléfono</li>
                 <li>Asesoramiento e información: Se brinda información respecto al formulario de autoexclusión y en relación a la problemática del juego.</li>

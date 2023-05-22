@@ -4,7 +4,7 @@ const InstitucionalDelegaciones = () => {
     return (
         <div className='container p-3 fondotransparente'>
             <center>
-            <h1 className='p-5'>Delegaciones del Interior</h1>
+            <h1 className='p-5 botonbordeazul text-white px-5 mx-5 py-3'>Delegaciones del Interior</h1>
             </center>
                         <div className="card mb-3 mx-auto " style={{maxWidth: "70%"}}>
                 <div className="row g-0">

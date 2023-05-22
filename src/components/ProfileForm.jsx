@@ -127,7 +127,7 @@ function UserProfile() {
   return (
     <div className="container">
       <h2 className="h1 text-center p-4">Mi Perfil</h2>
-      <form onSubmit={handleSubmit} className="form">
+      <form onSubmit={handleSubmit} className="container fondotransparente form text-center">
         <div className="form-group">
           <label htmlFor="nombre" className="h5">Nombre:</label>
           <input
@@ -136,7 +136,7 @@ function UserProfile() {
             name="nombre"
             value={formValues.nombre}
             onChange={handleChange}
-            className="form-control"
+            className="form-control col-6"
           />
         </div>
         <div className="form-group">

@@ -9,7 +9,7 @@ const NotiCapacitacion = () => {
       <p className='p-5'>En el SAME, se llevó a cabo la capacitación a operadores de Inprojuy que atenderán las llamadas para quienes necesiten contención en Trastorno por Juego.</p>
 
 
-<img src=".\noticias\img\noticapacitacion.webp" className='centrar'/>
+<img src=".\noticias\img\capacitacion.jpg" className='centrar'/>
 
 
 <p className='p-5'>Este encuentro formativo se desarrolla dentro del programa Juga x jugar, que lleva adelante <strong>Inprojuy</strong> con el objetivo de acompañar, asistir y contener a las personas que tienen un problema con el vínculo que crean el juego. Con esta línea recientemente incorporada se podrá llegar a más personas que necesiten ayuda.</p>
