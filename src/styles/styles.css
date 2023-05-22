@@ -10620,4 +10620,9 @@ nav.navbar {
 
 .casinos {
   width: 100vw !important;
+}
+
+.navbar-nav {
+  text-align: center !important;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
