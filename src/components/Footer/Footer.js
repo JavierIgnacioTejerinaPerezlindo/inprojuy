@@ -11,7 +11,7 @@ const Footer = () => {
                 <nav className="row m-0 p-0">
 
                     <ul className="col-12 col-md-4 px-4 list-unstyled">
-                        <ul className="navbar-nav mb-2 mb-lg-0 align-middle d-flex flex-row">
+                        <ul className="navbar-nav mb-2 mb-lg-0 align-middle d-flex flex-row letra_menu">
                             <li className="nav-item dropdown p-3">
                                 <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Institucional

@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "MiFuentemenu";
+  src: url("../../public/letras/BarlowCondensed-Medium.ttf") format("truetype");
+  /* Puedes agregar más formatos aquí si lo deseas */
+}
+@font-face {
+  font-family: "MiFuentenoticiastitulo";
+  src: url("../../public/letras/DINCond-Black.otf") format("truetype");
+  /* Puedes agregar más formatos aquí si lo deseas */
+}
+@font-face {
+  font-family: "MiFuentetitulo";
+  src: url("../../public/letras/DINCond-Medium.otf") format("truetype");
+  /* Puedes agregar más formatos aquí si lo deseas */
+}
+@font-face {
+  font-family: "MiFuenteParrafo";
+  src: url("../../public/letras/Museo500-Regular.otf") format("truetype");
+  /* Puedes agregar más formatos aquí si lo deseas */
+}
 /* @import "../node_modules/bootstrap/scss/maps"; */
 /* @import "../node_modules/bootstrap/scss/mixins"; */
 /* @import "../node_modules/bootstrap/scss/root"; */
@@ -10388,6 +10408,7 @@ h1, .h1 {
 }
 
 p {
+  font-family: "MiFuenteParrafo";
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 10px;
@@ -10548,6 +10569,7 @@ nav.navbar {
   background-color: rgb(215, 65, 42);
   border-radius: 0%;
   box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5);
+  font-family: "MiFuentetitulo";
 }
 
 .btn-titulo {
@@ -10625,4 +10647,16 @@ nav.navbar {
 .navbar-nav {
   text-align: center !important;
   align-items: center;
+}
+
+.letra_menu {
+  font-family: "MiFuentemenu";
+}
+
+.titulonoticias {
+  font-family: "MiFuentenoticiastitulo";
+}
+
+.titulop {
+  font-family: "MiFuentetitulo";
 }/*# sourceMappingURL=styles.css.map */

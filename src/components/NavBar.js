@@ -18,7 +18,7 @@ const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse h4 " id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 h3 align-middle">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 h3 align-middle letra_menu">
                         <li className="nav-item dropdown">
                             <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Institucional

@@ -19,7 +19,7 @@ const Cards = ({ showAllCards }) => {
   let maxCards = showAllCards ? tabn.length : 4
 
   return (
-    <div   className="wrapper " >
+    <div   className="wrapper titulonoticias" >
       {tabn.slice(0, maxCards).map((noticia, index) => (
         <Card
           key={index}
