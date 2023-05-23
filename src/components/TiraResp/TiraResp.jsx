@@ -5,7 +5,7 @@ const TiraResp = () => {
  
   return (
     <div className="tira"  >
-  <img src="../img/tiraresp.jpg"></img>
+  <img src="../img/tiraresp1.jpg"></img>
     </div>
   )
 }

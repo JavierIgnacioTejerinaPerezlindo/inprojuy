@@ -3,7 +3,7 @@ import React from 'react'
 const Reglamentos = () => {
     return (
         <div className='container fondotransparente p-5 my-5 '>
-            <h1 className="entry-title entry--item h2">Leyes y Reglamentos</h1>
+            <center><h1 className=" p-5 botonbordeazul text-white px-5 mx-5 py-3">Leyes y Reglamentos</h1></center>
             <br />
 
             <p>Encontrá todas las Leyes y Reglamentos publicadas en InProJuy.</p>

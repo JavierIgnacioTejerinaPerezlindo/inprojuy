@@ -4,7 +4,7 @@ const Recomendaciones = () => {
     return (
         <div className='container fondotransparente p-5'>
 
-            <h1 class="text-center h1">Recomendaciones Generales</h1>
+            <center><h1 class="p-5 botonbordeazul text-white px-5 mx-5 py-3">Recomendaciones Generales</h1></center>
             <br/>
             <div class="">
                 <img src=".\img\recomendaciones.jpg" className="img-fluid mx-auto d-block" />

@@ -16,7 +16,7 @@ function Logout() {
     };
     return (
 <div className="">
-                <h1 className="">Perfil de Usuario</h1>
+                <center><h1 className="botonbordeazul text-white px-5 mx-5 py-3 h1">Perfil de Usuario</h1></center>
                
             <div className="animate-pulse">
                 <h2 className="my-3">E-mail: {auth.user}</h2>

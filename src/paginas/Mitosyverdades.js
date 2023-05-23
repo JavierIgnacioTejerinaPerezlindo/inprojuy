@@ -4,7 +4,7 @@ const Mitosyverdades = () => {
     return (
         <div className='container fondotransparente p-5'>
 
-            <h1 class="entry-title entry--item h2">Mitos y Verdades</h1>
+            <center><h1 class="p-5 botonbordeazul text-white px-5 mx-5 py-3">Mitos y Verdades</h1></center>
 
             <p><strong>Mito y realidad en torno al juego</strong></p>
 

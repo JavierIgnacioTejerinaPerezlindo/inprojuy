@@ -4,7 +4,7 @@ const Quetaljuegoyo = () => {
     return (
         <div className='container fondotransparente p-5'>
 
-            <h1 class="entry-title entry--item h2">¿Qué tal juego yo?</h1>
+            <center><h1 class="botonbordeazul text-white px-5 mx-5 py-3">¿Qué tal juego yo?</h1></center>
 
             <p><strong>Evalúa tu Comportamiento:</strong></p>
 

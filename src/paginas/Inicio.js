@@ -37,11 +37,11 @@ const Inicio = () => {
 
 			<JuegoOnline/>
 			<VideoCarrusel />
-			<div className='p-5'>
+			<div className=''>
 
-			<Cards />
-			<Link className='btn-titulo' to={'/noticias'}><div className='botonbordeazul'><h2 className='text-white px-5 mx-5 py-3 h1'>MAS NOTICIAS</h2></div></Link>
-			</div>
+			<Cards /></div>
+			<Link className='btn-titulo p-4' to={'/noticias'}><div className='botonbordeazul'><h2 className='text-white px-5 mx-5 py-3 h1'>MAS NOTICIAS</h2></div></Link>
+			
 
 
 
