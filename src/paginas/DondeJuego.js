@@ -4,7 +4,7 @@ const DondeJuego = () => {
   return (
     <div className='container fondotransparente p-5'>
     
-			<h1 class=" h1">¿Dónde Juego?</h1>	
+			<center><h1 class="p-5 botonbordeazul text-white px-5 mx-5 py-3">¿Dónde Juego?</h1>	</center>
 			
 <p><strong>RECONOCIMIENTO DE AGENCIAS Y CORREDORES HABILITADOS.</strong> Aquí podrás encontrar las Agencias de Tómbola Habilitadas por Inprojuy. </p>
 
