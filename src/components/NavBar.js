@@ -59,10 +59,10 @@ const NavBar = () => {
                         </li>                 
                         <li className="nav-item dropdown">
                             <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Juego legal
+                                Juego Ilegal
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-3">
-                                <li><Link className="dropdown-item h5" to='/'>¿Que es el juego legal?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/'>¿Que es el juego Ilegal?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/'>Prevencion del lavado de activos</Link></li>
                                 <li><Link className="dropdown-item h5" to='/'>Denuncias</Link></li>
                             </ul>

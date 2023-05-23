@@ -12,6 +12,9 @@ const Carrousel = () => {
             </a>
           </div>
           <div className="carousel-item">
+            <img src="./img/loteria.jpg" className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
             <img src="./img/slider_5.jpeg" className="d-block w-100" alt="..." />
           </div>
                 <div className="carousel-item">

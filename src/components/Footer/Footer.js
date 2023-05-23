@@ -48,10 +48,10 @@ const Footer = () => {
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Juego legal
+                                    Juego Ilegal
                                 </a>
                                 <ul className="dropdown-menu fondotransparente2 p-3">
-                                    <li><Link className="dropdown-item h5" to='/'>¿Que es el juego legal?</Link></li>
+                                    <li><Link className="dropdown-item h5" to='/'>¿Que es el juego Ilegal?</Link></li>
                                     <li><Link className="dropdown-item h5" to='/'>Prevencion del lavado de activos</Link></li>
                                     <li><Link className="dropdown-item h5" to='/'>Denuncias</Link></li>
                                 </ul>
@@ -61,7 +61,7 @@ const Footer = () => {
                         </ul>
                         <li className="Text-center text-light  p-3  " ><i className="bi bi-geo-alt-fill mr-2"></i>   Avda Italia 39 S. S. de Jujuy </li>
                         <li className="Text-center text-light  p-3" > <i className="bi bi-globe mr-2"></i> www.inprojuy.gob.ar </li>
-                        <li className="Text-center text-light  p-3" >  <i className="bi bi-telephone-fill mr-2"></i> Tel: 388 456 3888 </li>
+                        <li className="Text-center text-light  p-3" >  <i className="bi bi-telephone-fill mr-2"></i> Tel: 388 422 3812 </li>
                     </ul>
                     <Link to='/' className="col-12 col-md-4 d-flex align-items-center justify-content-end">
                         <img src="../img/logogob.png" className="p-2" width="200"></img>
