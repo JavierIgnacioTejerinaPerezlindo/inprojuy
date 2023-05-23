@@ -19,8 +19,8 @@ const NavBar = () => {
                 </button>
                 <div className="collapse navbar-collapse h4 " id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 h3 align-middle">
-                        <li className="nav-item dropdown">
-                            <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li className="nav-item dropdown underline">
+                            <a className="nav-link text-white luzhover " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Institucional
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-3">
