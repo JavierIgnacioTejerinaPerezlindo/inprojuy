@@ -10574,17 +10574,6 @@ nav.navbar {
     grid-auto-rows: 400px;
   }
 }
-@media (max-width: 768px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: 400px;
-    margin: 0px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-}
 .cardaut {
   width: 40vw;
   min-width: 250px;
@@ -10699,4 +10688,48 @@ nav.navbar {
 
 .contimg img {
   width: 100%;
+}
+
+.contact {
+  width: 100%;
+  justify-content: center;
+  padding: 4rem;
+  background-color: rgb(59, 160, 168);
+}
+.contact .contactgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: 550px;
+}
+.contact .contactmap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+}
+.contact .contactmap .iframemap {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 400px;
+    margin: 0px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .contact {
+    padding: 1rem;
+  }
+  .contact .contactgrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: 550px;
+  }
 }/*# sourceMappingURL=styles.css.map */

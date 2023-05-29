@@ -9,20 +9,21 @@
   font-family: 'MiFuentenoticiastitulo';
   src: url('../../public/letras/DINCond-Black.otf') format('truetype');
   /* Puedes agregar más formatos aquí si lo deseas */
-  
+
 }
+
 @font-face {
   font-family: 'MiFuentetitulo';
   src: url('../../public/letras/DINCond-Medium.otf') format('truetype');
   /* Puedes agregar más formatos aquí si lo deseas */
-  
+
 }
 
 @font-face {
   font-family: 'MiFuenteParrafo';
   src: url('../../public/letras/Museo500-Regular.otf') format('truetype');
   /* Puedes agregar más formatos aquí si lo deseas */
-  
+
 }
 
 $primary: rgba(59, 160, 168, 1);
@@ -70,6 +71,7 @@ h1 {
 .luzhover:hover {
   filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
 }
+
 .underline {
   color: $danger;
   font-size: 6rem;
@@ -95,7 +97,7 @@ h1 {
   transform-origin: bottom left;
 }
 
-.fondorojo{
+.fondorojo {
   background-color: $danger;
   color: white;
   padding: 3rem;
@@ -289,27 +291,18 @@ nav.navbar {
     }
   }
 }
+
 @media (max-width: 1400px) {
 
-.wrapper{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: 400px;
-}
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 400px;
   }
-  @media (max-width: 768px) {
+}
 
-    .wrapper{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 10px;
-      grid-auto-rows: 400px;
-      margin: 0px;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
-      }
+
 
 .cardaut {
   width: 40vw;
@@ -327,7 +320,7 @@ nav.navbar {
   border-radius: 0%;
   box-shadow: (5px 7px 10px rgba(0, 0, 0, 0.5));
   font-family: 'MiFuentetitulo';
-  
+
 }
 
 .btn-titulo {
@@ -402,26 +395,81 @@ nav.navbar {
 .casinos {
   width: 100vw !important;
 }
-.navbar-nav{
+
+.navbar-nav {
   text-align: center !important;
   align-items: center;
 }
-.letra_menu{
+
+.letra_menu {
   font-family: 'MiFuentemenu';
 }
-.titulonoticias{
+
+.titulonoticias {
   font-family: 'MiFuentenoticiastitulo';
 }
 
-.titulop{
+.titulop {
   font-family: 'MiFuentetitulo';
 }
-.contimg{
+
+.contimg {
   width: 100%;
 
 
 }
-.contimg img{
+
+.contimg img {
 
   width: 100%;
+}
+
+.contact {
+  width: 100%;
+  justify-content: center;
+  padding: 4rem;
+  background-color: $primary;
+
+  .contactgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: 550px;
+    
+
+  }
+
+  .contactmap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+
+    .iframemap {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 400px;
+    margin: 0px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .contact{
+  padding: 1rem;
+  .contactgrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: 550px;
+    
+
+  }}
 }
