@@ -4,10 +4,14 @@ import 'firebase/firestore';
 import { useAuth, AuthProvider } from "../context/AuthContext";
 import { db } from "../firebase/firebase.config";
 import { doc, setDoc, getDoc, collection, getDocs } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
+import { Modal, Button } from 'react-bootstrap';
+
 
 function UserProfile() {
   const auth = useAuth();
   const usera = auth.id;
+  const navigate = useNavigate();
 
   const [userData, setUser] = useState(null);
   const [formValues, setFormValues] = useState({
@@ -23,6 +27,7 @@ function UserProfile() {
   });
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const getUserData = async () => {
@@ -70,6 +75,11 @@ function UserProfile() {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
 
+  const handleCloseModal = () => {
+    setShowModal(false);
+    navigate('/login');
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -112,6 +122,7 @@ function UserProfile() {
       setUser(userData);
       setSuccessMessage('Cambios guardados correctamente');
       setErrorMessage('');
+      setShowModal(true); // Mostrar el modal de éxito
     } catch (error) {
       setErrorMessage('Error al guardar los cambios');
       console.log(error);
@@ -231,6 +242,18 @@ function UserProfile() {
         {successMessage && <div className="text-success">{successMessage}</div>}
         <button type="submit" className="btn btn-primary mt-4">Guardar Cambios</button>
       </form>
+
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Éxito</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Los cambios se han guardado correctamente.</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleCloseModal}>Aceptar</Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }

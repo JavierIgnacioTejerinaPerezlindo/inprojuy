@@ -5,7 +5,7 @@ const JuegoOnline = () => {
  
   return (
     <div className="juego"  >
-  <img src="../img/juegoonline.jpg"></img>
+  <a href="https://casinosmacgroup.bet.ar" target="_blank" ><img src="../img/juegoonline.jpg"></img></a>
     </div>
   )
 }

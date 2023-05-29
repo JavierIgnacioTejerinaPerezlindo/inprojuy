@@ -2,6 +2,7 @@ import React from "react";
 import Form from "../components/Form";
 import {useAuth} from "../context/AuthContext"
 import Logout from "../components/Logout";
+import UserProfile from "../components/ProfileForm";
 
 
 function Register() {
@@ -10,7 +11,7 @@ function Register() {
   return (
     <div className="container fondotransparente center form" >
       {auth.user.length > 0
-      ?<Logout/>
+      ?<UserProfile/>
       :<Form nameForm="Registrarse" />
       }
     </div>
