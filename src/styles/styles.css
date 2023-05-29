@@ -10695,6 +10695,7 @@ nav.navbar {
   justify-content: center;
   padding: 4rem;
   background-color: rgb(59, 160, 168);
+  color: white;
 }
 .contact .contactgrid {
   display: grid;
