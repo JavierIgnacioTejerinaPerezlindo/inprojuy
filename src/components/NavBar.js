@@ -56,7 +56,7 @@ const NavBar = () => {
                                 <li><Link className="dropdown-item h5" to='/recomendaciones'>Recomendaciones</Link></li>
                                 <li><Link className="dropdown-item h5" to='/lugaresdeayuda'>Lugares de Ayuda</Link></li>
                             </ul>
-                        </li>                 
+                        </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Juego Ilegal
@@ -67,7 +67,7 @@ const NavBar = () => {
                                 <li><Link className="dropdown-item h5" to='/'>Denuncias</Link></li>
                             </ul>
                         </li>
-                     <li className="nav-item dropdown">
+{/*                         <li className="nav-item dropdown">
                             <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Una Más!
                             </a>
@@ -78,22 +78,22 @@ const NavBar = () => {
                                 <li><Link className="dropdown-item h5" to='/'>Premios</Link></li>
                                 <li><Link className="dropdown-item h5" to='/'>Ganadores</Link></li>
                                 <li><Link className="dropdown-item h5" to='/'>Galeria de fotos</Link></li>
-                               
+
                                 {auth.user === "" ? (
-                            <>
-                                 <li className="dropdown-item h5">
-                                    <Link className='' to="/login">Ingresar</Link>
-                                </li>
-                            </>
-                        ) : (
-                            <></>
-                        )}
+                                    <>
+                                        <li className="dropdown-item h5 botonbordeazul rounded">
+                                            <Link className='' to="/login">INGRESAR</Link>
+                                        </li>
+                                    </>
+                                ) : (
+                                    <></>
+                                )}
                             </ul>
-                        </li>                 
+                        </li>
 
                         {auth.user === "" ? (
                             <>
-                                
+
                             </>
                         ) : (
                             <li className="nav-item">
@@ -102,7 +102,7 @@ const NavBar = () => {
 
                                 </Link>
                             </li>
-                        )}
+                        )} */}
 
 
                     </ul>
