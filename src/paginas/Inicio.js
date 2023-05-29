@@ -10,6 +10,7 @@ import Ganadores from '../components/Ganadores/Ganadores';
 import Salas from '../components/salas/Salas';
 import TiraResp from '../components/TiraResp/TiraResp';
 import JuegoOnline from '../components/juegoonline/JuegoOnline';
+import Contacto from '../components/Contacto/Contacto'
 
 
 
@@ -42,6 +43,7 @@ const Inicio = () => {
 			<Cards /></div>
 			<Link className='btn-titulo p-4' to={'/noticias'}><div className='botonbordeazul'><h2 className='text-white px-5 mx-5 py-3 h1'>MAS NOTICIAS</h2></div></Link>
 			
+			<Contacto/>
 
 
 
