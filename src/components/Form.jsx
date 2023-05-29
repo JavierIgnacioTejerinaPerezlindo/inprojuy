@@ -9,8 +9,18 @@ function Form({ nameForm }) {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const [secondPassword, setSecondPassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
   const auth = useAuth();
   const error = auth.error;
+
+  const validatePassword = () => {
+    if (password.length < 6) {
+      setPasswordError("La contraseña debe tener al menos 6 caracteres");
+      return false;
+    }
+    // Agrega otras restricciones de validación de la contraseña aquí según tus necesidades
+    return true;
+  };
 
   const handlerAuth = (e) => {
     e.preventDefault();
@@ -22,7 +32,7 @@ function Form({ nameForm }) {
       }
     } else if (nameForm === "Registrarse") {
       try {
-        if (password === secondPassword) {
+        if (password === secondPassword && validatePassword()) {
           console.log("por entrar" + user + email + password);
           auth.register(user, email, password);
         }
@@ -48,7 +58,7 @@ function Form({ nameForm }) {
             <div className="text-center">
               <div className="text-danger p-2">
                 {error && nameForm === "Registrarse" ? (
-                  <a>Email ya registrado</a>
+                  <a>Error al Registrarse</a>
                 ) : (
                   <a>Error de Credenciales</a>
                 )}
@@ -195,6 +205,7 @@ function Form({ nameForm }) {
                 </Link>
               )}
             </div>
+            {passwordError && <p className="text-danger">{passwordError}</p>}
           </form>
         </div>
       </div>

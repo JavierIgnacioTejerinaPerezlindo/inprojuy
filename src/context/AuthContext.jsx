@@ -44,6 +44,8 @@ export function AuthProvider({ children }) {
   }, []);
 
   const register = async (username, email, password, rol = "user") => {
+    console.log('antes del try ' + username);
+
     try {
       const response = await createUserWithEmailAndPassword(
         auth,
@@ -63,6 +65,8 @@ export function AuthProvider({ children }) {
       <Link to={'/'} />;
     } catch (error) {
       setError(error.message);
+      console.log('error ' + error.message);
+
     }
   };
   const registerg = async (email, rol = "user") => {
