@@ -67,14 +67,16 @@ const NavBar = () => {
                                 <li><Link className="dropdown-item h5" to='/'>Denuncias</Link></li>
                             </ul>
                         </li>
-                        {/*  <li className="nav-item dropdown">
+
+
+                      <li className="nav-item dropdown">
                             <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Una Más!
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-3">
 
                                 <li><Link className="dropdown-item h5" to="/">¿Quiénes pueden participar?</Link></li>
-                                <li><Link className="dropdown-item h5" to="/">¿Cómo cargar el cupón?</Link></li>
+                                <li><Link className="dropdown-item h5" to="/videounamas">¿Cómo cargar el cupón?</Link></li>
                                 <li><Link className="dropdown-item h5" to="/">¿Cuándo sortea?</Link></li>
                                 <li><Link className="dropdown-item h5" to="/">Premios</Link></li>
                                 <li><Link className="dropdown-item h5" to="/">Ganadores</Link></li>
@@ -103,7 +105,7 @@ const NavBar = () => {
 
                                 </Link>
                             </li>
-                        )} */}
+                        )}
 
 
                     </ul>
