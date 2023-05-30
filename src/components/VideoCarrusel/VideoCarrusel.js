@@ -7,6 +7,8 @@ import vid2 from "./videos/juego-responsable.mp4"
 import vid3 from "./videos/Lavadodeactivos.mp4"
 import vid4 from "./videos/telekino.mp4"
 import vid5 from "./videos/PALPITO.mp4"
+import vid6 from "./videos/unamas.mp4"
+
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -48,6 +50,13 @@ const VideoCarrusel = () => {
             src: vid5,
             credit: "INPROJUY",
             tiempo: 38000
+        },
+        {
+            id: 6,
+            title: "Una Más",
+            src: vid6,
+            credit: "INPROJUY",
+            tiempo: 49000
         }
     ]
 

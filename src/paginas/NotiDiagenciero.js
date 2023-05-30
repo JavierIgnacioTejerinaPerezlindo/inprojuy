@@ -2,10 +2,11 @@ import React from 'react'
 
 const NotiDiagenciero = () => {
     return (
-        <div className='container fondotransparente p-5 text-center'>
+        <div className='text-left text-justify container fondotransparente p-5' >
+<center ><h1 className='p-5 botonbordeazul text-white px-5 mx-5 py-3'>INPROJUY conmemoró el Día del Agenciero</h1></center>
 
-            <h1 className='p-3'>INPROJUY conmemoró el Día del Agenciero</h1>
-            <h2> El Instituto Provincial de Juegos de azar, agasajó en su día a los agencieros de Tómbola de la provincia de Jujuy.</h2>
+<center><h3 className='p-3'> El Instituto Provincial de Juegos de azar, agasajó en su día a los agencieros de Tómbola de la provincia de Jujuy.</h3></center>
+          
 
             <img src="./noticias/img/notidiagenciero.jpg" className="centrar img-fluid my-3"/>
 
