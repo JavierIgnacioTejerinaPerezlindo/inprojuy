@@ -67,15 +67,15 @@ const NavBar = () => {
                                 <li><Link className="dropdown-item h5" to='/'>Denuncias</Link></li>
                             </ul>
                         </li>
-{/*                         <li className="nav-item dropdown">
+                        <li className="nav-item dropdown">
                             <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Una Más!
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-3">
-                                <li><Link className="dropdown-item h5" to='/'>¿quienes pueden participar?</Link></li>
-                                <li><Link className="dropdown-item h5" to='/'>¿Como cargar el cupon?</Link></li>
-                                <li><Link className="dropdown-item h5" to='/'>¿Cuando sortea?</Link></li>
-                                <li><Link className="dropdown-item h5" to='/'>Premios</Link></li>
+                                <li><Link className="dropdown-item h5" to='/quienespueden'>¿quienes pueden participar?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/comocargarcupon'>¿Como cargar el cupon?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/cuandosortea'>¿Cuando sortea?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/premios'>Premios</Link></li>
                                 <li><Link className="dropdown-item h5" to='/'>Ganadores</Link></li>
                                 <li><Link className="dropdown-item h5" to='/'>Galeria de fotos</Link></li>
 
@@ -102,7 +102,7 @@ const NavBar = () => {
 
                                 </Link>
                             </li>
-                        )} */}
+                        )}
 
 
                     </ul>

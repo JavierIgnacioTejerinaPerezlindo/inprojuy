@@ -26,7 +26,7 @@ const Inicio = () => {
 				<Contenido>
 					<img src='./img/horarios.jpg' useMap='#map' className='rounded'/>
 					<map name='map'>
-						<Link to={'/dondejuego'}><area shape='rect' coords='555, 340, 724, 371'/></Link>
+						<Link to={'/dondejuego'}><area href='' shape='rect' coords='555, 340, 724, 371'/></Link>
 					</map>
 				</Contenido>
 
