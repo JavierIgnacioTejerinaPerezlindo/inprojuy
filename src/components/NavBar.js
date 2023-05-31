@@ -24,14 +24,14 @@ const NavBar = () => {
                                 Institucional
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-3">
-                                <li><Link className="dropdown-item h5" to='/mision'>Mision, Vision, Objetivos</Link></li>
+                                <li><Link className="dropdown-item h5" to='/mision'>Misión, Visión, Objetivos</Link></li>
                                 <li><Link className="dropdown-item h5" to='/autoridades'>Autoridades y Organigrama</Link></li>
                                 <li><Link className="dropdown-item h5" to='/delegaciones'>Delegaciones del interior</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Juego
+                                Juegos
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-3">
                                 <li><Link className="dropdown-item h5" to='/reglamentos'>Reglamentos y Leyes</Link></li>
@@ -41,17 +41,17 @@ const NavBar = () => {
                                 <li><Link className="dropdown-item h5" to='/enconstruccion'>Sala de juegos</Link></li> */}
                                 <li><Link className="dropdown-item h5" to='/sitiosautorizados'>Sitios Autorizados</Link></li>
                                 <li><Link className="dropdown-item h5" to='/agencias'>Agencias</Link></li>
-                                <li><Link className="dropdown-item h5" to='/dondejuego'>¿Donde Juego?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/dondejuego'>¿Dónde Juego?</Link></li>
                             </ul>
                         </li>
-                        <li className="nav-item dropdown">
+                       <li className="nav-item dropdown">
                             <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Juego Responsable
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-3">
-                                <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Que significa?</Link></li>
-                                <li><Link className="dropdown-item h5" to='/comotrabajamos'>¿Como Trabajamos?</Link></li>
-                                <li><Link className="dropdown-item h5" to='/quetaljuego'>¿Como estoy jugando?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/juegoResponsable'>¿Qué significa?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/comotrabajamos'>¿Cómo Trabajamos?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/quetaljuego'>¿Cómo estoy jugando?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/mitosyverdades'>Mitos y Verdades</Link></li>
                                 <li><Link className="dropdown-item h5" to='/recomendaciones'>Recomendaciones</Link></li>
                                 <li><Link className="dropdown-item h5" to='/lugaresdeayuda'>Lugares de Ayuda</Link></li>
@@ -62,8 +62,8 @@ const NavBar = () => {
                                 Juego Ilegal
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-3">
-                                <li><Link className="dropdown-item h5" to='/'>¿Que es el juego Ilegal?</Link></li>
-                                <li><Link className="dropdown-item h5" to='/'>Prevencion del lavado de activos</Link></li>
+                                <li><Link className="dropdown-item h5" to='/'>¿Qué es el juego Ilegal?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/lavadodeactivos'>Prevención del lavado de activos</Link></li>
                                 <li><Link className="dropdown-item h5" to='/'>Denuncias</Link></li>
                             </ul>
                         </li>

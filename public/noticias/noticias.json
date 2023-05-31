@@ -1,5 +1,31 @@
 [
-
+    {
+        "titulo": "El Instituto Provincial de Juegos de azar, agasajó en su día a los agencieros de Tómbola de la provincia de Jujuy",
+        "fecha": 1500,
+        "idnoticia": 6,
+        "imagen": "./noticias/img/notidiagenciero.jpg",
+        "texto": "Este encuentro formativo se desarrolla dentro del programa Juga x jugar, que lleva adelante Inprojuy con el objetivo de acompañar, asistir y contener a las personas que tienen un problema con el vínculo que crean el juego. Con esta línea recientemente incorporada se podrá llegar a más personas que necesiten ayuda ",
+        "tipo": 1,
+        "linkn": "/notiDiagenciero"
+    },
+    {
+        "titulo": "Entrega de certificados a personal de INPROJUY",
+        "fecha": "01/04/2023",
+        "idnoticia": 1,
+        "imagen": "./noticias/img/certificados.jpg",
+        "texto": "Esta semana, en el Centro de Reuniones de ALEA, 21 integrantes de la Unidad Coordinadora de Prevención de Lavado de Activos de ALEA, de quince jurisdicciones participaron del encuentro de trabajo para la instancia preparatoria de cara a la 4ta. Ronda de Evaluación Mutua del GAFI a la República Argentina.",
+        "tipo": 1,
+        "linkn": "/certificados"
+    },
+    {
+        "titulo": "Diplomatura Universitaria en Innovación Tecnológica Y Organizacional en Gestión de Juegos de Azar",
+        "fecha": "02/04/2023",
+        "idnoticia": 5,
+        "imagen": "./noticias/img/diplomatura.jpg",
+        "texto": "Se conocieron los ganadores del concurso 'AGENDAME', y el 2º CONCURSO LITERARIO. Comenzó el 17 de febrero y concluyó el 17 de abril y contó con más de 100 participantes.",
+        "tipo": 1,
+        "linkn": "/diplomatura"
+    },
     {
         "titulo": "Ganadores del 2° Concurso Literario y 'Agendame'",
         "fecha": "02/04/2023",
@@ -9,6 +35,7 @@
         "tipo": 1,
         "linkn": "/notiGanadores"
     },
+
     {
         "titulo": "Prevención de Lavado de Activos: Trabajo coordinado junto a la UIF, de cara la Evaluación del GAFI",
         "fecha": "01/04/2023",
@@ -37,15 +64,7 @@
         "tipo": 1,
         "linkn": "/notiCapacitacion"
     },
-    {
-        "titulo": "El Instituto Provincial de Juegos de azar, agasajó en su día a los agencieros de Tómbola de la provincia de Jujuy",
-        "fecha": 1500,
-        "idnoticia": 6,
-        "imagen": "./noticias/img/notidiagenciero.jpg",
-        "texto": "Este encuentro formativo se desarrolla dentro del programa Juga x jugar, que lleva adelante Inprojuy con el objetivo de acompañar, asistir y contener a las personas que tienen un problema con el vínculo que crean el juego. Con esta línea recientemente incorporada se podrá llegar a más personas que necesiten ayuda ",
-        "tipo": 1,
-        "linkn": "/notiDiagenciero"
-    },
+
     {
         "titulo": "Seminario de Juego Responsable WLA CIBELAE, en Río de Janeiro, 22 al 24 de marzo",
         "fecha": 1500,

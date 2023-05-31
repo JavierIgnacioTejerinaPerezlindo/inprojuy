@@ -15,6 +15,9 @@ import Agencias from './paginas/Agencias';
 import NotiAgendame from './paginas/NotiAgendame';
 import NotiCapacitacion from './paginas/NotiCapacitacion';
 import NotiPrevencion from './paginas/NotiPrevencion';
+import Lavadodeactivos from './paginas/LavadoDeActivos';
+import Certificados from './paginas/noticias/Certificados';
+import Diplomatura from './paginas/noticias/Diplomatura';
 import NotiSeminario from './paginas/NotiSeminario';
 import NotiDiagenciero from './paginas/NotiDiagenciero';
 import Enconstruccion from './paginas/Enconstruccion';
@@ -32,6 +35,8 @@ import Recomendaciones from './paginas/Recomendaciones';
 import DondeJuego from './paginas/DondeJuego';
 import NoGanadores from './components/cuponesNo/NoGanadores';
 import ProfileForm from './components/ProfileForm';
+import Videounamas from './paginas/Videounamas';
+
 import NotiGanadores from './paginas/NotiGanadores';
 import React, { useState, useEffect } from 'react';
 import InproLoader from './components/loader/Loader';
@@ -94,8 +99,13 @@ function App() {
               <Route path='/notiganadores' element={<NotiGanadores />} />
               <Route path='/notiCapacitacion' element={<NotiCapacitacion />} />
               <Route path='/notiPrevencion' element={<NotiPrevencion />} />
+              <Route path='/lavadodeactivos' element={<Lavadodeactivos/>} />
+              <Route path='/certificados' element={<Certificados/>} />
+              <Route path='/diplomatura' element={<Diplomatura/>} />
               <Route path='/notiSeminario' element={<NotiSeminario />} />
               <Route path='/notiDiagenciero' element={<NotiDiagenciero />} />
+              <Route path='/videounamas' element={<Videounamas />} />
+
               <Route path='/comotrabajamos' element={<ComoTrabajamos />} />
               <Route path='/quetaljuego' element={<Quetaljuegoyo />} />
               <Route path='/sitiosautorizados' element={<SitiosAutorizados />} />
