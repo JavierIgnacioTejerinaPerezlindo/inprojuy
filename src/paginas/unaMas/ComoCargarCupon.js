@@ -1,4 +1,5 @@
 import React from 'react'
+import VideoComponent from '../../components/VideoComponent'
 
 const ComoCargarCupon = () => {
   return (
@@ -8,9 +9,14 @@ const ComoCargarCupon = () => {
             <h2 className='titulocaja'>¿Como Cargar el Cupon?</h2>
         </div>
         <div className='cuerpo'>
-            <p>Para registrarse, los participantes deberán ingresar al Sitio Web (http://inprojuy.gob.ar), y cargar sus Datos Personales, para generar su Perfil.</p>
+            <p>Para registrarse, los participantes deberán ingresar al Sitio Web <a href='https://inprojuy.gob.ar'>(InProJuy)</a>, y cargar sus Datos Personales, para generar su Perfil.</p>
+            
         </div>
     </div>
+    <VideoComponent
+        title="Una mas!"
+        videoSrc="./download/unamas.mp4"
+      />
     </div>
   )
 }

@@ -41,10 +41,10 @@ import NotiGanadores from './paginas/NotiGanadores';
 import React, { useState, useEffect } from 'react';
 import InproLoader from './components/loader/Loader';
 import Wrapper from './components/loader/Wrapper';
-import QuienesPuedenParticipar from './paginas/una mas/QuienesPuedenParticipar';
-import ComoCargarCupon from './paginas/una mas/ComoCargarCupon';
-import CuandoSortea from './paginas/una mas/CuandoSortea';
-import Premios from './paginas/una mas/Premios';
+import QuienesPuedenParticipar from './paginas/unaMas/QuienesPuedenParticipar';
+import ComoCargarCupon from './paginas/unaMas/ComoCargarCupon';
+import CuandoSortea from './paginas/unaMas/CuandoSortea';
+import Premios from './paginas/unaMas/Premios';
 
 
 

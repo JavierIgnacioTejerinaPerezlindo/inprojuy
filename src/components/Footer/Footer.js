@@ -12,7 +12,7 @@ const Footer = () => {
 
                     <ul className="col-12 col-md-4 px-4 list-unstyled">
                         <ul className="navbar-nav mb-2 mb-lg-0 align-middle d-flex flex-row letra_menu">
-                            <li className="nav-item dropdown p-3">
+                            <li className="nav-item dropdown p-2">
                                 <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Institucional
                                 </a>
@@ -22,7 +22,7 @@ const Footer = () => {
                                     <li><Link className="dropdown-item h5" to='/delegaciones'>Delegaciones del interior</Link></li>
                                 </ul>
                             </li>
-                            <li className="nav-item dropdown  p-3">
+                            <li className="nav-item dropdown  p-2">
                                 <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Juego
                                 </a>
@@ -33,7 +33,7 @@ const Footer = () => {
                                     <li><Link className="dropdown-item h5" to='/dondejuego'>¿Donde Juego?</Link></li>
                                 </ul>
                             </li>
-                            <li className="nav-item dropdown  p-3">
+                            <li className="nav-item dropdown  p-2">
                                 <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Juego Responsable
                                 </a>
