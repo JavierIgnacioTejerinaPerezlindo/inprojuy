@@ -3,7 +3,7 @@ import React from 'react'
 const LavadoDeActivos = () => {
     return (
 
-        <div className='text-left text-justify container fondotransparente p-5' >
+        <div className=' container fondotransparente p-5' >
             <br />
             <center ><h1 className='p-5 botonbordeazul text-white px-5 mx-5 py-3'>LAVADO DE ACTIVOS</h1></center>
             <p className='p-3'>

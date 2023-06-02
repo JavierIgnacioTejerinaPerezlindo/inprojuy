@@ -10389,9 +10389,12 @@ h1, .h1 {
 .fondotransparente2 {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 5px;
+  font-size: 1.4rem;
+  color: rgb(87, 87, 87);
 }
 
 .fondotransparente3 {
+  font-size: 1.4rem;
   padding: 0%;
   margin-left: auto !important;
   margin-right: 0% !important;
@@ -10403,6 +10406,7 @@ h1, .h1 {
 }
 
 .fondotransparente4 {
+  color: rgb(87, 87, 87);
   padding: 0%;
   margin-left: auto !important;
   margin-right: 0% !important;
@@ -10410,6 +10414,7 @@ h1, .h1 {
   margin-bottom: 2rem;
   width: 95%;
   min-width: 320px;
+  font-size: 1.4rem;
 }
 
 .fondotransparente {
@@ -10657,8 +10662,7 @@ nav.navbar {
 .cuerpo {
   display: inline-block;
   width: 85%;
-  padding: 3rem;
-  font-size: 2rem;
+  padding: 2rem;
 }
 
 .casinos {

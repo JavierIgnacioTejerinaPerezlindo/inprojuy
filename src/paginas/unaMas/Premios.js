@@ -8,7 +8,7 @@ const Premios = () => {
             <h2 className='titulocaja'>Premios</h2>
         </div>
         <div className='cuerpo'>
-            <p>Se entregarán 5 premios por un valor de $ 35000 cada uno y un 20% sobre cada premio, a las Agencias Oficiales que hayan vendido el Cupón.</p>
+            <p>Se sortearán 5 premioss de $ 35000 cada uno.</p>
         </div>
     </div>
     </div>

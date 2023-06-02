@@ -6,7 +6,7 @@ const Reglamentos = () => {
             <center><h1 className=" p-5 botonbordeazul text-white px-5 mx-5 py-3">Leyes y Reglamentos</h1></center>
             <br />
 
-            <p>Encontrá todas las Leyes y Reglamentos publicadas en InProJuy.</p>
+            <p>Encontrá todas las Leyes y Reglamentos publicados en InProJuy.</p>
 
             <br />
             <br />
@@ -19,7 +19,7 @@ const Reglamentos = () => {
 
                 <br />
 
-                <li className='h5 sinvineta'><a href=".\download\LEY-DE-CREACION-DEL-INSTITUTO-DE-JUEGOS-DE-AZAR-DE-JUJUY.pdf" download>LEY DE CREACION DEL INSTITUTO DE JUEGOS DE AZAR DE JUJUY</a></li>
+                <li className='h5 sinvineta'><a href=".\download\LEY-DE-CREACION-DEL-INSTITUTO-DE-JUEGOS-DE-AZAR-DE-JUJUY.pdf" download>LEY DE CREACIÓN DEL INSTITUTO DE JUEGOS DE AZAR DE JUJUY</a></li>
             </ul>
 
             <br />
@@ -37,7 +37,7 @@ const Reglamentos = () => {
 
                 <br />
 
-                <li className='h5 sinvineta'><a href=".\download\reglamento-bingos-rifas-bonos.pdf" download >REGLAMENTO DE BINGOS , RIFAS , BINGOS RIFAS , LOTAS , BONOS CONTRIBUCION</a></li>
+                <li className='h5 sinvineta'><a href=".\download\reglamento-bingos-rifas-bonos.pdf" download >REGLAMENTO DE BINGOS , RIFAS , BINGOS RIFAS , LOTAS , BONOS CONTRIBUCIÓN</a></li>
 
                 <br />
 

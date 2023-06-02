@@ -52,8 +52,6 @@ const Quetaljuegoyo = () => {
 
             <p>¿Pides dinero para poder jugar? ¿vendiste pertenencias o delinquido para financiar el juego? ¿Dejas de pagar obligaciones y dedicas el dinero al juego?&nbsp;</p>
 
-
-
             <p>¿Tus familiares o amigos te dicen que juegas demasiado y te animan a dejarlo?</p>
 
 

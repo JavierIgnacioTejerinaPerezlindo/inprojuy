@@ -72,12 +72,12 @@ const NavBar = () => {
                                 Una Más!
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-3">
-                                <li><Link className="dropdown-item h5" to='/quienespueden'>¿quienes pueden participar?</Link></li>
-                                <li><Link className="dropdown-item h5" to='/comocargarcupon'>¿Como cargar el cupon?</Link></li>
-                                <li><Link className="dropdown-item h5" to='/cuandosortea'>¿Cuando sortea?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/quienespueden'>¿Quiénes pueden participar?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/comocargarcupon'>¿Cómo cargar el cupón?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/cuandosortea'>¿Cuándo sortea?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/premios'>Premios</Link></li>
                                 <li><Link className="dropdown-item h5" to='/'>Ganadores</Link></li>
-                                <li><Link className="dropdown-item h5" to='/'>Galeria de fotos</Link></li>
+                                <li><Link className="dropdown-item h5" to='/'>Galería de fotos</Link></li>
 
                                 {auth.user === "" ? (
                                     <>
