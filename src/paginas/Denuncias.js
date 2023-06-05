@@ -46,7 +46,7 @@ const Denuncias = () => {
         <label className="h5 form-label">EN LINEA:</label>
         <br/>
         <label className="h5 form-label">Pagina web</label>
-        <input type="text" className=" form-control border px-3 py-2 rounded placeholder-gray-500" />
+        <input type="text" className=" form-control border px-3 py-2 rounded placeholder-gray-500"/>
         <label className="h5 form-label">Red Social</label>
         <input type="text" className=" form-control border px-3 py-2 rounded placeholder-gray-500" />
         <label className="h5 form-label">Otro</label>
