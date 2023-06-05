@@ -67,7 +67,7 @@ const NavBar = () => {
                                 <li><Link className="dropdown-item h5" to='/denuncias'>Denuncias</Link></li>
                             </ul>
                         </li>
-                        <li className="nav-item dropdown">
+                      <li className="nav-item dropdown">
                             <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Una Más!
                             </a>
