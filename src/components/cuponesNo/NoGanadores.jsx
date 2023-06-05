@@ -73,7 +73,7 @@ const NoGanadores = () => {
   
         <button className="btn btn-primary text-white m-4" type="submit">Enviar</button>
       </form>
-      <a href="">¿Donde encuentro estos datos en mi cupon?</a>
+      <Link className="dropdown-item h5" to='/comocargarcupon'>¿Cómo cargar el cupón?</Link>
     </div>
   )
   
