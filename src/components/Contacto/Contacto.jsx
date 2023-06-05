@@ -1,9 +1,12 @@
 import React from "react";
+import emailjs from "emailjs-com";
 /* import './contacto.css' */
 
 const ContactForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
+        emailjs.sendForm('service_o98nabr', 'template_l3zfrpc', e.target,'lSsyIX281CxUcE1YE').then(res=>{alert("mail enviado")
+    console.log(res)})
         // Lógica para enviar el correo electrónico a comunicaciones@connect-way.online
         // Puedes utilizar librerías como nodemailer para enviar el correo desde el backend
     };
