@@ -62,12 +62,12 @@ const NavBar = () => {
                                 Juego Ilegal
                             </a>
                             <ul className="dropdown-menu fondotransparente2 p-3">
-                                <li><Link className="dropdown-item h5" to='/'>¿Qué es el juego Ilegal?</Link></li>
+                                <li><Link className="dropdown-item h5" to='/juegoilegal'>¿Qué es el juego Ilegal?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/lavadodeactivos'>Prevención del lavado de activos</Link></li>
-                                <li><Link className="dropdown-item h5" to='/'>Denuncias</Link></li>
+                                <li><Link className="dropdown-item h5" to='/denuncias'>Denuncias</Link></li>
                             </ul>
                         </li>
-                 {/*        <li className="nav-item dropdown">
+                        <li className="nav-item dropdown">
                             <a className="nav-link text-white luzhover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Una Más!
                             </a>
@@ -103,7 +103,7 @@ const NavBar = () => {
                                 </Link>
                             </li>
                         )}
- */}
+
 
                     </ul>
                 </div>

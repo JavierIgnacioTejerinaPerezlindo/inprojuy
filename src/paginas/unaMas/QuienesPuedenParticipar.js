@@ -2,7 +2,7 @@ import React from 'react'
 
 const QuienesPuedenParticipar = () => {
     return (
-        <div className='container-fluid fondotransparente4'> 
+        <div className='container-fluid fondotransparente4 vhcomp'> 
         <div className='contcaja'>
             <div className='cajaroja'>
                 <h2 className='titulocaja'>¿Quienes Pueden Participar?</h2>

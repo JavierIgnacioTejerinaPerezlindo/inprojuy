@@ -2,70 +2,35 @@ import React from 'react'
 
 const JuegoIlegal = () => {
   return (
-    <div className='container p-5'>
-      <h2>Juego Ilegal</h2>
+    <div className='container p-5 fondotransparente4'>
+      <div className='margenazul pb-1'>
+      <h2 className='botonbordeazul text-white px-5 py-3 mb-4'>Juego Ilegal</h2>
+      <br/>
+      <p>Es aquel que no está autorizado ni regulado por el estado provincial, entendiéndose por ello cualquier organización, exploración, administración y comercialización de juegos de azar, apuestas y/o actividades conexas, no autorizadas por la Autoridad de Aplicación. En nuestra Provincia es el INPROJUY-</p>
+      <h4>¿CUÁL ES LA AUTORIDAD DE APLICACIÓN DE LOS JUEGOS DE AZAR EN LA PCIA? </h4>
+
+      <p>En Argentina cada provincia tiene la potestad de autorizar regular los juegos dentro de su territorio. En este contexto para ofrecer juego es necesario disponer de título habilitante autorización, o licencia otorgada por la Autoridad competente y únicamente pueden ofrecerse aquellos juegos que están regulados en cada jurisdicción.</p>
+      <p>En nuestra provincia el organismo competente es el INTITUTO DE JUEGOS DE AZAR DE JUJUY (INPROJUY).</p>
+
+      <h4>¿PORQUE ES UN DELITO?</h4>
+      <p>La ley 27.346 suma un artículo en el que se tipifica al juego clandestino como delito, determinando que se aplicará una pena de tres (3) a seis (6) años, sobre cualquier modalidad o sistema de captación de juegos de azar que no cuente con la autorización pertinente emanada de la autoridad jurisdiccional competente.
+        Dentro de la misión del Instituto Provincial de Juegos de Azar, se encuentra el control de los juegos de azar, destreza, apuestas mutuas y actividades relacionada.</p>
+        <h4>PORQUE JUGAR EN SITIOS AUTORIZADOS</h4>
+      <p>Es importante entender y transmitir al público general, que el jugar en sitios autorizados por el Instituto Provincial de Juegos de Azar de la Provincia de Jujuy, tiene beneficios para los tres pilares que intervienen en estas actividades: los apostadores, los empresarios y el estado, como así también apostar en sitios oficiales resulta seguro y legal ya que cuenta con las siguientes ventajas para los jugadores:</p>
+      </div>
+      <div className='margenrojo jus'>
       <ul>
-        <li>
-          ES UN DELITO PENAL El 22 de diciembre de 2016 fue sancionada por el Congreso Nacional la Ley 27346 que además de gravar con nuevos impuestos al sector de los juegos de azar, incorpora un nuevo Articulo (301 bis) al Código Penal que reprime con prisión a quienes capten apuestan en forma ilegal.
-        </li>
-        <li>
-          Ley 27346 Articulo bis: será reprimido con prisión de 3 a 6 años el que explotare, administrare, operare o de cualquier manera organizara, por si o a través de terceros, cualquier modalidad o sistema de captación de juegos de azar sin contar con la autorización pertinente emanada de la autoridad jurisdiccional competente.
-        </li>
-        <li>
-          Mediante Ley Provincial Nº 6234 se crea el Ente Regulador, Controlador y Fiscalizador de los juegos de azar en todo el territorio de la provincia de Jujuy, dentro de las principales funciones, tiene el combatir y erradicar el juego ilegal. Con la finalidad de maximizar la luchas contra el juego ilegal que lleva el estado provincial, ponemos a disposición una herramienta que permite realizar denuncias anónimas descargando de esta pagina.
-        </li>
+        <li>Cada Juego cuenta con sus Reglas Claras y transparentes.</li>
+        <li>Tienen la seguridad de pagos, cobros de premios y depósitos.</li>
+        <li>Están amparados por la Protección de los derechos de los apostadores.</li>
+        <li>Identificación del usurario en sitios on line y salas tragamonedas físicas.</li>
+        <li>Cuenta con herramientas de Juego Responsable con el objetivo de prevenir el desarrollo de conductas problemáticas.</li>
       </ul>
-      <h4>Formulario de denuncia</h4>
-      <p>Vos también podes ayudar a combatir el juego clandestino. Si tenés datos para proporcionar sobre indicios de juego ilegal (personas físicas, puntos de venta, páginas web, redes sociales, etc), por favor realizá tu denuncia AQUI.</p>
-      <form>
-        <div class="mb-3">
-          <label class="form-label">Apellido y Nombre</label>
-          <input type="text" class="form-control" />
-          <label class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-          <label class="form-label">Teléfono</label>
-          <input type="tel" class="form-control" />
-          <label class="form-label">Dirección</label>
-          <input type="text" class="form-control" />
-          <label class="form-label">Localidad</label>
-          <input type="text" class="form-control" />
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">Asistí al lugar</label>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">Aposté</label>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">Recibí un comprobante</label>
-        </div>
-        <label class="form-label">Dirección del lugar</label>
-        <input type="text" class="form-control" />
-        <label class="form-label">Entre calles/ Interseccion calle</label>
-        <input type="text" class="form-control" />
-        <div class="input-group">
-        <label class="form-label">Foto del lugar</label>
+      <p>Para lograr una actividad lúdica transparente, donde el rol estatal garantice que la misma se desarrolle de acuerdo al marco legal vigente, teniendo en cuenta principalmente el destino social de los fondos.</p>
 
-          <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" />
-        </div>
-        <label class="form-label">EN LINEA</label>
-        <label class="form-label">Pagina web</label>
-        <input type="text" class="form-control" />
-        <label class="form-label">Red Social</label>
-        <input type="text" class="form-control" />
-        <label class="form-label">Otro</label>
-        <input type="text" class="form-control" />
-        <div class="input-group">
-        <label class="form-label">Foto del lugar</label>
+      <p>A fin de combatir el juego clandestino, y en línea con lo establecido en la ley N° 27.346, mediante sus áreas de control realiza de manera continua operativos de rastrillaje, análisis de apuestas y análisis de páginas de juego en línea. Denuncia el juego ilegal al teléfono 3884136280</p>
+      </div>
 
-          <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" />
-
-        </div>
-
-      </form>
     </div>
   )
 }

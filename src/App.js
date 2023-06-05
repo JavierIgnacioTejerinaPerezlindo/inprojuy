@@ -45,6 +45,7 @@ import QuienesPuedenParticipar from './paginas/unaMas/QuienesPuedenParticipar';
 import ComoCargarCupon from './paginas/unaMas/ComoCargarCupon';
 import CuandoSortea from './paginas/unaMas/CuandoSortea';
 import Premios from './paginas/unaMas/Premios';
+import Denuncias from './paginas/Denuncias';
 
 
 
@@ -123,7 +124,8 @@ function App() {
               <Route path='/cuandosortea' element={<CuandoSortea/>} />
               <Route path='/premios' element={<Premios/>} />
               <Route path='/quienespueden' element={<QuienesPuedenParticipar />} />
-
+              <Route path='/juegoilegal' element={<JuegoIlegal />} />
+              <Route path='/denuncias' element={<Denuncias />} />
 
 
 

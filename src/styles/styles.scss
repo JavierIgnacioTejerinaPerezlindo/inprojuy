@@ -50,7 +50,9 @@ background: linear-gradient(180deg, rgba(59,160,168, 1) 5%, rgba(87,87,87,0.7) 5
   color: rgba(215, 65, 42);
   /*   filter: drop-shadow(0px 0px 2px rgba(215,65,42)); */
 }
-
+.jus{
+  text-align: left;
+}
 h1 {
   text-align: center;
   padding: 3rem;
@@ -165,6 +167,7 @@ p {
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 10px;
+  text-align: justify;
 }
 
 .cardt {
@@ -322,6 +325,7 @@ nav.navbar {
   border-radius: 0%;
   box-shadow: (5px 7px 10px rgba(0, 0, 0, 0.5));
   font-family: 'MiFuentetitulo';
+  text-align: center;
 
 }
 
@@ -499,6 +503,14 @@ nav.navbar {
   .nav-item{
     padding: 1rem;
   }
+}
 
+.vhcomp{
+  height: 75vh;
+  display: flex;
+  align-items: center;
+}
 
+.jus{
+  text-align: left;
 }

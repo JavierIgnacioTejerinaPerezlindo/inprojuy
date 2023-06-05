@@ -2,7 +2,7 @@ import React from 'react'
 
 const CuandoSortea = () => {
   return (
-    <div className='container-fluid fondotransparente4'> 
+    <div className='container-fluid fondotransparente4 vhcomp'> 
     <div className='contcaja'>
         <div className='cajaroja'>
             <h2 className='titulocaja'>¿Cuándo Sortea?</h2>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Premios = () => {
   return (
-    <div className='container-fluid fondotransparente4'> 
+    <div className='container-fluid fondotransparente4 vhcomp'> 
     <div className='contcaja'>
         <div className='cajaroja'>
             <h2 className='titulocaja'>Premios</h2>
