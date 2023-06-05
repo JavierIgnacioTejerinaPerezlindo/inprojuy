@@ -36,6 +36,9 @@ const Reglamentos = () => {
                 <li className='h5 sinvineta'><a href=".\download\reglamento-tombola.pdf" download >REGLAMENTO DE TÓMBOLA</a></li>
 
                 <br />
+                <li className='h5 sinvineta'><a href=".\download\ReglamentoCuponesNoPremiados.pdf" download >REGLAMENTO DE UNA MAS!</a></li>
+
+<br />
 
                 <li className='h5 sinvineta'><a href=".\download\reglamento-bingos-rifas-bonos.pdf" download >REGLAMENTO DE BINGOS , RIFAS , BINGOS RIFAS , LOTAS , BONOS CONTRIBUCIÓN</a></li>
 
