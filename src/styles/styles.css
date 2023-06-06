@@ -10409,6 +10409,17 @@ h1, .h1 {
   color: rgb(87, 87, 87);
 }
 
+.fondotransparente5 {
+  font-size: 1.4rem;
+  padding: 0%;
+  margin-left: auto !important;
+  margin-right: 0% !important;
+  margin-top: 2rem;
+  width: 83%;
+  min-width: 320px;
+  color: rgb(87, 87, 87);
+}
+
 .fondotransparente4 {
   color: rgb(87, 87, 87);
   padding: 0%;

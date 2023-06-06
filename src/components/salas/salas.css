@@ -1,8 +1,30 @@
 .salas{
+  position: relative;
+  display: inline-block;
     height: 100%;
+/* background-image: url("juegonline.png");
+background-size: cover; */
 
   }
-  .salas img{
-    height: 100%;
+  .imagensalas{
+width: 99vw;
+  }
+  .boton-videodrome{
+position: absolute;
+top: 34%;
+right: 11%;
+background: none;
+border-style: none;
+width: 17.9%;
+  }
+  .boton-superstar{
+      position: absolute;
+      top: 34%;
+      right: 34%;
+      background: none;
+border-style: none;
+      width: 15.9%;
+  }
+.salasbtnimg{
     width: 100%;
   }
