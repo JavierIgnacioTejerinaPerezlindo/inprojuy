@@ -6,11 +6,11 @@ const JuegoIlegal = () => {
       <div className='margenazul pb-1'>
       <h2 className='botonbordeazul text-white px-5 py-3 mb-4'>Juego Ilegal</h2>
       <br/>
-      <p>Es aquel que no está autorizado ni regulado por el estado provincial, entendiéndose por ello cualquier organización, exploración, administración y comercialización de juegos de azar, apuestas y/o actividades conexas, no autorizadas por la Autoridad de Aplicación. En nuestra Provincia es el INPROJUY-</p>
+      <p>Es aquel que no está autorizado ni regulado por el estado provincial, entendiéndose por ello cualquier organización, explotación, administración y comercialización de juegos de azar, apuestas y/o actividades conexas, no autorizadas por la Autoridad de Aplicación. En nuestra Provincia es el INPROJUY-</p>
       <h4>¿CUÁL ES LA AUTORIDAD DE APLICACIÓN DE LOS JUEGOS DE AZAR EN LA PCIA? </h4>
 
       <p>En Argentina cada provincia tiene la potestad de autorizar regular los juegos dentro de su territorio. En este contexto para ofrecer juego es necesario disponer de título habilitante autorización, o licencia otorgada por la Autoridad competente y únicamente pueden ofrecerse aquellos juegos que están regulados en cada jurisdicción.</p>
-      <p>En nuestra provincia el organismo competente es el INTITUTO DE JUEGOS DE AZAR DE JUJUY (INPROJUY).</p>
+      <p>En nuestra provincia el organismo competente es el INSTITUTO DE JUEGOS DE AZAR DE JUJUY (INPROJUY).</p>
 
       <h4>¿PORQUE ES UN DELITO?</h4>
       <p>La ley 27.346 suma un artículo en el que se tipifica al juego clandestino como delito, determinando que se aplicará una pena de tres (3) a seis (6) años, sobre cualquier modalidad o sistema de captación de juegos de azar que no cuente con la autorización pertinente emanada de la autoridad jurisdiccional competente.

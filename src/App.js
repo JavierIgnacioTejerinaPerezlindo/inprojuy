@@ -34,6 +34,7 @@ import Mitosyverdades from './paginas/Mitosyverdades';
 import Recomendaciones from './paginas/Recomendaciones';
 import DondeJuego from './paginas/DondeJuego';
 import NoGanadores from './components/cuponesNo/NoGanadores';
+import Formularios from './components/Formularios/Formularios';
 import ProfileForm from './components/ProfileForm';
 import Videounamas from './paginas/Videounamas';
 
@@ -106,7 +107,7 @@ function App() {
               <Route path='/notiSeminario' element={<NotiSeminario />} />
               <Route path='/notiDiagenciero' element={<NotiDiagenciero />} />
               <Route path='/videounamas' element={<Videounamas />} />
-
+              <Route path='/formulario' element={<Formularios />} />
               <Route path='/comotrabajamos' element={<ComoTrabajamos />} />
               <Route path='/quetaljuego' element={<Quetaljuegoyo />} />
               <Route path='/sitiosautorizados' element={<SitiosAutorizados />} />

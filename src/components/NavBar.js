@@ -55,6 +55,7 @@ const NavBar = () => {
                                 <li><Link className="dropdown-item h5" to='/mitosyverdades'>Mitos y Verdades</Link></li>
                                 <li><Link className="dropdown-item h5" to='/recomendaciones'>Recomendaciones</Link></li>
                                 <li><Link className="dropdown-item h5" to='/lugaresdeayuda'>Lugares de Ayuda</Link></li>
+                                <li><Link className="dropdown-item h5" to='/formulario'>Formularios de Autoexclusión</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
