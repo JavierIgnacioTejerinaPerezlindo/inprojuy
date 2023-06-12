@@ -28,7 +28,8 @@ const JuegoIlegal = () => {
       </ul>
       <p>Para lograr una actividad lúdica transparente, donde el rol estatal garantice que la misma se desarrolle de acuerdo al marco legal vigente, teniendo en cuenta principalmente el destino social de los fondos.</p>
 
-      <p>A fin de combatir el juego clandestino, y en línea con lo establecido en la ley N° 27.346, mediante sus áreas de control realiza de manera continua operativos de rastrillaje, análisis de apuestas y análisis de páginas de juego en línea. Denuncia el juego ilegal al teléfono 3884136280</p>
+      <p>A fin de combatir el juego clandestino, y en línea con lo establecido en la ley N° 27.346, mediante sus áreas de control realiza de manera continua operativos de rastrillaje, análisis de apuestas y análisis de páginas de juego en línea.</p>
+      <center><h2 className='botonbordeazul text-white px-5 py-3 mb-4'>Denuncia el juego ilegal al teléfono 3884136280</h2></center>
       </div>
 
     </div>
