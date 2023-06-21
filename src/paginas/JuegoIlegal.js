@@ -2,7 +2,7 @@ import React from 'react'
 
 const JuegoIlegal = () => {
   return (
-    <div className='container p-5 fondotransparente4'>
+    <div className='container-fluid py-5 fondotransparente5'>
       <div className='margenazul pb-1'>
       <h2 className='botonbordeazul text-white px-5 py-3 mb-4'>Juego Ilegal</h2>
       <br/>
