@@ -27,7 +27,7 @@ const JuegoIlegal = () => {
       </ul>
       <p>Para lograr una actividad lúdica transparente, donde el rol estatal garantice que la misma se desarrolle de acuerdo al marco legal vigente, teniendo en cuenta principalmente el destino social de los fondos.</p>
 
-      <p>Colabora con el <strong>Juego Seguro, Legal y Responsable</strong> realizando tu denuncia sobre juego ilegal o sitios de juegos clandestinos de manera anónima al teléfono 3884136280 o completando el siguiente <a href="https://http://inprojuy.gob.ar/#/denuncias"><strong><u>formulario</u></strong></a> </p>
+      <p>Colabora con el <strong>Juego Seguro, Legal y Responsable</strong> realizando tu denuncia sobre juego ilegal o sitios de juegos clandestinos de manera anónima al teléfono 3884136280 o completando el siguiente <a href="https://inprojuy.gob.ar/#/denuncias"><strong><u>formulario</u></strong></a> </p>
       <center><h2 className='botonbordeazul text-white px-5 py-3 mb-4'>Denuncia el juego ilegal al teléfono 3884136280</h2></center>
       </div>
 

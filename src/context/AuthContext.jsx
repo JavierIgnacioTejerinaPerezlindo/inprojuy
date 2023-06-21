@@ -38,6 +38,7 @@ export function AuthProvider({ children }) {
         setUser(currentUser.email);
         setUserName(currentUser.displayName);
         setId(currentUser.uid);
+        
       }
     });
     return () => userSession();
@@ -160,6 +161,7 @@ export function AuthProvider({ children }) {
   };
   const logout = async () => {
     localStorage.removeItem("role");
+    localStorage.removeItem("username");
     const response = await signOut(auth);
     console.log(response);
     setUser("");
@@ -188,6 +190,7 @@ export function AuthProvider({ children }) {
         user,
         userName,
         googleAuth,
+        
         logout,
         resetPassword,
         setRoleDb,
