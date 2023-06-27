@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Carrousel = () => {
+  const telekino = "./img/telekino.jpg";
+  const uniqueParam = Date.now(); // Genera un timestamp único
+
   return (
     <div className="pt-5 pb-5 drop" >
       <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
@@ -18,7 +21,7 @@ const Carrousel = () => {
             <img src="./img/slider_5.jpeg" className="d-block w-100" alt="..." />
           </div>
                 <div className="carousel-item">
-            <img src="./img/telekino.jpg" className="d-block w-100" alt="..." />
+            <img src={`${telekino}?${uniqueParam}`} className="d-block w-100" alt="Telekino" />
           </div>
           <div className="carousel-item">
             <img src="./img/quini.jpg" className="d-block w-100" alt="..." />
