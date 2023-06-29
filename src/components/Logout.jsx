@@ -11,7 +11,7 @@ function Logout() {
   const username = auth.userName;
   const id = auth.id;
   
-  const ids = ["ErpHKkxgkHdodt33QeatdntKNhC3", "CGiTlQPRYSS0M2jPAAV6si7YrU73","WeNrAUGyhbX6dezY86XMRJjKR1A3"];
+  const ids = ["ErpHKkxgkHdodt33QeatdntKNhC3", "CGiTlQPRYSS0M2jPAAV6si7YrU73","WeNrAUGyhbX6dezY86XMRJjKR1A3","fhaY2Ssl5Zdxq8yFfVsLX9tm44A3"];
 
   const logoutButton = () => {
     try {
