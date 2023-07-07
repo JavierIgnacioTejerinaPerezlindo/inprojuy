@@ -3,16 +3,21 @@ import React from 'react'
 const Carrousel = () => {
   const telekino = "./img/telekino.jpg";
   const uniqueParam = Date.now(); // Genera un timestamp único
+  const unamas = "./img/unamas.jpg";
+  const uniqueParam1 = Date.now() + 1; // Genera un timestamp único
 
   return (
     <div className="pt-5 pb-5 drop" >
       <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner rounded">
-                         
+
           <div className="carousel-item active">
             <a href="https://juj.lotemovil.com.ar" target="_blank">
               <img src="./img/resultados.jpg" className="d-block w-100" alt="..." />
             </a>
+          </div>
+          <div className="carousel-item">
+            <img src={`${unamas}?${uniqueParam1}`} className="d-block w-100" alt="Una Mas" />
           </div>
           <div className="carousel-item">
             <img src="./img/loteria.jpg" className="d-block w-100" alt="..." />
@@ -20,7 +25,7 @@ const Carrousel = () => {
           <div className="carousel-item">
             <img src="./img/slider_5.jpeg" className="d-block w-100" alt="..." />
           </div>
-                <div className="carousel-item">
+          <div className="carousel-item">
             <img src={`${telekino}?${uniqueParam}`} className="d-block w-100" alt="Telekino" />
           </div>
           <div className="carousel-item">
