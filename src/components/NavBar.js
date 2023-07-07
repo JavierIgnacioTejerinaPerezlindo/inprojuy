@@ -77,7 +77,7 @@ const NavBar = () => {
                                 <li><Link className="dropdown-item h5" to='/comocargarcupon'>¿Cómo cargar el cupón?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/cuandosortea'>¿Cuándo sortea?</Link></li>
                                 <li><Link className="dropdown-item h5" to='/premios'>Premios</Link></li>
-                                <li><Link className="dropdown-item h5" to='/'>Ganadores</Link></li>
+                                <li><Link className="dropdown-item h5" to='/ganadoresum'>Ganadores</Link></li>
                                 <li><Link className="dropdown-item h5" to='/'>Galería de fotos</Link></li>
 
                                 {auth.user === "" ? (
