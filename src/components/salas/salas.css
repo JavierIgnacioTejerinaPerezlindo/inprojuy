@@ -1,13 +1,13 @@
 .salas{
   position: relative;
   display: inline-block;
-    height: 100%;
+width: 100%;
 /* background-image: url("juegonline.png");
 background-size: cover; */
 
   }
   .imagensalas{
-width: 99vw;
+width: 100%;
   }
   .boton-videodrome{
 position: absolute;

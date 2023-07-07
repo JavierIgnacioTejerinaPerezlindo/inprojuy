@@ -11,7 +11,7 @@ const Formularios = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="panelsStayOpen-headingOne">
             <button className="h3 accordion-button text-light bg-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-              ¿QUE ES EL ACTA DE ACUERDO DE AUTOEXCLUSION?
+              ¿QUE ES EL ACTA DE ACUERDO DE AUTOEXCLUSIÓN?
             </button>
           </h2>
           <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
@@ -71,7 +71,7 @@ const Formularios = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="panelsStayOpen-headingSix">
             <button className="h3 accordion-button text-light bg-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
-              ¿SE PUEDE LEVANTAR LA AUTOEXCLUSION?
+              ¿SE PUEDE LEVANTAR LA AUTOEXCLUSIÓN?
             </button>
           </h2>
           <div id="panelsStayOpen-collapseSix" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
@@ -83,7 +83,7 @@ const Formularios = () => {
         <div className="accordion-item">
           <h2 className="accordion-header" id="panelsStayOpen-headingSeven">
             <button className="h3 accordion-button text-light bg-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
-              ¿CUANTO DEMORO EN HACER EL TRAMITE DE REVOCACION?
+              ¿CUANTO DEMORO EN HACER EL TRAMITE DE REVOCACIÓN?
             </button>
           </h2>
           <div id="panelsStayOpen-collapseSeven" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
@@ -109,7 +109,7 @@ const Formularios = () => {
 
       <br />
       <br />
-      <p><strong>ACTA DE ACUERDO DE AUTOEXCLUSION</strong></p>
+      <p><strong>ACTA DE ACUERDO DE AUTOEXCLUSIÓN</strong></p>
 
       <br />
 
@@ -120,7 +120,7 @@ const Formularios = () => {
         <hr className="wp-block-separator has-css-opacity" />
       </ul>
       <br />
-      <p><strong>ACTA DE ACUERDO DE AUTOEXCLUSION POR PARTE DE UN FAMILIAR</strong></p>
+      <p><strong>ACTA DE ACUERDO DE AUTOEXCLUSIÓN POR PARTE DE UN FAMILIAR</strong></p>
       <br />
       <ul>
         <li className='h5 sinvineta'><a href=".\download\FormAutoexFamiliar.pdf" download >Descargar</a></li>
@@ -130,7 +130,7 @@ const Formularios = () => {
       <br />
       <br />
       <br />
-      <p><strong>ACTA DE LEVANTAMIENTO o REVOCACION DE LA AUTOEXCLUSION VOLUNTARIA</strong></p>
+      <p><strong>ACTA DE LEVANTAMIENTO o REVOCACION DE LA AUTOEXCLUSIÓN VOLUNTARIA</strong></p>
       <br />
       <ul>
         <li className='h5 sinvineta'><a href=".\download\FormActaRevocacion.pdf" download >Descargar</a></li>

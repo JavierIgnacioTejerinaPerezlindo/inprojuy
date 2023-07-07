@@ -41,10 +41,10 @@ $theme-colors: (
 /* @import "../node_modules/bootstrap/scss/root"; */
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-/* .App{
-    background: rgb(59,160,168);
-background: linear-gradient(180deg, rgba(59,160,168, 1) 5%, rgba(87,87,87,0.7) 50%, rgba(215,65,42,1) 85%);
-} */
+.App{
+    width: 90%;
+    margin: auto;
+}
 
 .container a:hover {
   color: rgba(215, 65, 42);
@@ -469,6 +469,9 @@ nav.navbar {
 }
 @media (max-width: 768px) {
 
+  .App{
+    width: 100%;
+  }
   .wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
