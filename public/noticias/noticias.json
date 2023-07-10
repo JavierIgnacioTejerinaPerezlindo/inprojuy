@@ -1,5 +1,23 @@
 [
     {
+        "titulo": "INPROJUY llevó adelante el primer sorteo de los cupones no premiados",
+        "fecha": "07/07/2023",
+        "idnoticia": 8,
+        "imagen": "./noticias/img/notiganadoresunamas.webp",
+        "texto": "En instalaciones del salón sorteador 304 del INPROJUY, se llevó a cabo el primer sorteo de los cupones no premiados de la Tómbola Jujeña, con más de 7.500 boletas, perteneciente a participantes de toda la provincia.",
+        "tipo": 1,
+        "linkn": "/notiganadoresunamas"
+    },
+    {
+        "titulo": "Tómbola La Jujeña, sortea Cupones No Ganadores",
+        "fecha": "06/07/2023",
+        "idnoticia": 7,
+        "imagen": "./noticias/img/notiunamas.webp",
+        "texto": "Se trata de una oportunidad de volver a jugar para quienes apostaron a la Tómbola y no obtuvieron premios. ",
+        "tipo": 1,
+        "linkn": "/notiunamas"
+    },
+    {
         "titulo": "El Instituto Provincial de Juegos de azar, agasajó en su día a los agencieros de Tómbola de la provincia de Jujuy",
         "fecha": 1500,
         "idnoticia": 6,

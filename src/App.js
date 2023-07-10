@@ -49,6 +49,8 @@ import Premios from './paginas/unaMas/Premios';
 import Denuncias from './paginas/Denuncias';
 import Ganadores from './paginas/unaMas/Ganadoresum';
 import Ganadoresum from './paginas/unaMas/Ganadoresum';
+import Notiunamas from './paginas/Notiunamas';
+import Notiganadoresunamas from './paginas/Notiganadoresunamas';
 
 
 
@@ -130,6 +132,8 @@ function App() {
               <Route path='/juegoilegal' element={<JuegoIlegal />} />
               <Route path='/denuncias' element={<Denuncias />} />
               <Route path='/ganadoresum' element={<Ganadoresum />} />
+              <Route path='/notiunamas' element={<Notiunamas />} />
+              <Route path='/notiganadoresunamas' element={<Notiganadoresunamas />} />
 
 
 
